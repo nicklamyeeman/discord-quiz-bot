@@ -12,6 +12,7 @@ import {
   getTopUsersQuizStatistics,
 } from "../../database/data/top";
 import { CommandConfig } from "../../types/commands";
+import { GlobalEmotes } from "../../types/constants";
 
 export const top: CommandConfig = {
   name: "top",
@@ -77,7 +78,9 @@ export const top: CommandConfig = {
         topTitle = "Solde";
         const topBalances = await getTopUsersBalances();
         results = topBalances.map((top, index) => {
-          return `**#${index + 1}** <@!${top.id}>: ${top.balance}`;
+          return `**#${index + 1}** <@!${top.id}>: ${top.balance} ${
+            GlobalEmotes.money
+          }`;
         });
         break;
       case "messages":
@@ -105,14 +108,18 @@ export const top: CommandConfig = {
         topTitle = "Pièces gagnées";
         const topBalanceWon = await getTopUsersBalanceStatistics("won");
         results = topBalanceWon.map((top, index) => {
-          return `**#${index + 1}** <@!${top.id}>: ${top.won}`;
+          return `**#${index + 1}** <@!${top.id}>: ${top.won} ${
+            GlobalEmotes.money
+          }`;
         });
         break;
       case "coins-spent":
         topTitle = "Pièces dépensées";
         const topBalanceSpent = await getTopUsersBalanceStatistics("spent");
         results = topBalanceSpent.map((top, index) => {
-          return `**#${index + 1}** <@!${top.id}>: ${top.spent}`;
+          return `**#${index + 1}** <@!${top.id}>: ${top.spent} ${
+            GlobalEmotes.money
+          }`;
         });
         break;
       case "casino-played":
@@ -140,14 +147,18 @@ export const top: CommandConfig = {
         topTitle = "Pièces misées au casino";
         const topCasinoBet = await getTopUsersCasinoStatistics("bet");
         results = topCasinoBet.map((top, index) => {
-          return `**#${index + 1}** <@!${top.id}>: ${top.bet}`;
+          return `**#${index + 1}** <@!${top.id}>: ${top.bet} ${
+            GlobalEmotes.money
+          }`;
         });
         break;
       default:
         topTitle = "Solde";
         const topDefault = await getTopUsersBalances();
         results = topDefault.map((top, index) => {
-          return `**#${index + 1}** <@!${top.id}>: ${top.balance}`;
+          return `**#${index + 1}** <@!${top.id}>: ${top.balance} ${
+            GlobalEmotes.money
+          }`;
         });
         break;
     }

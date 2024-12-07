@@ -10,7 +10,7 @@ import {
   addUserBalanceStatistics,
   addUserCasinoStatistics,
 } from "../../database/data/statistics";
-import { getUserBalance, setUserBalance } from "../../database/data/user";
+import { addUserBalance, getUserBalance } from "../../database/data/user";
 import { CommandConfig } from "../../types/commands";
 import { GlobalEmotes } from "../../types/constants";
 import { coinImage, flipCoin } from "./utils";
@@ -65,7 +65,7 @@ export const flip: CommandConfig = {
     const winnings = win ? bet * 2 : 0;
 
     await Promise.all([
-      setUserBalance(interaction.user.id, userBalance + winnings - bet),
+      addUserBalance(interaction.user.id, winnings - bet),
       addUserBalanceStatistics(interaction.user.id, winnings - bet),
       addUserCasinoStatistics(interaction.user.id, bet, winnings - bet),
     ]);

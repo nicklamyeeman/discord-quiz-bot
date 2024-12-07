@@ -5,9 +5,16 @@ import { ActivityType, Client, GatewayIntentBits } from "discord.js";
 import { config } from "./config";
 import { GameThemes, HOUR } from "./types/constants";
 
+import { checkAdminCommand } from "./admin_commands";
 import { deployCommands } from "./commands";
+import { startQuiz } from "./quiz/quiz";
 import { commands } from "./slash_commands";
-import { commandNotAllowedInChannel, initUser, runOnInterval } from "./utils";
+import {
+  commandNotAllowedInChannel,
+  initUser,
+  logUser,
+  runOnInterval,
+} from "./utils";
 
 const client = new Client({
   intents: [
@@ -37,6 +44,7 @@ client.once("ready", () => {
 
 client.on("guildAvailable", async (guild) => {
   await deployCommands(guild.id);
+  await startQuiz(guild);
 });
 
 client.on("guildCreate", async (guild) => {
@@ -47,7 +55,7 @@ client.on("interactionCreate", async (interaction) => {
   if (!interaction.isCommand()) {
     return;
   }
-  await initUser(interaction.user);
+  await initUser(interaction.user, interaction);
 
   const command = commands[interaction.commandName as keyof typeof commands];
   if (command) {
@@ -58,9 +66,19 @@ client.on("interactionCreate", async (interaction) => {
     if (notAllowedMessage) {
       return interaction.reply(notAllowedMessage);
     }
-
-    command.execute(interaction);
+    await logUser(interaction.user, interaction, "commands");
+    await command.execute(interaction);
   }
+});
+
+client.on("messageCreate", async (message) => {
+  if (message.author.bot) {
+    return;
+  }
+  await initUser(message.author, message);
+  await logUser(message.author, message, "messages");
+
+  checkAdminCommand(message);
 });
 
 client.login(config.DISCORD_BOT_TOKEN);

@@ -12,10 +12,16 @@ export const config = {
   DISCORD_APP_ID,
 };
 
-const { GUILD_ID, CASINO_CHANNEL_ID, BACKUP_CHANNEL_ID, QUIZ_CHANNEL_ID } =
-  process.env;
+const {
+  DISCORD_OWNER_ID,
+  GUILD_ID,
+  CASINO_CHANNEL_ID,
+  BACKUP_CHANNEL_ID,
+  QUIZ_CHANNEL_ID,
+} = process.env;
 
 export const guildConfig = {
+  DISCORD_OWNER_ID,
   GUILD_ID,
   CASINO_CHANNEL_ID,
   BACKUP_CHANNEL_ID,

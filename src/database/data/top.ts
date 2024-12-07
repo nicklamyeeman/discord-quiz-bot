@@ -7,18 +7,18 @@ import {
 import { User } from "../../types/user";
 import { getSortedDatabaseValue } from "../utils";
 
-export async function getTopUsersBalances(options?: { limitTo?: number }) {
+export const getTopUsersBalances = (options?: { limitTo?: number }) => {
   return getSortedDatabaseValue<User>(`users`, {
     sortBy: "balance",
     asc: false,
     limitTo: options?.limitTo ?? 20,
   });
-}
+};
 
-export async function getTopUsersInteractionStatistics(
+export const getTopUsersInteractionStatistics = (
   key: keyof InteractionStatistics,
   options?: { limitTo?: number }
-) {
+) => {
   return getSortedDatabaseValue<{
     [userId: string]: InteractionStatistics & { id: string };
   }>(`statistics/interaction`, {
@@ -26,12 +26,12 @@ export async function getTopUsersInteractionStatistics(
     asc: false,
     limitTo: options?.limitTo ?? 20,
   });
-}
+};
 
-export async function getTopUsersQuizStatistics(
+export const getTopUsersQuizStatistics = (
   key: keyof QuizStatistics,
   options?: { limitTo?: number }
-) {
+) => {
   return getSortedDatabaseValue<{
     [userId: string]: QuizStatistics & { id: string };
   }>(`statistics/quiz`, {
@@ -39,12 +39,12 @@ export async function getTopUsersQuizStatistics(
     asc: false,
     limitTo: options?.limitTo ?? 20,
   });
-}
+};
 
-export async function getTopUsersBalanceStatistics(
+export const getTopUsersBalanceStatistics = (
   key: keyof BalanceStatistics,
   options?: { limitTo?: number }
-) {
+) => {
   return getSortedDatabaseValue<{
     [userId: string]: BalanceStatistics & { id: string };
   }>(`statistics/balance`, {
@@ -52,12 +52,12 @@ export async function getTopUsersBalanceStatistics(
     asc: false,
     limitTo: options?.limitTo ?? 20,
   });
-}
+};
 
-export async function getTopUsersCasinoStatistics(
+export const getTopUsersCasinoStatistics = (
   key: keyof CasinoStatistics,
   options?: { limitTo?: number }
-) {
+) => {
   return getSortedDatabaseValue<{
     [userId: string]: CasinoStatistics & { id: string };
   }>(`statistics/casino`, {
@@ -65,4 +65,4 @@ export async function getTopUsersCasinoStatistics(
     asc: false,
     limitTo: options?.limitTo ?? 20,
   });
-}
+};

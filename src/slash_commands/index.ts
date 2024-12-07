@@ -9,11 +9,20 @@ import {
 import { balance } from "./balance/balance";
 import { flip } from "./flip/flip";
 import { ping } from "./ping/ping";
+import { rush } from "./rush/rush";
 import { spin } from "./spin/spin";
 import { statistics } from "./statistics/statistics";
 import { top } from "./top/top";
 
-export const commands = [ping, balance, flip, spin, statistics, top].reduce(
+export const commands = [
+  ping,
+  balance,
+  flip,
+  spin,
+  statistics,
+  top,
+  rush,
+].reduce(
   (acc, command) => {
     const data = new SlashCommandBuilder()
       .setName(command.name)

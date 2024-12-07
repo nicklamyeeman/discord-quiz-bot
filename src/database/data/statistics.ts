@@ -8,112 +8,111 @@ import { getDatabaseValue, setDatabaseValue } from "../utils";
 
 /** Getters */
 
-export async function getUserInteractionStatistics(userId: string) {
+export const getUserInteractionStatistics = (userId: string) => {
   return getDatabaseValue<InteractionStatistics>(
-    `users/${userId}/statistics/interaction`
+    `/statistics/interaction/${userId}`
   );
-}
+};
 
-export async function getUserQuizStatistics(userId: string) {
-  return getDatabaseValue<QuizStatistics>(`users/${userId}/statistics/quiz`);
-}
+export const getUserQuizStatistics = (userId: string) => {
+  return getDatabaseValue<QuizStatistics>(`statistics/quiz/${userId}`);
+};
 
-export async function getUserBalanceStatistics(userId: string) {
-  return getDatabaseValue<BalanceStatistics>(
-    `users/${userId}/statistics/balance`
-  );
-}
+export const getUserBalanceStatistics = (userId: string) => {
+  return getDatabaseValue<BalanceStatistics>(`statistics/balance/${userId}`);
+};
 
-export async function getUserCasinoStatistics(userId: string) {
-  return getDatabaseValue<CasinoStatistics>(
-    `users/${userId}/statistics/casino`
-  );
-}
+export const getUserCasinoStatistics = (userId: string) => {
+  return getDatabaseValue<CasinoStatistics>(`statistics/casino/${userId}`);
+};
 
 /** Setters */
 
-export async function setUserInteractionStatistic(
+export const setUserInteractionStatistic = (
   userId: string,
   key: keyof InteractionStatistics,
   value: number
-) {
+) => {
   return setDatabaseValue<InteractionStatistics[typeof key]>(
     `statistics/interaction/${userId}/${key}`,
     value
   );
-}
+};
 
-export async function setUserQuizStatistic(
+export const setUserQuizStatistic = (
   userId: string,
   key: keyof QuizStatistics,
   value: number
-) {
+) => {
   return setDatabaseValue<QuizStatistics[typeof key]>(
     `statistics/quiz/${userId}/${key}`,
     value
   );
-}
-export async function setUserBalanceStatistic(
+};
+export const setUserBalanceStatistic = (
   userId: string,
   key: keyof BalanceStatistics,
   value: number
-) {
+) => {
   return setDatabaseValue<BalanceStatistics[typeof key]>(
     `statistics/balance/${userId}/${key}`,
     value
   );
-}
-export async function setUserCasinoStatistic(
+};
+export const setUserCasinoStatistic = (
   userId: string,
   key: keyof CasinoStatistics,
   value: number
-) {
+) => {
   return setDatabaseValue<CasinoStatistics[typeof key]>(
     `statistics/casino/${userId}/${key}`,
     value
   );
-}
+};
 
-export async function setUserInteractionStatistics(
+export const setUserInteractionStatistics = (
   userId: string,
   value: InteractionStatistics & { id: string }
-) {
+) => {
   return setDatabaseValue<InteractionStatistics & { id: string }>(
     `statistics/interaction/${userId}`,
     value
   );
-}
-export async function setUserQuizStatistics(
+};
+export const setUserQuizStatistics = (
   userId: string,
   value: QuizStatistics & { id: string }
-) {
+) => {
   return setDatabaseValue<QuizStatistics & { id: string }>(
     `statistics/quiz/${userId}`,
     value
   );
-}
-export async function setUserBalanceStatistics(
+};
+export const setUserBalanceStatistics = (
   userId: string,
   value: BalanceStatistics & { id: string }
-) {
+) => {
   return setDatabaseValue<BalanceStatistics & { id: string }>(
     `statistics/balance/${userId}`,
     value
   );
-}
-export async function setUserCasinoStatistics(
+};
+export const setUserCasinoStatistics = (
   userId: string,
   value: CasinoStatistics & { id: string }
-) {
+) => {
   return setDatabaseValue<CasinoStatistics & { id: string }>(
     `statistics/casino/${userId}`,
     value
   );
-}
+};
 
 /** Adders */
 
-export async function addUserBalanceStatistics(userId: string, diff: number) {
+export const addUserBalanceStatistics = async (
+  userId: string,
+  diff: number
+) => {
   const userBalanceStatistics = await getUserBalanceStatistics(userId);
   const totalWon = userBalanceStatistics?.won ?? 0;
   const totalSpent = userBalanceStatistics?.spent ?? 0;
@@ -123,13 +122,13 @@ export async function addUserBalanceStatistics(userId: string, diff: number) {
     diff < 0 ? "spent" : "won",
     diff < 0 ? totalSpent + Math.abs(diff) : totalWon + diff
   );
-}
+};
 
-export async function addUserCasinoStatistics(
+export const addUserCasinoStatistics = async (
   userId: string,
   bet: number,
   diff: number
-) {
+) => {
   const userCasinoStatistics = await getUserCasinoStatistics(userId);
   const totalPlayed = userCasinoStatistics?.played ?? 0;
   const totalWon = userCasinoStatistics?.won ?? 0;
@@ -145,4 +144,19 @@ export async function addUserCasinoStatistics(
     ),
     setUserCasinoStatistic(userId, "bet", totalBet + bet),
   ]);
-}
+};
+
+export const addUserInteractionStatistics = async (
+  userId: string,
+  type: keyof InteractionStatistics
+) => {
+  const userInteractionStatistics = await getUserInteractionStatistics(userId);
+  const totalMessage = userInteractionStatistics?.messages ?? 0;
+  const totalCommands = userInteractionStatistics?.commands ?? 0;
+
+  return setUserInteractionStatistic(
+    userId,
+    type,
+    type === "messages" ? totalMessage + 1 : totalCommands + 1
+  );
+};
