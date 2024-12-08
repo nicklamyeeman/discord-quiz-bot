@@ -37,36 +37,16 @@ export const rush: CommandConfig = {
     const game = (interaction.options.get("game")?.value ||
       "all") as Quiz["rushTime"];
 
-    let output = "";
-    let color = 0;
-    switch (game) {
-      case "all":
-        output = "Rush lancé sur tous les jeux";
-        color = Colors.Blue;
-        break;
-      case "pokemon":
-        output = "Rush lancé sur Pokémon";
-        color = Colors.Yellow;
-        break;
-      case "lol":
-        output = "Rush lancé sur League of Legends";
-        color = Colors.Purple;
-        break;
-      default:
-        output = "Rush lancé sur tous les jeux";
-        color = Colors.Blue;
-        break;
-    }
-
     const rushTime = await getQuizRushTime();
     if (!rushTime) {
       await setQuizRushTime(game);
     }
 
     const embed = new EmbedBuilder()
-      .setTitle(!rushTime ? "Rush lancé" : "Un rush est déjà en cours")
-      .setDescription(!rushTime ? output : null)
-      .setColor(!rushTime ? color : Colors.Red);
+      .setTitle(
+        !rushTime ? "Lancement du rush..." : "Un rush est déjà en cours"
+      )
+      .setColor(!rushTime ? Colors.Blue : Colors.Red);
     return interaction.reply({ embeds: [embed] });
   },
 };

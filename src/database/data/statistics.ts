@@ -160,3 +160,13 @@ export const addUserInteractionStatistics = async (
     type === "messages" ? totalMessage + 1 : totalCommands + 1
   );
 };
+
+export const addUserQuizStatistics = async (
+  userId: string,
+  type: keyof QuizStatistics
+) => {
+  const userQuizStatistics = await getUserQuizStatistics(userId);
+  const totalWon = userQuizStatistics?.won ?? 0;
+
+  return setUserQuizStatistic(userId, type, totalWon + 1);
+};

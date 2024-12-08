@@ -1,5 +1,9 @@
 import { database } from "./database";
 
+export const DATABASE_PATH = "./src/database";
+export const DATABASE_NAME = "quizbot";
+export const DATABASE_FULLPATH = `${DATABASE_PATH}/${DATABASE_NAME}.acebase/data.db`;
+
 export async function getDatabaseValue<T>(ref: string) {
   return database
     .ref<T>(ref)

@@ -1,12 +1,15 @@
 import {
+  AttachmentBuilder,
   Colors,
   CommandInteraction,
   User as DiscordUser,
   EmbedBuilder,
+  Guild,
   Interaction,
   Message,
 } from "discord.js";
 
+import { guildConfig } from "./config";
 import {
   addUserBalanceStatistics,
   addUserInteractionStatistics,
@@ -23,6 +26,7 @@ import {
   setUser,
   setUserLastActivity,
 } from "./database/data/user";
+import { DATABASE_FULLPATH } from "./database/utils";
 import {
   DEFAULT_BALANCE_STATISTICS,
   DEFAULT_CASINO_STATISTICS,
@@ -33,12 +37,31 @@ import {
 } from "./types/constants";
 import { InteractionStatistics } from "./types/statistics";
 
-export const runOnInterval = (
+export const backupDatabase = (guild: Guild | null) => {
+  const backupChannel = guild?.channels.cache.find(
+    (channel) => channel.id === guildConfig.BACKUP_CHANNEL_ID
+  );
+  if (!backupChannel || !backupChannel.isSendable()) {
+    return;
+  }
+  const attachment = new AttachmentBuilder(DATABASE_FULLPATH, {
+    name: "data.db",
+  });
+  backupChannel.send({
+    content: `__***Database Backup:***__\n_${new Date()
+      .toJSON()
+      .replace(/T/g, " ")
+      .replace(/\.\w+$/, "")}_`,
+    files: [attachment],
+  });
+};
+
+export const runOnInterval = async (
   callback: (...args: any) => any,
   interval: number
 ) => {
-  callback();
-  setInterval(callback, interval);
+  await callback();
+  return setInterval(callback, interval);
 };
 
 export const initUser = async (
@@ -107,6 +130,8 @@ export const logUser = async (
     await Promise.all([
       addUserBalance(user.id, dailyBonus),
       addUserBalanceStatistics(user.id, dailyBonus),
+      setUserLastActivity(user.id, Date.now()),
+      addUserInteractionStatistics(user.id, type),
     ]);
     if (message.channel?.isSendable()) {
       const embed = new EmbedBuilder()

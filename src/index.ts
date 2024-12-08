@@ -2,7 +2,7 @@ import "./database/database";
 
 import { ActivityType, Client, GatewayIntentBits } from "discord.js";
 
-import { config } from "./config";
+import { config, guildConfig } from "./config";
 import { GameThemes, HOUR } from "./types/constants";
 
 import { checkAdminCommand } from "./admin_commands";
@@ -10,6 +10,7 @@ import { deployCommands } from "./commands";
 import { startQuiz } from "./quiz/quiz";
 import { commands } from "./slash_commands";
 import {
+  backupDatabase,
   commandNotAllowedInChannel,
   initUser,
   logUser,
@@ -39,6 +40,10 @@ client.once("ready", () => {
     client.user?.setActivity(GameThemes[randomThemeIndex], {
       type: ActivityType.Playing,
     });
+    backupDatabase(
+      client.guilds.cache.find((guild) => guild.id === guildConfig.GUILD_ID) ??
+        null
+    );
   }, HOUR * 12);
 });
 

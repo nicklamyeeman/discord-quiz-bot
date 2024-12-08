@@ -28,5 +28,5 @@ export const setQuizRushTime = (value: Quiz["rushTime"]) => {
 export const listenQuiz = (
   callback: (snapshot: DataSnapshot<Quiz>) => void
 ) => {
-  database.ref<Quiz["rushTime"]>("quiz").on("value", callback);
+  return database.ref<Quiz["rushTime"]>("quiz").on("value", callback);
 };

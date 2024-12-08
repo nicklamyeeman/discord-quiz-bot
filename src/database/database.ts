@@ -1,8 +1,9 @@
 import { AceBase } from "acebase";
+import { DATABASE_PATH } from "./utils";
 
 export const database = new AceBase("quizbot", {
   logLevel: "error",
-  storage: { path: "./src/database" },
+  storage: { path: DATABASE_PATH },
 });
 
 database.ready(async () => {
