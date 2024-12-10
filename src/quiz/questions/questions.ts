@@ -5,7 +5,7 @@ import { pokemonQuizQuestions } from "./pokemon/pokemon";
 export const getQuizNextQuestion = async (
   rushTime: "all" | "pokemon" | "lol" | null
 ): Promise<QuizNextQuestion> => {
-  let question: () => QuizNextQuestion;
+  let question: (() => QuizNextQuestion) | (() => Promise<QuizNextQuestion>);
   let random = 0;
   switch (rushTime) {
     case "pokemon":

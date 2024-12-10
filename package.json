@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/nicklamyeeman/discord-quiz-bot#readme",
   "dependencies": {
+    "@napi-rs/canvas": "^0.1.65",
     "acebase": "^1.29.5",
     "discord.js": "^14.16.3",
     "dotenv": "^16.4.7"

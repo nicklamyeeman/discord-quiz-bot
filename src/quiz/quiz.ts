@@ -18,6 +18,7 @@ import { getQuizNextQuestion } from "./questions/questions";
 import {
   ANSWER_TIME_LIMIT,
   endRushMessageContent,
+  loadImages,
   reloadQuiz,
   RUSH_TIME_DURATION,
   startRushMessageContent,
@@ -32,6 +33,7 @@ export const startQuiz = async (guild: Guild) => {
   }
 
   await setQuizIsLive(true);
+  await loadImages();
 
   let interval: NodeJS.Timeout | null = null;
   listenQuiz(async (snapshot: DataSnapshot<Quiz>) => {

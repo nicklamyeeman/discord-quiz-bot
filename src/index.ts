@@ -40,11 +40,14 @@ client.once("ready", () => {
     client.user?.setActivity(GameThemes[randomThemeIndex], {
       type: ActivityType.Playing,
     });
+  }, HOUR * 12);
+
+  setInterval(() => {
     backupDatabase(
       client.guilds.cache.find((guild) => guild.id === guildConfig.GUILD_ID) ??
         null
     );
-  }, HOUR * 12);
+  }, HOUR * 24);
 });
 
 client.on("guildAvailable", async (guild) => {

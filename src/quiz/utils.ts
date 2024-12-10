@@ -1,3 +1,4 @@
+import { Image, loadImage } from "@napi-rs/canvas";
 import { Colors, EmbedBuilder } from "discord.js";
 import { setQuizIsLive } from "../database/data/quiz";
 import { MINUTE, SECOND } from "../types/constants";
@@ -11,6 +12,16 @@ export const NEXT_QUESTION_NIGHT_INTERVAL = MINUTE * 10;
 export const ANSWER_TIME_LIMIT = SECOND * 6;
 
 export const RUSH_TIME_DURATION = SECOND * 20;
+
+export const WHOS_THAT_POKEMON_IMAGE_PATH =
+  "assets/images/backdrop/whos_that_pokemon.png";
+
+export let whosThatPokemonBackgroundImage: Image;
+export const loadImages = async () => {
+  whosThatPokemonBackgroundImage = await loadImage(
+    WHOS_THAT_POKEMON_IMAGE_PATH
+  );
+};
 
 export const getRewardAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 
