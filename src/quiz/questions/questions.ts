@@ -1,5 +1,5 @@
 import { QuizNextQuestion } from "../../types/quiz";
-import { lolQuizQuestions } from "./lol";
+import { lolQuizQuestions } from "./lol/lol";
 import { pokemonQuizQuestions } from "./pokemon/pokemon";
 
 export const getQuizNextQuestion = async (

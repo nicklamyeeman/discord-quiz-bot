@@ -17,11 +17,11 @@ import {
 
 const nameDualTypePokemon = (): QuizNextQuestion => {
   const selectedPokemon = getRandomPokemonFrom(dualTypePokemons);
-  const types = selectedPokemon.type.map((type) => pokemonTypes[type]);
+  const types = selectedPokemon.types.map((type) => pokemonTypes[type]);
   const eligiblePokemons = Object.values(dualTypePokemons).filter(
     (pokemon) =>
-      pokemon.type.every((type) => selectedPokemon.type.includes(type)) &&
-      pokemon.type.length === 2
+      pokemon.types.every((type) => selectedPokemon.types.includes(type)) &&
+      pokemon.types.length === 2
   );
   const answer = new RegExp(
     `^\\W*${eligiblePokemons
@@ -73,10 +73,10 @@ const nameDualTypePokemon = (): QuizNextQuestion => {
 
 const whatsThePokemonType = async (): Promise<QuizNextQuestion> => {
   const selectedPokemon = getRandomPokemonFrom(pokemons);
-  const types = selectedPokemon.type.map((type) => pokemonTypes[type]);
+  const types = selectedPokemon.types.map((type) => pokemonTypes[type]);
   const memeAnswer =
-    selectedPokemon.type.includes("flying") &&
-    selectedPokemon.type.includes("normal")
+    selectedPokemon.types.includes("flying") &&
+    selectedPokemon.types.includes("normal")
       ? "bir[bd]"
       : "";
 
@@ -120,7 +120,7 @@ const whatsThePokemonType = async (): Promise<QuizNextQuestion> => {
         name: "pokemon.png",
       });
       const newEmbed = new EmbedBuilder()
-        .setTitle(`Ce Pokémon a pour type(s) :`)
+        .setTitle(`Ce Pokémon possède le(s) type(s) :`)
         .setDescription(
           `${types
             .reverse()

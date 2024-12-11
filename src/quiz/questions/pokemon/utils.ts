@@ -15,7 +15,7 @@ export const normalizeAnswer = (answer: string) =>
     .replaceAll(/\W|_/gi, ".?");
 
 export const dualTypePokemons = Object.entries(pokemons)
-  .filter(([, pokemon]) => pokemon.type.length === 2)
+  .filter(([, pokemon]) => pokemon.types.length === 2)
   .reduce(
     (acc, [id, value]) => ({ ...acc, [id]: value }),
     {} as typeof pokemons

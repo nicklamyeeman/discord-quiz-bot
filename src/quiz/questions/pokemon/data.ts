@@ -21,7 +21,7 @@ export type PokemonTypesKeys =
 export type Pokemon = {
   id: string;
   name: string;
-  type: Array<PokemonTypesKeys>;
+  types: Array<PokemonTypesKeys>;
   femaleVariation?: boolean;
   evolutions?: Array<{
     type: "evolution" | "prevolution";
@@ -115,12 +115,12 @@ export const pokemons: {
   "0": {
     id: "0",
     name: "MissingNo.",
-    type: ["normal"],
+    types: ["normal"],
   },
   "1": {
     id: "1",
     name: "Bulbizarre",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -133,7 +133,7 @@ export const pokemons: {
   "2": {
     id: "2",
     name: "Herbizarre",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -151,7 +151,7 @@ export const pokemons: {
   "3": {
     id: "3",
     name: "Florizarre",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -174,7 +174,7 @@ export const pokemons: {
   "3.01": {
     id: "3.01",
     name: "Méga-Florizarre",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -186,7 +186,7 @@ export const pokemons: {
   "3.02": {
     id: "3.02",
     name: "Florizarre Gigamax",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -198,7 +198,7 @@ export const pokemons: {
   "4": {
     id: "4",
     name: "Salamèche",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -211,7 +211,7 @@ export const pokemons: {
   "5": {
     id: "5",
     name: "Reptincel",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -229,7 +229,7 @@ export const pokemons: {
   "6": {
     id: "6",
     name: "Dracaufeu",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -256,7 +256,7 @@ export const pokemons: {
   "6.01": {
     id: "6.01",
     name: "Méga-Dracaufeu X",
-    type: ["fire", "dragon"],
+    types: ["fire", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -268,7 +268,7 @@ export const pokemons: {
   "6.02": {
     id: "6.02",
     name: "Méga-Dracaufeu Y",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -280,7 +280,7 @@ export const pokemons: {
   "6.03": {
     id: "6.03",
     name: "Dracaufeu Gigamax",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -292,7 +292,7 @@ export const pokemons: {
   "7": {
     id: "7",
     name: "Carapuce",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -305,7 +305,7 @@ export const pokemons: {
   "8": {
     id: "8",
     name: "Carabaffe",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -323,7 +323,7 @@ export const pokemons: {
   "9": {
     id: "9",
     name: "Tortank",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -345,7 +345,7 @@ export const pokemons: {
   "9.01": {
     id: "9.01",
     name: "Méga-Tortank",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -357,7 +357,7 @@ export const pokemons: {
   "9.02": {
     id: "9.02",
     name: "Tortank Gigamax",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -369,7 +369,7 @@ export const pokemons: {
   "10": {
     id: "10",
     name: "Chenipan",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -382,7 +382,7 @@ export const pokemons: {
   "11": {
     id: "11",
     name: "Chrysacier",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -400,7 +400,7 @@ export const pokemons: {
   "12": {
     id: "12",
     name: "Papilusion",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -418,7 +418,7 @@ export const pokemons: {
   "12.01": {
     id: "12.01",
     name: "Papilusion Gigamax",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -430,7 +430,7 @@ export const pokemons: {
   "13": {
     id: "13",
     name: "Aspicot",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -443,7 +443,7 @@ export const pokemons: {
   "14": {
     id: "14",
     name: "Coconfort",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -461,7 +461,7 @@ export const pokemons: {
   "15": {
     id: "15",
     name: "Dardargnan",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -478,7 +478,7 @@ export const pokemons: {
   "15.01": {
     id: "15.01",
     name: "Méga-Dardargnan",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -490,7 +490,7 @@ export const pokemons: {
   "16": {
     id: "16",
     name: "Roucool",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -503,7 +503,7 @@ export const pokemons: {
   "17": {
     id: "17",
     name: "Roucoups",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -521,7 +521,7 @@ export const pokemons: {
   "18": {
     id: "18",
     name: "Roucarnage",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -538,7 +538,7 @@ export const pokemons: {
   "18.01": {
     id: "18.01",
     name: "Méga-Roucarnage",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -550,7 +550,7 @@ export const pokemons: {
   "19": {
     id: "19",
     name: "Rattata",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -564,7 +564,7 @@ export const pokemons: {
   "19.01": {
     id: "19.01",
     name: "Rattata d'Alola",
-    type: ["dark", "normal"],
+    types: ["dark", "normal"],
     evolutions: [
       {
         type: "evolution",
@@ -577,7 +577,7 @@ export const pokemons: {
   "20": {
     id: "20",
     name: "Rattatac",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -590,7 +590,7 @@ export const pokemons: {
   "20.01": {
     id: "20.01",
     name: "Rattatac d'Alola",
-    type: ["dark", "normal"],
+    types: ["dark", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -602,7 +602,7 @@ export const pokemons: {
   "21": {
     id: "21",
     name: "Piafabec",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -615,7 +615,7 @@ export const pokemons: {
   "22": {
     id: "22",
     name: "Rapasdepic",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -627,7 +627,7 @@ export const pokemons: {
   "23": {
     id: "23",
     name: "Abo",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -640,7 +640,7 @@ export const pokemons: {
   "24": {
     id: "24",
     name: "Arbok",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -652,7 +652,7 @@ export const pokemons: {
   "25": {
     id: "25",
     name: "Pikachu",
-    type: ["electric"],
+    types: ["electric"],
     femaleVariation: true,
     evolutions: [
       {
@@ -680,7 +680,7 @@ export const pokemons: {
   "25.01": {
     id: "25.01",
     name: "Pikachu Gigamax",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -692,7 +692,7 @@ export const pokemons: {
   "26": {
     id: "26",
     name: "Raichu",
-    type: ["electric"],
+    types: ["electric"],
     femaleVariation: true,
     evolutions: [
       {
@@ -705,7 +705,7 @@ export const pokemons: {
   "26.01": {
     id: "26.01",
     name: "Raichu d'Alola",
-    type: ["electric", "psychic"],
+    types: ["electric", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -717,7 +717,7 @@ export const pokemons: {
   "27": {
     id: "27",
     name: "Sabelette",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -730,7 +730,7 @@ export const pokemons: {
   "27.01": {
     id: "27.01",
     name: "Sabelette d'Alola",
-    type: ["ice", "steel"],
+    types: ["ice", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -742,7 +742,7 @@ export const pokemons: {
   "28": {
     id: "28",
     name: "Sablaireau",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -754,7 +754,7 @@ export const pokemons: {
   "28.01": {
     id: "28.01",
     name: "Sablaireau d'Alola",
-    type: ["ice", "steel"],
+    types: ["ice", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -766,7 +766,7 @@ export const pokemons: {
   "29": {
     id: "29",
     name: "Nidoran(F)",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -779,7 +779,7 @@ export const pokemons: {
   "30": {
     id: "30",
     name: "Nidorina",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -796,7 +796,7 @@ export const pokemons: {
   "31": {
     id: "31",
     name: "Nidoqueen",
-    type: ["poison", "ground"],
+    types: ["poison", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -808,7 +808,7 @@ export const pokemons: {
   "32": {
     id: "32",
     name: "Nidoran(M)",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -821,7 +821,7 @@ export const pokemons: {
   "33": {
     id: "33",
     name: "Nidorino",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -838,7 +838,7 @@ export const pokemons: {
   "34": {
     id: "34",
     name: "Nidoking",
-    type: ["poison", "ground"],
+    types: ["poison", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -850,7 +850,7 @@ export const pokemons: {
   "35": {
     id: "35",
     name: "Mélofée",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -867,7 +867,7 @@ export const pokemons: {
   "36": {
     id: "36",
     name: "Mélodelfe",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -879,7 +879,7 @@ export const pokemons: {
   "37": {
     id: "37",
     name: "Goupix",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -891,7 +891,7 @@ export const pokemons: {
   "37.01": {
     id: "37.01",
     name: "Goupix d'Alola",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -903,7 +903,7 @@ export const pokemons: {
   "38": {
     id: "38",
     name: "Feunard",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -915,7 +915,7 @@ export const pokemons: {
   "38.01": {
     id: "38.01",
     name: "Feunard d'Alola",
-    type: ["ice", "fairy"],
+    types: ["ice", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -927,7 +927,7 @@ export const pokemons: {
   "39": {
     id: "39",
     name: "Rondoudou",
-    type: ["normal", "fairy"],
+    types: ["normal", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -944,7 +944,7 @@ export const pokemons: {
   "40": {
     id: "40",
     name: "Grodoudou",
-    type: ["normal", "fairy"],
+    types: ["normal", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -956,7 +956,7 @@ export const pokemons: {
   "41": {
     id: "41",
     name: "Nosferapti",
-    type: ["poison", "flying"],
+    types: ["poison", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -970,7 +970,7 @@ export const pokemons: {
   "42": {
     id: "42",
     name: "Nosferalto",
-    type: ["poison", "flying"],
+    types: ["poison", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -988,7 +988,7 @@ export const pokemons: {
   "43": {
     id: "43",
     name: "Mystherbe",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -1001,7 +1001,7 @@ export const pokemons: {
   "44": {
     id: "44",
     name: "Ortide",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -1024,7 +1024,7 @@ export const pokemons: {
   "45": {
     id: "45",
     name: "Rafflesia",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -1037,7 +1037,7 @@ export const pokemons: {
   "46": {
     id: "46",
     name: "Paras",
-    type: ["insect", "grass"],
+    types: ["insect", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -1050,7 +1050,7 @@ export const pokemons: {
   "47": {
     id: "47",
     name: "Parasect",
-    type: ["insect", "grass"],
+    types: ["insect", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -1062,7 +1062,7 @@ export const pokemons: {
   "48": {
     id: "48",
     name: "Mimitoss",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -1075,7 +1075,7 @@ export const pokemons: {
   "49": {
     id: "49",
     name: "Aéromite",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1087,7 +1087,7 @@ export const pokemons: {
   "50": {
     id: "50",
     name: "Taupiqueur",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -1100,7 +1100,7 @@ export const pokemons: {
   "50.01": {
     id: "50.01",
     name: "Taupiqueur d'Alola",
-    type: ["ground", "steel"],
+    types: ["ground", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -1113,7 +1113,7 @@ export const pokemons: {
   "51": {
     id: "51",
     name: "Triopikeur",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -1125,7 +1125,7 @@ export const pokemons: {
   "51.01": {
     id: "51.01",
     name: "Triopikeur d'Alola",
-    type: ["ground", "steel"],
+    types: ["ground", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -1137,7 +1137,7 @@ export const pokemons: {
   "52": {
     id: "52",
     name: "Miaouss",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -1155,7 +1155,7 @@ export const pokemons: {
   "52.01": {
     id: "52.01",
     name: "Miaouss Gigamax",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -1167,7 +1167,7 @@ export const pokemons: {
   "52.02": {
     id: "52.02",
     name: "Miaouss d'Alola",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -1179,7 +1179,7 @@ export const pokemons: {
   "52.03": {
     id: "52.03",
     name: "Miaouss de Galar",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "evolution",
@@ -1192,7 +1192,7 @@ export const pokemons: {
   "53": {
     id: "53",
     name: "Persian",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -1204,7 +1204,7 @@ export const pokemons: {
   "53.01": {
     id: "53.01",
     name: "Persian d'Alola",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -1216,7 +1216,7 @@ export const pokemons: {
   "54": {
     id: "54",
     name: "Psykokwak",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -1229,7 +1229,7 @@ export const pokemons: {
   "55": {
     id: "55",
     name: "Akwakwak",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -1241,7 +1241,7 @@ export const pokemons: {
   "56": {
     id: "56",
     name: "Férosinge",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -1254,7 +1254,7 @@ export const pokemons: {
   "57": {
     id: "57",
     name: "Colossinge",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -1272,7 +1272,7 @@ export const pokemons: {
   "58": {
     id: "58",
     name: "Caninos",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -1284,7 +1284,7 @@ export const pokemons: {
   "58.01": {
     id: "58.01",
     name: "Caninos de Hisui",
-    type: ["fire", "rock"],
+    types: ["fire", "rock"],
     evolutions: [
       {
         type: "evolution",
@@ -1296,7 +1296,7 @@ export const pokemons: {
   "59": {
     id: "59",
     name: "Arcanin",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -1308,7 +1308,7 @@ export const pokemons: {
   "59.01": {
     id: "59.01",
     name: "Arcanin de Hisui",
-    type: ["fire", "rock"],
+    types: ["fire", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -1320,7 +1320,7 @@ export const pokemons: {
   "60": {
     id: "60",
     name: "Ptitard",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -1333,7 +1333,7 @@ export const pokemons: {
   "61": {
     id: "61",
     name: "Têtarte",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -1355,7 +1355,7 @@ export const pokemons: {
   "62": {
     id: "62",
     name: "Tartard",
-    type: ["water", "fighting"],
+    types: ["water", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -1367,7 +1367,7 @@ export const pokemons: {
   "63": {
     id: "63",
     name: "Abra",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -1380,7 +1380,7 @@ export const pokemons: {
   "64": {
     id: "64",
     name: "Kadabra",
-    type: ["psychic"],
+    types: ["psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -1398,7 +1398,7 @@ export const pokemons: {
   "65": {
     id: "65",
     name: "Alakazam",
-    type: ["psychic"],
+    types: ["psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -1416,7 +1416,7 @@ export const pokemons: {
   "65.01": {
     id: "65.01",
     name: "Méga-Alakazam",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -1428,7 +1428,7 @@ export const pokemons: {
   "66": {
     id: "66",
     name: "Machoc",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -1441,7 +1441,7 @@ export const pokemons: {
   "67": {
     id: "67",
     name: "Machopeur",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -1458,7 +1458,7 @@ export const pokemons: {
   "68": {
     id: "68",
     name: "Mackogneur",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -1475,7 +1475,7 @@ export const pokemons: {
   "68.01": {
     id: "68.01",
     name: "Mackogneur Gigamax",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -1487,7 +1487,7 @@ export const pokemons: {
   "69": {
     id: "69",
     name: "Chétiflor",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -1500,7 +1500,7 @@ export const pokemons: {
   "70": {
     id: "70",
     name: "Boustiflor",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1517,7 +1517,7 @@ export const pokemons: {
   "71": {
     id: "71",
     name: "Empiflor",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1529,7 +1529,7 @@ export const pokemons: {
   "72": {
     id: "72",
     name: "Tentacool",
-    type: ["water", "poison"],
+    types: ["water", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -1542,7 +1542,7 @@ export const pokemons: {
   "73": {
     id: "73",
     name: "Tentacruel",
-    type: ["water", "poison"],
+    types: ["water", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1554,7 +1554,7 @@ export const pokemons: {
   "74": {
     id: "74",
     name: "Racaillou",
-    type: ["rock", "ground"],
+    types: ["rock", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -1567,7 +1567,7 @@ export const pokemons: {
   "74.01": {
     id: "74.01",
     name: "Racaillou d'Alola",
-    type: ["rock", "electric"],
+    types: ["rock", "electric"],
     evolutions: [
       {
         type: "evolution",
@@ -1580,7 +1580,7 @@ export const pokemons: {
   "75": {
     id: "75",
     name: "Gravalanch",
-    type: ["rock", "ground"],
+    types: ["rock", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -1597,7 +1597,7 @@ export const pokemons: {
   "75.01": {
     id: "75.01",
     name: "Gravalanch d'Alola",
-    type: ["rock", "electric"],
+    types: ["rock", "electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -1614,7 +1614,7 @@ export const pokemons: {
   "76": {
     id: "76",
     name: "Grolem",
-    type: ["rock", "ground"],
+    types: ["rock", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -1626,7 +1626,7 @@ export const pokemons: {
   "76.01": {
     id: "76.01",
     name: "Grolem d'Alola",
-    type: ["rock", "electric"],
+    types: ["rock", "electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -1638,7 +1638,7 @@ export const pokemons: {
   "77": {
     id: "77",
     name: "Ponyta",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -1651,7 +1651,7 @@ export const pokemons: {
   "77.01": {
     id: "77.01",
     name: "Ponyta de Galar",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -1664,7 +1664,7 @@ export const pokemons: {
   "78": {
     id: "78",
     name: "Galopa",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -1676,7 +1676,7 @@ export const pokemons: {
   "78.01": {
     id: "78.01",
     name: "Galopa de Galar",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -1688,7 +1688,7 @@ export const pokemons: {
   "79": {
     id: "79",
     name: "Ramoloss",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -1706,7 +1706,7 @@ export const pokemons: {
   "79.01": {
     id: "79.01",
     name: "Ramoloss de Galar",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -1723,7 +1723,7 @@ export const pokemons: {
   "80": {
     id: "80",
     name: "Flagadoss",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -1740,7 +1740,7 @@ export const pokemons: {
   "80.01": {
     id: "80.01",
     name: "Méga-Flagadoss",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -1752,7 +1752,7 @@ export const pokemons: {
   "80.02": {
     id: "80.02",
     name: "Flagadoss de Galar",
-    type: ["poison", "psychic"],
+    types: ["poison", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -1764,7 +1764,7 @@ export const pokemons: {
   "81": {
     id: "81",
     name: "Magnéti",
-    type: ["electric", "steel"],
+    types: ["electric", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -1777,7 +1777,7 @@ export const pokemons: {
   "82": {
     id: "82",
     name: "Magnéton",
-    type: ["electric", "steel"],
+    types: ["electric", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -1794,12 +1794,12 @@ export const pokemons: {
   "83": {
     id: "83",
     name: "Canarticho",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
   },
   "83.01": {
     id: "83.01",
     name: "Canarticho de Galar",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -1812,7 +1812,7 @@ export const pokemons: {
   "84": {
     id: "84",
     name: "Doduo",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -1826,7 +1826,7 @@ export const pokemons: {
   "85": {
     id: "85",
     name: "Dodrio",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -1839,7 +1839,7 @@ export const pokemons: {
   "86": {
     id: "86",
     name: "Otaria",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -1852,7 +1852,7 @@ export const pokemons: {
   "87": {
     id: "87",
     name: "Lamantine",
-    type: ["water", "ice"],
+    types: ["water", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -1864,7 +1864,7 @@ export const pokemons: {
   "88": {
     id: "88",
     name: "Tadmorv",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -1877,7 +1877,7 @@ export const pokemons: {
   "88.01": {
     id: "88.01",
     name: "Tadmorv d'Alola",
-    type: ["poison", "dark"],
+    types: ["poison", "dark"],
     evolutions: [
       {
         type: "evolution",
@@ -1890,7 +1890,7 @@ export const pokemons: {
   "89": {
     id: "89",
     name: "Grotadmorv",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1902,7 +1902,7 @@ export const pokemons: {
   "89.01": {
     id: "89.01",
     name: "Grotadmorv d'Alola",
-    type: ["poison", "dark"],
+    types: ["poison", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -1914,7 +1914,7 @@ export const pokemons: {
   "90": {
     id: "90",
     name: "Kokiyas",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -1926,7 +1926,7 @@ export const pokemons: {
   "91": {
     id: "91",
     name: "Crustabri",
-    type: ["water", "ice"],
+    types: ["water", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -1938,7 +1938,7 @@ export const pokemons: {
   "92": {
     id: "92",
     name: "Fantominus",
-    type: ["ghost", "poison"],
+    types: ["ghost", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -1951,7 +1951,7 @@ export const pokemons: {
   "93": {
     id: "93",
     name: "Spectrum",
-    type: ["ghost", "poison"],
+    types: ["ghost", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1968,7 +1968,7 @@ export const pokemons: {
   "94": {
     id: "94",
     name: "Ectoplasma",
-    type: ["ghost", "poison"],
+    types: ["ghost", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -1990,7 +1990,7 @@ export const pokemons: {
   "94.01": {
     id: "94.01",
     name: "Méga-Ectoplasma",
-    type: ["ghost", "poison"],
+    types: ["ghost", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -2002,7 +2002,7 @@ export const pokemons: {
   "94.02": {
     id: "94.02",
     name: "Ectoplasma Gigamax",
-    type: ["ghost", "poison"],
+    types: ["ghost", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -2014,7 +2014,7 @@ export const pokemons: {
   "95": {
     id: "95",
     name: "Onix",
-    type: ["rock", "ground"],
+    types: ["rock", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -2026,7 +2026,7 @@ export const pokemons: {
   "96": {
     id: "96",
     name: "Soporifik",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -2039,7 +2039,7 @@ export const pokemons: {
   "97": {
     id: "97",
     name: "Hypnomade",
-    type: ["psychic"],
+    types: ["psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2052,7 +2052,7 @@ export const pokemons: {
   "98": {
     id: "98",
     name: "Krabby",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -2065,7 +2065,7 @@ export const pokemons: {
   "99": {
     id: "99",
     name: "Krabboss",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -2082,7 +2082,7 @@ export const pokemons: {
   "99.01": {
     id: "99.01",
     name: "Krabboss Gigamax",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -2094,7 +2094,7 @@ export const pokemons: {
   "100": {
     id: "100",
     name: "Voltorbe",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -2107,7 +2107,7 @@ export const pokemons: {
   "100.01": {
     id: "100.01",
     name: "Voltorbe de Hisui",
-    type: ["electric", "grass"],
+    types: ["electric", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -2119,7 +2119,7 @@ export const pokemons: {
   "101": {
     id: "101",
     name: "Électrode",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -2131,7 +2131,7 @@ export const pokemons: {
   "101.01": {
     id: "101.01",
     name: "Électrode de Hisui",
-    type: ["electric", "grass"],
+    types: ["electric", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -2143,7 +2143,7 @@ export const pokemons: {
   "102": {
     id: "102",
     name: "Noeunoeuf",
-    type: ["grass", "psychic"],
+    types: ["grass", "psychic"],
     evolutions: [
       { type: "evolution", id: "103", name: "Noadkoko" },
       {
@@ -2156,7 +2156,7 @@ export const pokemons: {
   "103": {
     id: "103",
     name: "Noadkoko",
-    type: ["grass", "psychic"],
+    types: ["grass", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -2168,7 +2168,7 @@ export const pokemons: {
   "103.01": {
     id: "103.01",
     name: "Noadkoko d'Alola",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -2180,7 +2180,7 @@ export const pokemons: {
   "104": {
     id: "104",
     name: "Osselait",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -2199,7 +2199,7 @@ export const pokemons: {
   "105": {
     id: "105",
     name: "Ossatueur",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -2211,7 +2211,7 @@ export const pokemons: {
   "105.01": {
     id: "105.01",
     name: "Ossatueur d'Alola",
-    type: ["fire", "ghost"],
+    types: ["fire", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -2223,7 +2223,7 @@ export const pokemons: {
   "106": {
     id: "106",
     name: "Kicklee",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -2235,7 +2235,7 @@ export const pokemons: {
   "107": {
     id: "107",
     name: "Tygnon",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -2247,7 +2247,7 @@ export const pokemons: {
   "108": {
     id: "108",
     name: "Excelangue",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -2260,7 +2260,7 @@ export const pokemons: {
   "109": {
     id: "109",
     name: "Smogo",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -2279,7 +2279,7 @@ export const pokemons: {
   "110": {
     id: "110",
     name: "Smogogo",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -2291,7 +2291,7 @@ export const pokemons: {
   "110.01": {
     id: "110.01",
     name: "Smogogo de Galar",
-    type: ["poison", "fairy"],
+    types: ["poison", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -2303,7 +2303,7 @@ export const pokemons: {
   "111": {
     id: "111",
     name: "Rhinocorne",
-    type: ["ground", "rock"],
+    types: ["ground", "rock"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2317,7 +2317,7 @@ export const pokemons: {
   "112": {
     id: "112",
     name: "Rhinoféros",
-    type: ["ground", "rock"],
+    types: ["ground", "rock"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2335,7 +2335,7 @@ export const pokemons: {
   "113": {
     id: "113",
     name: "Leveinard",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       { type: "prevolution", id: "440", name: "Ptiravi" },
       {
@@ -2348,7 +2348,7 @@ export const pokemons: {
   "114": {
     id: "114",
     name: "Saquedeneu",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -2361,7 +2361,7 @@ export const pokemons: {
   "115": {
     id: "115",
     name: "Kangourex",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -2373,7 +2373,7 @@ export const pokemons: {
   "115.01": {
     id: "115.01",
     name: "Méga-Kangourex",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -2385,7 +2385,7 @@ export const pokemons: {
   "116": {
     id: "116",
     name: "Hypotrempe",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -2398,7 +2398,7 @@ export const pokemons: {
   "117": {
     id: "117",
     name: "Hypocean",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -2415,7 +2415,7 @@ export const pokemons: {
   "118": {
     id: "118",
     name: "Poissirène",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2429,7 +2429,7 @@ export const pokemons: {
   "119": {
     id: "119",
     name: "Poissoroy",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2442,7 +2442,7 @@ export const pokemons: {
   "120": {
     id: "120",
     name: "Stari",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -2454,7 +2454,7 @@ export const pokemons: {
   "121": {
     id: "121",
     name: "Staross",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -2466,7 +2466,7 @@ export const pokemons: {
   "122": {
     id: "122",
     name: "M. Mime",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -2478,7 +2478,7 @@ export const pokemons: {
   "122.01": {
     id: "122.01",
     name: "M. Mime de Galar",
-    type: ["ice", "psychic"],
+    types: ["ice", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -2496,7 +2496,7 @@ export const pokemons: {
   "123": {
     id: "123",
     name: "Insécateur",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2514,7 +2514,7 @@ export const pokemons: {
   "124": {
     id: "124",
     name: "Lippoutou",
-    type: ["ice", "psychic"],
+    types: ["ice", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -2526,7 +2526,7 @@ export const pokemons: {
   "125": {
     id: "125",
     name: "Élektek",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -2543,7 +2543,7 @@ export const pokemons: {
   "126": {
     id: "126",
     name: "Magmar",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -2560,7 +2560,7 @@ export const pokemons: {
   "127": {
     id: "127",
     name: "Scarabrute",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -2572,7 +2572,7 @@ export const pokemons: {
   "127.01": {
     id: "127.01",
     name: "Méga-Scarabrute",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -2584,27 +2584,27 @@ export const pokemons: {
   "128": {
     id: "128",
     name: "Tauros",
-    type: ["normal"],
+    types: ["normal"],
   },
   "128.01": {
     id: "128.01",
     name: "Tauros de Pladea (Combative)",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "128.02": {
     id: "128.02",
     name: "Tauros de Pladea (Flamboyante)",
-    type: ["fighting", "fire"],
+    types: ["fighting", "fire"],
   },
   "128.03": {
     id: "128.03",
     name: "Tauros de Pladea (Aquatique)",
-    type: ["fighting", "water"],
+    types: ["fighting", "water"],
   },
   "129": {
     id: "129",
     name: "Magicarpe",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2618,7 +2618,7 @@ export const pokemons: {
   "130": {
     id: "130",
     name: "Léviator",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2636,7 +2636,7 @@ export const pokemons: {
   "130.01": {
     id: "130.01",
     name: "Méga-Léviator",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -2648,7 +2648,7 @@ export const pokemons: {
   "131": {
     id: "131",
     name: "Lokhlass",
-    type: ["water", "ice"],
+    types: ["water", "ice"],
     evolutions: [
       {
         type: "evolution",
@@ -2660,7 +2660,7 @@ export const pokemons: {
   "131.01": {
     id: "131.01",
     name: "Lokhlass Gigamax",
-    type: ["water", "ice"],
+    types: ["water", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -2672,12 +2672,12 @@ export const pokemons: {
   "132": {
     id: "132",
     name: "Métamorph",
-    type: ["normal"],
+    types: ["normal"],
   },
   "133": {
     id: "133",
     name: "Évoli",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -2730,7 +2730,7 @@ export const pokemons: {
   "133.01": {
     id: "133.01",
     name: "Évoli Gigamax",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -2742,7 +2742,7 @@ export const pokemons: {
   "134": {
     id: "134",
     name: "Aquali",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -2754,7 +2754,7 @@ export const pokemons: {
   "135": {
     id: "135",
     name: "Voltali",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -2766,7 +2766,7 @@ export const pokemons: {
   "136": {
     id: "136",
     name: "Pyroli",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -2778,7 +2778,7 @@ export const pokemons: {
   "137": {
     id: "137",
     name: "Porygon",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -2790,7 +2790,7 @@ export const pokemons: {
   "138": {
     id: "138",
     name: "Amonita",
-    type: ["rock", "water"],
+    types: ["rock", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -2803,7 +2803,7 @@ export const pokemons: {
   "139": {
     id: "139",
     name: "Amonistar",
-    type: ["rock", "water"],
+    types: ["rock", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -2815,7 +2815,7 @@ export const pokemons: {
   "140": {
     id: "140",
     name: "Kabuto",
-    type: ["rock", "water"],
+    types: ["rock", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -2828,7 +2828,7 @@ export const pokemons: {
   "141": {
     id: "141",
     name: "Kabutops",
-    type: ["rock", "water"],
+    types: ["rock", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -2840,7 +2840,7 @@ export const pokemons: {
   "142": {
     id: "142",
     name: "Ptéra",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -2852,7 +2852,7 @@ export const pokemons: {
   "142.01": {
     id: "142.01",
     name: "Méga-Ptéra",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -2864,7 +2864,7 @@ export const pokemons: {
   "143": {
     id: "143",
     name: "Ronflex",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -2881,7 +2881,7 @@ export const pokemons: {
   "143.01": {
     id: "143.01",
     name: "Ronflex Gigamax",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -2893,37 +2893,37 @@ export const pokemons: {
   "144": {
     id: "144",
     name: "Artikodin",
-    type: ["ice", "flying"],
+    types: ["ice", "flying"],
   },
   "144.01": {
     id: "144.01",
     name: "Artikodin de Galar",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
   },
   "145": {
     id: "145",
     name: "Électhor",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
   },
   "145.01": {
     id: "145.01",
     name: "Électhor de Galar",
-    type: ["fighting", "flying"],
+    types: ["fighting", "flying"],
   },
   "146": {
     id: "146",
     name: "Sulfura",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
   },
   "146.01": {
     id: "146.01",
     name: "Sulfura de Galar",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
   },
   "147": {
     id: "147",
     name: "Minidraco",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -2936,7 +2936,7 @@ export const pokemons: {
   "148": {
     id: "148",
     name: "Draco",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -2954,7 +2954,7 @@ export const pokemons: {
   "149": {
     id: "149",
     name: "Dracolosse",
-    type: ["dragon", "flying"],
+    types: ["dragon", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -2966,7 +2966,7 @@ export const pokemons: {
   "150": {
     id: "150",
     name: "Mewtwo",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -2983,7 +2983,7 @@ export const pokemons: {
   "150.01": {
     id: "150.01",
     name: "Méga-Mewtwo X",
-    type: ["psychic", "fighting"],
+    types: ["psychic", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -2995,7 +2995,7 @@ export const pokemons: {
   "150.02": {
     id: "150.02",
     name: "Méga-Mewtwo Y",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -3007,12 +3007,12 @@ export const pokemons: {
   "151": {
     id: "151",
     name: "Mew",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "152": {
     id: "152",
     name: "Germignon",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -3025,7 +3025,7 @@ export const pokemons: {
   "153": {
     id: "153",
     name: "Macronium",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -3043,7 +3043,7 @@ export const pokemons: {
   "154": {
     id: "154",
     name: "Méganium",
-    type: ["grass"],
+    types: ["grass"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3056,7 +3056,7 @@ export const pokemons: {
   "155": {
     id: "155",
     name: "Héricendre",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -3069,7 +3069,7 @@ export const pokemons: {
   "156": {
     id: "156",
     name: "Feurisson",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -3093,7 +3093,7 @@ export const pokemons: {
   "157": {
     id: "157",
     name: "Typhlosion",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -3105,7 +3105,7 @@ export const pokemons: {
   "157.01": {
     id: "157.01",
     name: "Typhlosion de Hisui",
-    type: ["fire", "ghost"],
+    types: ["fire", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -3117,7 +3117,7 @@ export const pokemons: {
   "158": {
     id: "158",
     name: "Kaiminus",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -3130,7 +3130,7 @@ export const pokemons: {
   "159": {
     id: "159",
     name: "Crocrodil",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -3148,7 +3148,7 @@ export const pokemons: {
   "160": {
     id: "160",
     name: "Aligatueur",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -3160,7 +3160,7 @@ export const pokemons: {
   "161": {
     id: "161",
     name: "Fouinette",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -3173,7 +3173,7 @@ export const pokemons: {
   "162": {
     id: "162",
     name: "Fouinar",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -3185,7 +3185,7 @@ export const pokemons: {
   "163": {
     id: "163",
     name: "Hoothoot",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -3198,7 +3198,7 @@ export const pokemons: {
   "164": {
     id: "164",
     name: "Noarfang",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -3210,7 +3210,7 @@ export const pokemons: {
   "165": {
     id: "165",
     name: "Coxy",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3224,7 +3224,7 @@ export const pokemons: {
   "166": {
     id: "166",
     name: "Coxyclaque",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3237,7 +3237,7 @@ export const pokemons: {
   "167": {
     id: "167",
     name: "Mimigal",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -3250,7 +3250,7 @@ export const pokemons: {
   "168": {
     id: "168",
     name: "Migalos",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -3262,7 +3262,7 @@ export const pokemons: {
   "169": {
     id: "169",
     name: "Nostenfer",
-    type: ["poison", "flying"],
+    types: ["poison", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -3274,7 +3274,7 @@ export const pokemons: {
   "170": {
     id: "170",
     name: "Loupio",
-    type: ["water", "electric"],
+    types: ["water", "electric"],
     evolutions: [
       {
         type: "evolution",
@@ -3287,7 +3287,7 @@ export const pokemons: {
   "171": {
     id: "171",
     name: "Lanturn",
-    type: ["water", "electric"],
+    types: ["water", "electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -3299,7 +3299,7 @@ export const pokemons: {
   "172": {
     id: "172",
     name: "Pichu",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -3311,7 +3311,7 @@ export const pokemons: {
   "173": {
     id: "173",
     name: "Mélo",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -3323,7 +3323,7 @@ export const pokemons: {
   "174": {
     id: "174",
     name: "Toudoudou",
-    type: ["normal", "fairy"],
+    types: ["normal", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -3335,7 +3335,7 @@ export const pokemons: {
   "175": {
     id: "175",
     name: "Togepi",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -3347,7 +3347,7 @@ export const pokemons: {
   "176": {
     id: "176",
     name: "Togetic",
-    type: ["fairy", "flying"],
+    types: ["fairy", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -3364,7 +3364,7 @@ export const pokemons: {
   "177": {
     id: "177",
     name: "Natu",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -3377,7 +3377,7 @@ export const pokemons: {
   "178": {
     id: "178",
     name: "Xatu",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3390,7 +3390,7 @@ export const pokemons: {
   "179": {
     id: "179",
     name: "Wattouat",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -3403,7 +3403,7 @@ export const pokemons: {
   "180": {
     id: "180",
     name: "Lainergie",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -3421,7 +3421,7 @@ export const pokemons: {
   "181": {
     id: "181",
     name: "Pharamp",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -3438,7 +3438,7 @@ export const pokemons: {
   "181.01": {
     id: "181.01",
     name: "Méga-Pharamp",
-    type: ["electric", "dragon"],
+    types: ["electric", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -3450,7 +3450,7 @@ export const pokemons: {
   "182": {
     id: "182",
     name: "Joliflor",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -3462,7 +3462,7 @@ export const pokemons: {
   "183": {
     id: "183",
     name: "Marill",
-    type: ["water", "fairy"],
+    types: ["water", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -3480,7 +3480,7 @@ export const pokemons: {
   "184": {
     id: "184",
     name: "Azumarill",
-    type: ["water", "fairy"],
+    types: ["water", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -3492,7 +3492,7 @@ export const pokemons: {
   "185": {
     id: "185",
     name: "Simularbre",
-    type: ["rock"],
+    types: ["rock"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3505,7 +3505,7 @@ export const pokemons: {
   "186": {
     id: "186",
     name: "Tarpaud",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3518,7 +3518,7 @@ export const pokemons: {
   "187": {
     id: "187",
     name: "Granivol",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -3531,7 +3531,7 @@ export const pokemons: {
   "188": {
     id: "188",
     name: "Floravol",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -3549,7 +3549,7 @@ export const pokemons: {
   "189": {
     id: "189",
     name: "Cotovol",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -3561,7 +3561,7 @@ export const pokemons: {
   "190": {
     id: "190",
     name: "Capumain",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3575,7 +3575,7 @@ export const pokemons: {
   "191": {
     id: "191",
     name: "Tournegrin",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -3587,7 +3587,7 @@ export const pokemons: {
   "192": {
     id: "192",
     name: "Heliatronc",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -3599,7 +3599,7 @@ export const pokemons: {
   "193": {
     id: "193",
     name: "Yanma",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -3612,7 +3612,7 @@ export const pokemons: {
   "194": {
     id: "194",
     name: "Axoloto",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3626,7 +3626,7 @@ export const pokemons: {
   "194.01": {
     id: "194.01",
     name: "Axoloto de Paldea",
-    type: ["poison", "ground"],
+    types: ["poison", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -3639,7 +3639,7 @@ export const pokemons: {
   "195": {
     id: "195",
     name: "Maraiste",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3652,7 +3652,7 @@ export const pokemons: {
   "196": {
     id: "196",
     name: "Mentali",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -3664,7 +3664,7 @@ export const pokemons: {
   "197": {
     id: "197",
     name: "Noctali",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -3676,7 +3676,7 @@ export const pokemons: {
   "198": {
     id: "198",
     name: "Cornèbre",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3689,7 +3689,7 @@ export const pokemons: {
   "199": {
     id: "199",
     name: "Roigada",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -3701,7 +3701,7 @@ export const pokemons: {
   "199.01": {
     id: "199.01",
     name: "Roigada de Galar",
-    type: ["poison", "psychic"],
+    types: ["poison", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -3713,7 +3713,7 @@ export const pokemons: {
   "200": {
     id: "200",
     name: "Feuforêve",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -3725,147 +3725,147 @@ export const pokemons: {
   "201": {
     id: "201",
     name: "Zarbi (A)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.01": {
     id: "201.01",
     name: "Zarbi (B)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.02": {
     id: "201.02",
     name: "Zarbi (C)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.03": {
     id: "201.03",
     name: "Zarbi (D)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.04": {
     id: "201.04",
     name: "Zarbi (E)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.05": {
     id: "201.05",
     name: "Zarbi (F)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.06": {
     id: "201.06",
     name: "Zarbi (G)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.07": {
     id: "201.07",
     name: "Zarbi (H)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.08": {
     id: "201.08",
     name: "Zarbi (I)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.09": {
     id: "201.09",
     name: "Zarbi (J)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.1": {
     id: "201.1",
     name: "Zarbi (K)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.11": {
     id: "201.11",
     name: "Zarbi (L)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.12": {
     id: "201.12",
     name: "Zarbi (M)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.13": {
     id: "201.13",
     name: "Zarbi (N)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.14": {
     id: "201.14",
     name: "Zarbi (O)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.15": {
     id: "201.15",
     name: "Zarbi (P)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.16": {
     id: "201.16",
     name: "Zarbi (Q)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.17": {
     id: "201.17",
     name: "Zarbi (R)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.18": {
     id: "201.18",
     name: "Zarbi (S)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.19": {
     id: "201.19",
     name: "Zarbi (T)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.2": {
     id: "201.2",
     name: "Zarbi (U)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.21": {
     id: "201.21",
     name: "Zarbi (V)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.22": {
     id: "201.22",
     name: "Zarbi (W)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.23": {
     id: "201.23",
     name: "Zarbi (X)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.24": {
     id: "201.24",
     name: "Zarbi (Y)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.25": {
     id: "201.25",
     name: "Zarbi (Z)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.26": {
     id: "201.26",
     name: "Zarbi (!)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "201.27": {
     id: "201.27",
     name: "Zarbi (?)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "202": {
     id: "202",
     name: "Qulbutoké",
-    type: ["psychic"],
+    types: ["psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3878,7 +3878,7 @@ export const pokemons: {
   "203": {
     id: "203",
     name: "Girafarig",
-    type: ["normal", "psychic"],
+    types: ["normal", "psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3892,7 +3892,7 @@ export const pokemons: {
   "204": {
     id: "204",
     name: "Pomdepik",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -3905,7 +3905,7 @@ export const pokemons: {
   "205": {
     id: "205",
     name: "Foretress",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -3917,7 +3917,7 @@ export const pokemons: {
   "206": {
     id: "206",
     name: "Insolourdo",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -3936,7 +3936,7 @@ export const pokemons: {
   "207": {
     id: "207",
     name: "Scorplane",
-    type: ["ground", "flying"],
+    types: ["ground", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3949,7 +3949,7 @@ export const pokemons: {
   "208": {
     id: "208",
     name: "Steelix",
-    type: ["steel", "ground"],
+    types: ["steel", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -3967,7 +3967,7 @@ export const pokemons: {
   "208.01": {
     id: "208.01",
     name: "Méga-Steelix",
-    type: ["steel", "ground"],
+    types: ["steel", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -3979,7 +3979,7 @@ export const pokemons: {
   "209": {
     id: "209",
     name: "Snubbull",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -3992,7 +3992,7 @@ export const pokemons: {
   "210": {
     id: "210",
     name: "Granbull",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -4004,12 +4004,12 @@ export const pokemons: {
   "211": {
     id: "211",
     name: "Qwilfish",
-    type: ["water", "poison"],
+    types: ["water", "poison"],
   },
   "211.01": {
     id: "211.01",
     name: "Qwilfish de Hisui",
-    type: ["dark", "poison"],
+    types: ["dark", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -4022,7 +4022,7 @@ export const pokemons: {
   "212": {
     id: "212",
     name: "Cizayox",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4040,7 +4040,7 @@ export const pokemons: {
   "212.01": {
     id: "212.01",
     name: "Méga-Cizayox",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -4052,12 +4052,12 @@ export const pokemons: {
   "213": {
     id: "213",
     name: "Caratroc",
-    type: ["insect", "rock"],
+    types: ["insect", "rock"],
   },
   "214": {
     id: "214",
     name: "Scarhino",
-    type: ["insect", "fighting"],
+    types: ["insect", "fighting"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4070,7 +4070,7 @@ export const pokemons: {
   "214.01": {
     id: "214.01",
     name: "Méga-Scarhino",
-    type: ["insect", "fighting"],
+    types: ["insect", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -4082,7 +4082,7 @@ export const pokemons: {
   "215": {
     id: "215",
     name: "Farfuret",
-    type: ["dark", "ice"],
+    types: ["dark", "ice"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4095,7 +4095,7 @@ export const pokemons: {
   "215.01": {
     id: "215.01",
     name: "Farfuret de Hisui",
-    type: ["fighting", "poison"],
+    types: ["fighting", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4108,7 +4108,7 @@ export const pokemons: {
   "216": {
     id: "216",
     name: "Teddiursa",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -4121,7 +4121,7 @@ export const pokemons: {
   "217": {
     id: "217",
     name: "Ursaring",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4139,7 +4139,7 @@ export const pokemons: {
   "218": {
     id: "218",
     name: "Limagma",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -4152,7 +4152,7 @@ export const pokemons: {
   "219": {
     id: "219",
     name: "Volcaropod",
-    type: ["fire", "rock"],
+    types: ["fire", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -4164,7 +4164,7 @@ export const pokemons: {
   "220": {
     id: "220",
     name: "Marcacrin",
-    type: ["ice", "ground"],
+    types: ["ice", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -4177,7 +4177,7 @@ export const pokemons: {
   "221": {
     id: "221",
     name: "Cochignon",
-    type: ["ice", "ground"],
+    types: ["ice", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4196,12 +4196,12 @@ export const pokemons: {
   "222": {
     id: "222",
     name: "Corayon",
-    type: ["water", "rock"],
+    types: ["water", "rock"],
   },
   "222.01": {
     id: "222.01",
     name: "Corayon de Galar",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -4214,7 +4214,7 @@ export const pokemons: {
   "223": {
     id: "223",
     name: "Rémoraid",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -4227,7 +4227,7 @@ export const pokemons: {
   "224": {
     id: "224",
     name: "Octillery",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4240,12 +4240,12 @@ export const pokemons: {
   "225": {
     id: "225",
     name: "Cadoizo",
-    type: ["ice", "flying"],
+    types: ["ice", "flying"],
   },
   "226": {
     id: "226",
     name: "Demanta",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -4257,12 +4257,12 @@ export const pokemons: {
   "227": {
     id: "227",
     name: "Airmure",
-    type: ["steel", "flying"],
+    types: ["steel", "flying"],
   },
   "228": {
     id: "228",
     name: "Malosse",
-    type: ["dark", "fire"],
+    types: ["dark", "fire"],
     evolutions: [
       {
         type: "evolution",
@@ -4275,7 +4275,7 @@ export const pokemons: {
   "229": {
     id: "229",
     name: "Démolosse",
-    type: ["dark", "fire"],
+    types: ["dark", "fire"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4293,7 +4293,7 @@ export const pokemons: {
   "229.01": {
     id: "229.01",
     name: "Méga-Démolosse",
-    type: ["dark", "fire"],
+    types: ["dark", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -4305,7 +4305,7 @@ export const pokemons: {
   "230": {
     id: "230",
     name: "Hyporoi",
-    type: ["water", "dragon"],
+    types: ["water", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -4317,7 +4317,7 @@ export const pokemons: {
   "231": {
     id: "231",
     name: "Phanpy",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -4330,7 +4330,7 @@ export const pokemons: {
   "232": {
     id: "232",
     name: "Donphan",
-    type: ["ground"],
+    types: ["ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4343,7 +4343,7 @@ export const pokemons: {
   "233": {
     id: "233",
     name: "Porygon2",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -4360,7 +4360,7 @@ export const pokemons: {
   "234": {
     id: "234",
     name: "Cerfrousse",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -4373,12 +4373,12 @@ export const pokemons: {
   "235": {
     id: "235",
     name: "Queulorior",
-    type: ["normal"],
+    types: ["normal"],
   },
   "236": {
     id: "236",
     name: "Debugant",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -4403,7 +4403,7 @@ export const pokemons: {
   "237": {
     id: "237",
     name: "Kapoera",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -4415,7 +4415,7 @@ export const pokemons: {
   "238": {
     id: "238",
     name: "Lippouti",
-    type: ["ice", "psychic"],
+    types: ["ice", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -4428,7 +4428,7 @@ export const pokemons: {
   "239": {
     id: "239",
     name: "Elekid",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -4441,7 +4441,7 @@ export const pokemons: {
   "240": {
     id: "240",
     name: "Magby",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -4454,12 +4454,12 @@ export const pokemons: {
   "241": {
     id: "241",
     name: "Écrémeuh",
-    type: ["normal"],
+    types: ["normal"],
   },
   "242": {
     id: "242",
     name: "Leuphorie",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -4471,22 +4471,22 @@ export const pokemons: {
   "243": {
     id: "243",
     name: "Raikou",
-    type: ["electric"],
+    types: ["electric"],
   },
   "244": {
     id: "244",
     name: "Entei",
-    type: ["fire"],
+    types: ["fire"],
   },
   "245": {
     id: "245",
     name: "Suicune",
-    type: ["water"],
+    types: ["water"],
   },
   "246": {
     id: "246",
     name: "Embrylex",
-    type: ["rock", "ground"],
+    types: ["rock", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -4499,7 +4499,7 @@ export const pokemons: {
   "247": {
     id: "247",
     name: "Ymphect",
-    type: ["rock", "ground"],
+    types: ["rock", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -4517,7 +4517,7 @@ export const pokemons: {
   "248": {
     id: "248",
     name: "Tyranocif",
-    type: ["rock", "dark"],
+    types: ["rock", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -4534,7 +4534,7 @@ export const pokemons: {
   "248.01": {
     id: "248.01",
     name: "Méga-Tyranocif",
-    type: ["rock", "dark"],
+    types: ["rock", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -4546,22 +4546,22 @@ export const pokemons: {
   "249": {
     id: "249",
     name: "Lugia",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
   },
   "250": {
     id: "250",
     name: "Ho-Oh",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
   },
   "251": {
     id: "251",
     name: "Celebi",
-    type: ["psychic", "grass"],
+    types: ["psychic", "grass"],
   },
   "252": {
     id: "252",
     name: "Arcko",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -4574,7 +4574,7 @@ export const pokemons: {
   "253": {
     id: "253",
     name: "Massko",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -4592,7 +4592,7 @@ export const pokemons: {
   "254": {
     id: "254",
     name: "Jungko",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -4609,7 +4609,7 @@ export const pokemons: {
   "254.01": {
     id: "254.01",
     name: "Méga-Jungko",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -4621,7 +4621,7 @@ export const pokemons: {
   "255": {
     id: "255",
     name: "Poussifeu",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -4634,7 +4634,7 @@ export const pokemons: {
   "256": {
     id: "256",
     name: "Galifeu",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4653,7 +4653,7 @@ export const pokemons: {
   "257": {
     id: "257",
     name: "Braségali",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4671,7 +4671,7 @@ export const pokemons: {
   "257.01": {
     id: "257.01",
     name: "Méga-Braségali",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -4683,7 +4683,7 @@ export const pokemons: {
   "258": {
     id: "258",
     name: "Gobou",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -4696,7 +4696,7 @@ export const pokemons: {
   "259": {
     id: "259",
     name: "Flobio",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -4714,7 +4714,7 @@ export const pokemons: {
   "260": {
     id: "260",
     name: "Laggron",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -4731,7 +4731,7 @@ export const pokemons: {
   "260.01": {
     id: "260.01",
     name: "Méga-Laggron",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -4743,7 +4743,7 @@ export const pokemons: {
   "261": {
     id: "261",
     name: "Medhyèna",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -4756,7 +4756,7 @@ export const pokemons: {
   "262": {
     id: "262",
     name: "Grahyèna",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -4768,7 +4768,7 @@ export const pokemons: {
   "263": {
     id: "263",
     name: "Zigzaton",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -4781,7 +4781,7 @@ export const pokemons: {
   "263.01": {
     id: "263.01",
     name: "Zigzaton de Galar",
-    type: ["dark", "normal"],
+    types: ["dark", "normal"],
     evolutions: [
       {
         type: "evolution",
@@ -4794,7 +4794,7 @@ export const pokemons: {
   "264": {
     id: "264",
     name: "Linéon",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -4806,7 +4806,7 @@ export const pokemons: {
   "264.01": {
     id: "264.01",
     name: "Linéon de Galar",
-    type: ["dark", "normal"],
+    types: ["dark", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -4824,7 +4824,7 @@ export const pokemons: {
   "265": {
     id: "265",
     name: "Chenipotte",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -4843,7 +4843,7 @@ export const pokemons: {
   "266": {
     id: "266",
     name: "Armulys",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -4861,7 +4861,7 @@ export const pokemons: {
   "267": {
     id: "267",
     name: "Charmillon",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4874,7 +4874,7 @@ export const pokemons: {
   "268": {
     id: "268",
     name: "Blindalys",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -4892,7 +4892,7 @@ export const pokemons: {
   "269": {
     id: "269",
     name: "Papinox",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4905,7 +4905,7 @@ export const pokemons: {
   "270": {
     id: "270",
     name: "Nénupiot",
-    type: ["water", "grass"],
+    types: ["water", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -4918,7 +4918,7 @@ export const pokemons: {
   "271": {
     id: "271",
     name: "Lombre",
-    type: ["water", "grass"],
+    types: ["water", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -4935,7 +4935,7 @@ export const pokemons: {
   "272": {
     id: "272",
     name: "Ludicolo",
-    type: ["water", "grass"],
+    types: ["water", "grass"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4948,7 +4948,7 @@ export const pokemons: {
   "273": {
     id: "273",
     name: "Grainipiot",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -4961,7 +4961,7 @@ export const pokemons: {
   "274": {
     id: "274",
     name: "Pifeuil",
-    type: ["grass", "dark"],
+    types: ["grass", "dark"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4979,7 +4979,7 @@ export const pokemons: {
   "275": {
     id: "275",
     name: "Tengalice",
-    type: ["grass", "dark"],
+    types: ["grass", "dark"],
     femaleVariation: true,
     evolutions: [
       {
@@ -4992,7 +4992,7 @@ export const pokemons: {
   "276": {
     id: "276",
     name: "Nirondelle",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -5005,7 +5005,7 @@ export const pokemons: {
   "277": {
     id: "277",
     name: "Hélédelle",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -5017,7 +5017,7 @@ export const pokemons: {
   "278": {
     id: "278",
     name: "Goélise",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -5030,7 +5030,7 @@ export const pokemons: {
   "279": {
     id: "279",
     name: "Bekipan",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -5042,7 +5042,7 @@ export const pokemons: {
   "280": {
     id: "280",
     name: "Tarsal",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -5055,7 +5055,7 @@ export const pokemons: {
   "281": {
     id: "281",
     name: "Kirlia",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -5078,7 +5078,7 @@ export const pokemons: {
   "282": {
     id: "282",
     name: "Gardevoir",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -5095,7 +5095,7 @@ export const pokemons: {
   "282.01": {
     id: "282.01",
     name: "Méga-Gardevoir",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -5107,7 +5107,7 @@ export const pokemons: {
   "283": {
     id: "283",
     name: "Arakdo",
-    type: ["insect", "water"],
+    types: ["insect", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -5120,7 +5120,7 @@ export const pokemons: {
   "284": {
     id: "284",
     name: "Maskadra",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -5132,7 +5132,7 @@ export const pokemons: {
   "285": {
     id: "285",
     name: "Balignon",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -5145,7 +5145,7 @@ export const pokemons: {
   "286": {
     id: "286",
     name: "Chapignon",
-    type: ["grass", "fighting"],
+    types: ["grass", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -5157,7 +5157,7 @@ export const pokemons: {
   "287": {
     id: "287",
     name: "Parecool",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -5170,7 +5170,7 @@ export const pokemons: {
   "288": {
     id: "288",
     name: "Vigoroth",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -5188,7 +5188,7 @@ export const pokemons: {
   "289": {
     id: "289",
     name: "Monaflèmit",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -5200,7 +5200,7 @@ export const pokemons: {
   "290": {
     id: "290",
     name: "Ningale",
-    type: ["insect", "ground"],
+    types: ["insect", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -5219,7 +5219,7 @@ export const pokemons: {
   "291": {
     id: "291",
     name: "Ninjask",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -5231,7 +5231,7 @@ export const pokemons: {
   "292": {
     id: "292",
     name: "Munja",
-    type: ["insect", "ghost"],
+    types: ["insect", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -5243,7 +5243,7 @@ export const pokemons: {
   "293": {
     id: "293",
     name: "Chuchmur",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -5256,7 +5256,7 @@ export const pokemons: {
   "294": {
     id: "294",
     name: "Ramboum",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -5274,7 +5274,7 @@ export const pokemons: {
   "295": {
     id: "295",
     name: "Brouhabam",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -5286,7 +5286,7 @@ export const pokemons: {
   "296": {
     id: "296",
     name: "Makuhita",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -5299,7 +5299,7 @@ export const pokemons: {
   "297": {
     id: "297",
     name: "Hariyama",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -5311,7 +5311,7 @@ export const pokemons: {
   "298": {
     id: "298",
     name: "Azurill",
-    type: ["normal", "fairy"],
+    types: ["normal", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -5323,7 +5323,7 @@ export const pokemons: {
   "299": {
     id: "299",
     name: "Tarinor",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -5336,7 +5336,7 @@ export const pokemons: {
   "300": {
     id: "300",
     name: "Skitty",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -5348,7 +5348,7 @@ export const pokemons: {
   "301": {
     id: "301",
     name: "Delcatty",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -5360,7 +5360,7 @@ export const pokemons: {
   "302": {
     id: "302",
     name: "Ténéfix",
-    type: ["dark", "ghost"],
+    types: ["dark", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -5372,7 +5372,7 @@ export const pokemons: {
   "302.01": {
     id: "302.01",
     name: "Méga-Ténéfix",
-    type: ["dark", "ghost"],
+    types: ["dark", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -5384,7 +5384,7 @@ export const pokemons: {
   "303": {
     id: "303",
     name: "Mysdibule",
-    type: ["steel", "fairy"],
+    types: ["steel", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -5396,7 +5396,7 @@ export const pokemons: {
   "303.01": {
     id: "303.01",
     name: "Méga-Mysdibule",
-    type: ["steel", "fairy"],
+    types: ["steel", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -5408,7 +5408,7 @@ export const pokemons: {
   "304": {
     id: "304",
     name: "Galekid",
-    type: ["steel", "rock"],
+    types: ["steel", "rock"],
     evolutions: [
       {
         type: "evolution",
@@ -5421,7 +5421,7 @@ export const pokemons: {
   "305": {
     id: "305",
     name: "Galegon",
-    type: ["steel", "rock"],
+    types: ["steel", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -5439,7 +5439,7 @@ export const pokemons: {
   "306": {
     id: "306",
     name: "Galeking",
-    type: ["steel", "rock"],
+    types: ["steel", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -5456,7 +5456,7 @@ export const pokemons: {
   "306.01": {
     id: "306.01",
     name: "Méga-Galeking",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -5468,7 +5468,7 @@ export const pokemons: {
   "307": {
     id: "307",
     name: "Méditikka",
-    type: ["fighting", "psychic"],
+    types: ["fighting", "psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5482,7 +5482,7 @@ export const pokemons: {
   "308": {
     id: "308",
     name: "Charmina",
-    type: ["fighting", "psychic"],
+    types: ["fighting", "psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5500,7 +5500,7 @@ export const pokemons: {
   "308.01": {
     id: "308.01",
     name: "Méga-Charmina",
-    type: ["fighting", "psychic"],
+    types: ["fighting", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -5512,7 +5512,7 @@ export const pokemons: {
   "309": {
     id: "309",
     name: "Dynavolt",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -5525,7 +5525,7 @@ export const pokemons: {
   "310": {
     id: "310",
     name: "Élecsprint",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -5542,7 +5542,7 @@ export const pokemons: {
   "310.01": {
     id: "310.01",
     name: "Méga-Élecsprint",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -5554,27 +5554,27 @@ export const pokemons: {
   "311": {
     id: "311",
     name: "Posipi",
-    type: ["electric"],
+    types: ["electric"],
   },
   "312": {
     id: "312",
     name: "Négapi",
-    type: ["electric"],
+    types: ["electric"],
   },
   "313": {
     id: "313",
     name: "Muciole",
-    type: ["insect"],
+    types: ["insect"],
   },
   "314": {
     id: "314",
     name: "Lumivole",
-    type: ["insect"],
+    types: ["insect"],
   },
   "315": {
     id: "315",
     name: "Rosélia",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5592,7 +5592,7 @@ export const pokemons: {
   "316": {
     id: "316",
     name: "Gloupti",
-    type: ["poison"],
+    types: ["poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5606,7 +5606,7 @@ export const pokemons: {
   "317": {
     id: "317",
     name: "Avaltout",
-    type: ["poison"],
+    types: ["poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5619,7 +5619,7 @@ export const pokemons: {
   "318": {
     id: "318",
     name: "Carvanha",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "evolution",
@@ -5632,7 +5632,7 @@ export const pokemons: {
   "319": {
     id: "319",
     name: "Sharpedo",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -5649,7 +5649,7 @@ export const pokemons: {
   "319.01": {
     id: "319.01",
     name: "Méga-Sharpedo",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -5661,7 +5661,7 @@ export const pokemons: {
   "320": {
     id: "320",
     name: "Wailmer",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -5674,7 +5674,7 @@ export const pokemons: {
   "321": {
     id: "321",
     name: "Wailord",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -5686,7 +5686,7 @@ export const pokemons: {
   "322": {
     id: "322",
     name: "Chamallot",
-    type: ["fire", "ground"],
+    types: ["fire", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5700,7 +5700,7 @@ export const pokemons: {
   "323": {
     id: "323",
     name: "Camérupt",
-    type: ["fire", "ground"],
+    types: ["fire", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5718,7 +5718,7 @@ export const pokemons: {
   "323.01": {
     id: "323.01",
     name: "Méga-Camérupt",
-    type: ["fire", "ground"],
+    types: ["fire", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -5730,12 +5730,12 @@ export const pokemons: {
   "324": {
     id: "324",
     name: "Chartor",
-    type: ["fire"],
+    types: ["fire"],
   },
   "325": {
     id: "325",
     name: "Spoink",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -5748,7 +5748,7 @@ export const pokemons: {
   "326": {
     id: "326",
     name: "Groret",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -5760,12 +5760,12 @@ export const pokemons: {
   "327": {
     id: "327",
     name: "Spinda",
-    type: ["normal"],
+    types: ["normal"],
   },
   "328": {
     id: "328",
     name: "Kraknoix",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -5778,7 +5778,7 @@ export const pokemons: {
   "329": {
     id: "329",
     name: "Vibraninf",
-    type: ["ground", "dragon"],
+    types: ["ground", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -5796,7 +5796,7 @@ export const pokemons: {
   "330": {
     id: "330",
     name: "Libégon",
-    type: ["ground", "dragon"],
+    types: ["ground", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -5808,7 +5808,7 @@ export const pokemons: {
   "331": {
     id: "331",
     name: "Cacnea",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -5821,7 +5821,7 @@ export const pokemons: {
   "332": {
     id: "332",
     name: "Cacturne",
-    type: ["grass", "dark"],
+    types: ["grass", "dark"],
     femaleVariation: true,
     evolutions: [
       {
@@ -5834,7 +5834,7 @@ export const pokemons: {
   "333": {
     id: "333",
     name: "Tylton",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -5847,7 +5847,7 @@ export const pokemons: {
   "334": {
     id: "334",
     name: "Altaria",
-    type: ["dragon", "flying"],
+    types: ["dragon", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -5864,7 +5864,7 @@ export const pokemons: {
   "334.01": {
     id: "334.01",
     name: "Méga-Altaria",
-    type: ["dragon", "fairy"],
+    types: ["dragon", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -5876,27 +5876,27 @@ export const pokemons: {
   "335": {
     id: "335",
     name: "Mangriff",
-    type: ["normal"],
+    types: ["normal"],
   },
   "336": {
     id: "336",
     name: "Séviper",
-    type: ["poison"],
+    types: ["poison"],
   },
   "337": {
     id: "337",
     name: "Séléroc",
-    type: ["rock", "psychic"],
+    types: ["rock", "psychic"],
   },
   "338": {
     id: "338",
     name: "Solaroc",
-    type: ["rock", "psychic"],
+    types: ["rock", "psychic"],
   },
   "339": {
     id: "339",
     name: "Barloche",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -5909,7 +5909,7 @@ export const pokemons: {
   "340": {
     id: "340",
     name: "Barbicha",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -5921,7 +5921,7 @@ export const pokemons: {
   "341": {
     id: "341",
     name: "Écrapince",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -5934,7 +5934,7 @@ export const pokemons: {
   "342": {
     id: "342",
     name: "Colhomard",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -5946,7 +5946,7 @@ export const pokemons: {
   "343": {
     id: "343",
     name: "Balbuto",
-    type: ["ground", "psychic"],
+    types: ["ground", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -5959,7 +5959,7 @@ export const pokemons: {
   "344": {
     id: "344",
     name: "Kaorine",
-    type: ["ground", "psychic"],
+    types: ["ground", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -5971,7 +5971,7 @@ export const pokemons: {
   "345": {
     id: "345",
     name: "Lilia",
-    type: ["rock", "grass"],
+    types: ["rock", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -5984,7 +5984,7 @@ export const pokemons: {
   "346": {
     id: "346",
     name: "Vacilys",
-    type: ["rock", "grass"],
+    types: ["rock", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -5996,7 +5996,7 @@ export const pokemons: {
   "347": {
     id: "347",
     name: "Anorith",
-    type: ["rock", "insect"],
+    types: ["rock", "insect"],
     evolutions: [
       {
         type: "evolution",
@@ -6009,7 +6009,7 @@ export const pokemons: {
   "348": {
     id: "348",
     name: "Armaldo",
-    type: ["rock", "insect"],
+    types: ["rock", "insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -6021,7 +6021,7 @@ export const pokemons: {
   "349": {
     id: "349",
     name: "Barpau",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -6033,7 +6033,7 @@ export const pokemons: {
   "350": {
     id: "350",
     name: "Milobellus",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6046,32 +6046,32 @@ export const pokemons: {
   "351": {
     id: "351",
     name: "Morphéo",
-    type: ["normal"],
+    types: ["normal"],
   },
   "351.01": {
     id: "351.01",
     name: "Morphéo (Solaire)",
-    type: ["fire"],
+    types: ["fire"],
   },
   "351.02": {
     id: "351.02",
     name: "Morphéo (Eau de Pluie)",
-    type: ["water"],
+    types: ["water"],
   },
   "351.03": {
     id: "351.03",
     name: "Morphéo (Blizzard)",
-    type: ["ice"],
+    types: ["ice"],
   },
   "352": {
     id: "352",
     name: "Kecleon",
-    type: ["normal"],
+    types: ["normal"],
   },
   "353": {
     id: "353",
     name: "Polichombr",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -6084,7 +6084,7 @@ export const pokemons: {
   "354": {
     id: "354",
     name: "Branette",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -6101,7 +6101,7 @@ export const pokemons: {
   "354.01": {
     id: "354.01",
     name: "Méga-Branette",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -6113,7 +6113,7 @@ export const pokemons: {
   "355": {
     id: "355",
     name: "Skelénox",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -6126,7 +6126,7 @@ export const pokemons: {
   "356": {
     id: "356",
     name: "Teraclope",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -6143,12 +6143,12 @@ export const pokemons: {
   "357": {
     id: "357",
     name: "Tropius",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
   },
   "358": {
     id: "358",
     name: "Éoko",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -6160,7 +6160,7 @@ export const pokemons: {
   "359": {
     id: "359",
     name: "Absol",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -6172,7 +6172,7 @@ export const pokemons: {
   "359.01": {
     id: "359.01",
     name: "Méga-Absol",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -6184,7 +6184,7 @@ export const pokemons: {
   "360": {
     id: "360",
     name: "Okéoké",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -6197,7 +6197,7 @@ export const pokemons: {
   "361": {
     id: "361",
     name: "Stalgamin",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -6215,7 +6215,7 @@ export const pokemons: {
   "362": {
     id: "362",
     name: "Oniglali",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -6232,7 +6232,7 @@ export const pokemons: {
   "362.01": {
     id: "362.01",
     name: "Méga-Oniglali",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -6244,7 +6244,7 @@ export const pokemons: {
   "363": {
     id: "363",
     name: "Obalie",
-    type: ["ice", "water"],
+    types: ["ice", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -6257,7 +6257,7 @@ export const pokemons: {
   "364": {
     id: "364",
     name: "Phogleur",
-    type: ["ice", "water"],
+    types: ["ice", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -6275,7 +6275,7 @@ export const pokemons: {
   "365": {
     id: "365",
     name: "Kaimorse",
-    type: ["ice", "water"],
+    types: ["ice", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -6287,7 +6287,7 @@ export const pokemons: {
   "366": {
     id: "366",
     name: "Coquiperl",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -6304,7 +6304,7 @@ export const pokemons: {
   "367": {
     id: "367",
     name: "Serpang",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -6316,7 +6316,7 @@ export const pokemons: {
   "368": {
     id: "368",
     name: "Rosabyss",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -6328,18 +6328,18 @@ export const pokemons: {
   "369": {
     id: "369",
     name: "Relicanth",
-    type: ["water", "rock"],
+    types: ["water", "rock"],
     femaleVariation: true,
   },
   "370": {
     id: "370",
     name: "Lovdisc",
-    type: ["water"],
+    types: ["water"],
   },
   "371": {
     id: "371",
     name: "Draby",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -6352,7 +6352,7 @@ export const pokemons: {
   "372": {
     id: "372",
     name: "Drackhaus",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -6370,7 +6370,7 @@ export const pokemons: {
   "373": {
     id: "373",
     name: "Drattak",
-    type: ["dragon", "flying"],
+    types: ["dragon", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -6387,7 +6387,7 @@ export const pokemons: {
   "373.01": {
     id: "373.01",
     name: "Méga-Drattak",
-    type: ["dragon", "flying"],
+    types: ["dragon", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -6399,7 +6399,7 @@ export const pokemons: {
   "374": {
     id: "374",
     name: "Terhal",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -6412,7 +6412,7 @@ export const pokemons: {
   "375": {
     id: "375",
     name: "Métang",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -6430,7 +6430,7 @@ export const pokemons: {
   "376": {
     id: "376",
     name: "Métalosse",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -6447,7 +6447,7 @@ export const pokemons: {
   "376.01": {
     id: "376.01",
     name: "Méga-Métalosse",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -6459,22 +6459,22 @@ export const pokemons: {
   "377": {
     id: "377",
     name: "Regirock",
-    type: ["rock"],
+    types: ["rock"],
   },
   "378": {
     id: "378",
     name: "Regice",
-    type: ["ice"],
+    types: ["ice"],
   },
   "379": {
     id: "379",
     name: "Registeel",
-    type: ["steel"],
+    types: ["steel"],
   },
   "380": {
     id: "380",
     name: "Latias",
-    type: ["dragon", "psychic"],
+    types: ["dragon", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -6486,7 +6486,7 @@ export const pokemons: {
   "380.01": {
     id: "380.01",
     name: "Méga-Latias",
-    type: ["dragon", "psychic"],
+    types: ["dragon", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -6498,7 +6498,7 @@ export const pokemons: {
   "381": {
     id: "381",
     name: "Latios",
-    type: ["dragon", "psychic"],
+    types: ["dragon", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -6510,7 +6510,7 @@ export const pokemons: {
   "381.01": {
     id: "381.01",
     name: "Méga-Latios",
-    type: ["dragon", "psychic"],
+    types: ["dragon", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -6522,7 +6522,7 @@ export const pokemons: {
   "382": {
     id: "382",
     name: "Kyogre",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -6534,7 +6534,7 @@ export const pokemons: {
   "382.01": {
     id: "382.01",
     name: "Primo Kyogre",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -6546,7 +6546,7 @@ export const pokemons: {
   "383": {
     id: "383",
     name: "Groudon",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -6558,7 +6558,7 @@ export const pokemons: {
   "383.01": {
     id: "383.01",
     name: "Primo Groudon",
-    type: ["ground", "fire"],
+    types: ["ground", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -6570,7 +6570,7 @@ export const pokemons: {
   "384": {
     id: "384",
     name: "Rayquaza",
-    type: ["dragon", "flying"],
+    types: ["dragon", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -6582,7 +6582,7 @@ export const pokemons: {
   "384.01": {
     id: "384.01",
     name: "Méga-Rayquaza",
-    type: ["dragon", "flying"],
+    types: ["dragon", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -6594,32 +6594,32 @@ export const pokemons: {
   "385": {
     id: "385",
     name: "Jirachi",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
   },
   "386": {
     id: "386",
     name: "Deoxys",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "386.01": {
     id: "386.01",
     name: "Deoxys (Attaque)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "386.02": {
     id: "386.02",
     name: "Deoxys (Defense)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "386.03": {
     id: "386.03",
     name: "Deoxys (Vitesse)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "387": {
     id: "387",
     name: "Tortipouss",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -6632,7 +6632,7 @@ export const pokemons: {
   "388": {
     id: "388",
     name: "Boskara",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -6650,7 +6650,7 @@ export const pokemons: {
   "389": {
     id: "389",
     name: "Torterra",
-    type: ["grass", "ground"],
+    types: ["grass", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -6662,7 +6662,7 @@ export const pokemons: {
   "390": {
     id: "390",
     name: "Ouisticram",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -6675,7 +6675,7 @@ export const pokemons: {
   "391": {
     id: "391",
     name: "Chimpenfeu",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -6693,7 +6693,7 @@ export const pokemons: {
   "392": {
     id: "392",
     name: "Simiabraz",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -6705,7 +6705,7 @@ export const pokemons: {
   "393": {
     id: "393",
     name: "Tiplouf",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -6718,7 +6718,7 @@ export const pokemons: {
   "394": {
     id: "394",
     name: "Prinplouf",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -6736,7 +6736,7 @@ export const pokemons: {
   "395": {
     id: "395",
     name: "Pingoleon",
-    type: ["water", "steel"],
+    types: ["water", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -6748,7 +6748,7 @@ export const pokemons: {
   "396": {
     id: "396",
     name: "Étourmi",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6762,7 +6762,7 @@ export const pokemons: {
   "397": {
     id: "397",
     name: "Étourvol",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6781,7 +6781,7 @@ export const pokemons: {
   "398": {
     id: "398",
     name: "Étouraptor",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6794,7 +6794,7 @@ export const pokemons: {
   "399": {
     id: "399",
     name: "Keunotor",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6808,7 +6808,7 @@ export const pokemons: {
   "400": {
     id: "400",
     name: "Castorno",
-    type: ["normal", "water"],
+    types: ["normal", "water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6821,7 +6821,7 @@ export const pokemons: {
   "401": {
     id: "401",
     name: "Crikzik",
-    type: ["insect"],
+    types: ["insect"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6835,7 +6835,7 @@ export const pokemons: {
   "402": {
     id: "402",
     name: "Mélokrik",
-    type: ["insect"],
+    types: ["insect"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6848,7 +6848,7 @@ export const pokemons: {
   "403": {
     id: "403",
     name: "Lixy",
-    type: ["electric"],
+    types: ["electric"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6862,7 +6862,7 @@ export const pokemons: {
   "404": {
     id: "404",
     name: "Luxio",
-    type: ["electric"],
+    types: ["electric"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6881,7 +6881,7 @@ export const pokemons: {
   "405": {
     id: "405",
     name: "Luxray",
-    type: ["electric"],
+    types: ["electric"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6894,7 +6894,7 @@ export const pokemons: {
   "406": {
     id: "406",
     name: "Rozbouton",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -6906,7 +6906,7 @@ export const pokemons: {
   "407": {
     id: "407",
     name: "Roserade",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     femaleVariation: true,
     evolutions: [
       {
@@ -6919,7 +6919,7 @@ export const pokemons: {
   "408": {
     id: "408",
     name: "Kranidos",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -6932,7 +6932,7 @@ export const pokemons: {
   "409": {
     id: "409",
     name: "Charkos",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -6944,7 +6944,7 @@ export const pokemons: {
   "410": {
     id: "410",
     name: "Dinoclier",
-    type: ["rock", "steel"],
+    types: ["rock", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -6957,7 +6957,7 @@ export const pokemons: {
   "411": {
     id: "411",
     name: "Bastiodon",
-    type: ["rock", "steel"],
+    types: ["rock", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -6969,7 +6969,7 @@ export const pokemons: {
   "412": {
     id: "412",
     name: "Cheniti (Plante)",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -6989,7 +6989,7 @@ export const pokemons: {
   "412.01": {
     id: "412.01",
     name: "Cheniti (Sable)",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -7008,7 +7008,7 @@ export const pokemons: {
   "412.02": {
     id: "412.02",
     name: "Cheniti (Dechet)",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -7027,7 +7027,7 @@ export const pokemons: {
   "413": {
     id: "413",
     name: "Cheniselle (Plante)",
-    type: ["insect", "grass"],
+    types: ["insect", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -7039,7 +7039,7 @@ export const pokemons: {
   "413.01": {
     id: "413.01",
     name: "Cheniselle (Sable)",
-    type: ["insect", "ground"],
+    types: ["insect", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -7051,7 +7051,7 @@ export const pokemons: {
   "413.02": {
     id: "413.02",
     name: "Cheniselle (Dechet)",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -7063,7 +7063,7 @@ export const pokemons: {
   "414": {
     id: "414",
     name: "Papilord",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7085,7 +7085,7 @@ export const pokemons: {
   "415": {
     id: "415",
     name: "Apitrini",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7099,7 +7099,7 @@ export const pokemons: {
   "416": {
     id: "416",
     name: "Apireine",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7111,13 +7111,13 @@ export const pokemons: {
   "417": {
     id: "417",
     name: "Pachirisu",
-    type: ["electric"],
+    types: ["electric"],
     femaleVariation: true,
   },
   "418": {
     id: "418",
     name: "Mustébouée",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -7130,7 +7130,7 @@ export const pokemons: {
   "419": {
     id: "419",
     name: "Mustéflott",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -7142,7 +7142,7 @@ export const pokemons: {
   "420": {
     id: "420",
     name: "Ceribou",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -7161,7 +7161,7 @@ export const pokemons: {
   "421": {
     id: "421",
     name: "Ceriflor (Couvert)",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -7173,7 +7173,7 @@ export const pokemons: {
   "421.01": {
     id: "421.01",
     name: "Ceriflor (Ensoleille)",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -7185,7 +7185,7 @@ export const pokemons: {
   "422": {
     id: "422",
     name: "Sancoki (Occident)",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -7198,7 +7198,7 @@ export const pokemons: {
   "422.01": {
     id: "422.01",
     name: "Sancoki (Orient)",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -7211,7 +7211,7 @@ export const pokemons: {
   "423": {
     id: "423",
     name: "Tritosor (Occident)",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -7223,7 +7223,7 @@ export const pokemons: {
   "423.01": {
     id: "423.01",
     name: "Tritosor (Orient)",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -7235,7 +7235,7 @@ export const pokemons: {
   "424": {
     id: "424",
     name: "Capidextre",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7248,7 +7248,7 @@ export const pokemons: {
   "425": {
     id: "425",
     name: "Baudrive",
-    type: ["ghost", "flying"],
+    types: ["ghost", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -7261,7 +7261,7 @@ export const pokemons: {
   "426": {
     id: "426",
     name: "Grodrive",
-    type: ["ghost", "flying"],
+    types: ["ghost", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7273,7 +7273,7 @@ export const pokemons: {
   "427": {
     id: "427",
     name: "Laporeille",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -7285,7 +7285,7 @@ export const pokemons: {
   "428": {
     id: "428",
     name: "Lockpin",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -7302,7 +7302,7 @@ export const pokemons: {
   "428.01": {
     id: "428.01",
     name: "Méga-Lockpin",
-    type: ["normal", "fighting"],
+    types: ["normal", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -7314,7 +7314,7 @@ export const pokemons: {
   "429": {
     id: "429",
     name: "Magirêve",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -7326,7 +7326,7 @@ export const pokemons: {
   "430": {
     id: "430",
     name: "Corboss",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7338,7 +7338,7 @@ export const pokemons: {
   "431": {
     id: "431",
     name: "Chaglam",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -7351,7 +7351,7 @@ export const pokemons: {
   "432": {
     id: "432",
     name: "Chaffreux",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -7363,7 +7363,7 @@ export const pokemons: {
   "433": {
     id: "433",
     name: "Korillon",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -7375,7 +7375,7 @@ export const pokemons: {
   "434": {
     id: "434",
     name: "Moufouette",
-    type: ["poison", "dark"],
+    types: ["poison", "dark"],
     evolutions: [
       {
         type: "evolution",
@@ -7388,7 +7388,7 @@ export const pokemons: {
   "435": {
     id: "435",
     name: "Moufflair",
-    type: ["poison", "dark"],
+    types: ["poison", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -7400,7 +7400,7 @@ export const pokemons: {
   "436": {
     id: "436",
     name: "Archéomire",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -7413,7 +7413,7 @@ export const pokemons: {
   "437": {
     id: "437",
     name: "Archéodong",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -7425,7 +7425,7 @@ export const pokemons: {
   "438": {
     id: "438",
     name: "Manzaï",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -7438,7 +7438,7 @@ export const pokemons: {
   "439": {
     id: "439",
     name: "Mime Jr.",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -7457,7 +7457,7 @@ export const pokemons: {
   "440": {
     id: "440",
     name: "Ptiravi",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -7469,17 +7469,17 @@ export const pokemons: {
   "441": {
     id: "441",
     name: "Pijako",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
   },
   "442": {
     id: "442",
     name: "Spiritomb",
-    type: ["ghost", "dark"],
+    types: ["ghost", "dark"],
   },
   "443": {
     id: "443",
     name: "Griknot",
-    type: ["dragon", "ground"],
+    types: ["dragon", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7493,7 +7493,7 @@ export const pokemons: {
   "444": {
     id: "444",
     name: "Carmache",
-    type: ["dragon", "ground"],
+    types: ["dragon", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7512,7 +7512,7 @@ export const pokemons: {
   "445": {
     id: "445",
     name: "Carchakrok",
-    type: ["dragon", "ground"],
+    types: ["dragon", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7530,7 +7530,7 @@ export const pokemons: {
   "445.01": {
     id: "445.01",
     name: "Méga-Carchakrok",
-    type: ["dragon", "ground"],
+    types: ["dragon", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -7542,7 +7542,7 @@ export const pokemons: {
   "446": {
     id: "446",
     name: "Goinfrex",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -7554,7 +7554,7 @@ export const pokemons: {
   "447": {
     id: "447",
     name: "Riolu",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -7566,7 +7566,7 @@ export const pokemons: {
   "448": {
     id: "448",
     name: "Lucario",
-    type: ["fighting", "steel"],
+    types: ["fighting", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -7583,7 +7583,7 @@ export const pokemons: {
   "448.01": {
     id: "448.01",
     name: "Méga-Lucario",
-    type: ["fighting", "steel"],
+    types: ["fighting", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -7595,7 +7595,7 @@ export const pokemons: {
   "449": {
     id: "449",
     name: "Hippopotas",
-    type: ["ground"],
+    types: ["ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7609,7 +7609,7 @@ export const pokemons: {
   "450": {
     id: "450",
     name: "Hippodocus",
-    type: ["ground"],
+    types: ["ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7622,7 +7622,7 @@ export const pokemons: {
   "451": {
     id: "451",
     name: "Rapion",
-    type: ["poison", "insect"],
+    types: ["poison", "insect"],
     evolutions: [
       {
         type: "evolution",
@@ -7635,7 +7635,7 @@ export const pokemons: {
   "452": {
     id: "452",
     name: "Drascore",
-    type: ["poison", "dark"],
+    types: ["poison", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -7647,7 +7647,7 @@ export const pokemons: {
   "453": {
     id: "453",
     name: "Cradopaud",
-    type: ["poison", "fighting"],
+    types: ["poison", "fighting"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7661,7 +7661,7 @@ export const pokemons: {
   "454": {
     id: "454",
     name: "Coatox",
-    type: ["poison", "fighting"],
+    types: ["poison", "fighting"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7674,12 +7674,12 @@ export const pokemons: {
   "455": {
     id: "455",
     name: "Vortente",
-    type: ["grass"],
+    types: ["grass"],
   },
   "456": {
     id: "456",
     name: "Écayon",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7693,7 +7693,7 @@ export const pokemons: {
   "457": {
     id: "457",
     name: "Luminéon",
-    type: ["water"],
+    types: ["water"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7706,7 +7706,7 @@ export const pokemons: {
   "458": {
     id: "458",
     name: "Babimanta",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -7718,7 +7718,7 @@ export const pokemons: {
   "459": {
     id: "459",
     name: "Blizzi",
-    type: ["grass", "ice"],
+    types: ["grass", "ice"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7732,7 +7732,7 @@ export const pokemons: {
   "460": {
     id: "460",
     name: "Blizzaroi",
-    type: ["grass", "ice"],
+    types: ["grass", "ice"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7750,7 +7750,7 @@ export const pokemons: {
   "460.01": {
     id: "460.01",
     name: "Méga-Blizzaroi",
-    type: ["grass", "ice"],
+    types: ["grass", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -7762,7 +7762,7 @@ export const pokemons: {
   "461": {
     id: "461",
     name: "Dimoret",
-    type: ["dark", "ice"],
+    types: ["dark", "ice"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7775,7 +7775,7 @@ export const pokemons: {
   "462": {
     id: "462",
     name: "Magnézone",
-    type: ["electric", "steel"],
+    types: ["electric", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -7787,7 +7787,7 @@ export const pokemons: {
   "463": {
     id: "463",
     name: "Coudlangue",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -7799,7 +7799,7 @@ export const pokemons: {
   "464": {
     id: "464",
     name: "Rhinastoc",
-    type: ["ground", "rock"],
+    types: ["ground", "rock"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7812,7 +7812,7 @@ export const pokemons: {
   "465": {
     id: "465",
     name: "Bouldeneu",
-    type: ["grass"],
+    types: ["grass"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7825,7 +7825,7 @@ export const pokemons: {
   "466": {
     id: "466",
     name: "Élekable",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -7837,7 +7837,7 @@ export const pokemons: {
   "467": {
     id: "467",
     name: "Maganon",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -7849,7 +7849,7 @@ export const pokemons: {
   "468": {
     id: "468",
     name: "Togekiss",
-    type: ["fairy", "flying"],
+    types: ["fairy", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7861,7 +7861,7 @@ export const pokemons: {
   "469": {
     id: "469",
     name: "Yanmega",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7873,7 +7873,7 @@ export const pokemons: {
   "470": {
     id: "470",
     name: "Phyllali",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -7885,7 +7885,7 @@ export const pokemons: {
   "471": {
     id: "471",
     name: "Givrali",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -7897,7 +7897,7 @@ export const pokemons: {
   "472": {
     id: "472",
     name: "Scorvol",
-    type: ["ground", "flying"],
+    types: ["ground", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -7909,7 +7909,7 @@ export const pokemons: {
   "473": {
     id: "473",
     name: "Mammochon",
-    type: ["ice", "ground"],
+    types: ["ice", "ground"],
     femaleVariation: true,
     evolutions: [
       {
@@ -7922,7 +7922,7 @@ export const pokemons: {
   "474": {
     id: "474",
     name: "Porygon-Z",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -7934,7 +7934,7 @@ export const pokemons: {
   "475": {
     id: "475",
     name: "Gallame",
-    type: ["psychic", "fighting"],
+    types: ["psychic", "fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -7951,7 +7951,7 @@ export const pokemons: {
   "475.01": {
     id: "475.01",
     name: "Méga-Gallame",
-    type: ["psychic", "fighting"],
+    types: ["psychic", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -7963,7 +7963,7 @@ export const pokemons: {
   "476": {
     id: "476",
     name: "Tarinorme",
-    type: ["rock", "steel"],
+    types: ["rock", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -7975,7 +7975,7 @@ export const pokemons: {
   "477": {
     id: "477",
     name: "Noctunoir",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -7987,7 +7987,7 @@ export const pokemons: {
   "478": {
     id: "478",
     name: "Momartik",
-    type: ["ice", "ghost"],
+    types: ["ice", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -7999,217 +7999,217 @@ export const pokemons: {
   "479": {
     id: "479",
     name: "Motisma",
-    type: ["electric", "ghost"],
+    types: ["electric", "ghost"],
   },
   "479.01": {
     id: "479.01",
     name: "Motisma (Chaleur)",
-    type: ["electric", "fire"],
+    types: ["electric", "fire"],
   },
   "479.02": {
     id: "479.02",
     name: "Motisma (Lavage)",
-    type: ["electric", "water"],
+    types: ["electric", "water"],
   },
   "479.03": {
     id: "479.03",
     name: "Motisma (Froid)",
-    type: ["electric", "ice"],
+    types: ["electric", "ice"],
   },
   "479.04": {
     id: "479.04",
     name: "Motisma (Hélice)",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
   },
   "479.05": {
     id: "479.05",
     name: "Motisma (Tonte)",
-    type: ["electric", "grass"],
+    types: ["electric", "grass"],
   },
   "480": {
     id: "480",
     name: "Créhelf",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "481": {
     id: "481",
     name: "Créfollet",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "482": {
     id: "482",
     name: "Créfadet",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "483": {
     id: "483",
     name: "Dialga",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
   },
   "483.01": {
     id: "483.01",
     name: "Dialga (Originel)",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
   },
   "484": {
     id: "484",
     name: "Palkia",
-    type: ["water", "dragon"],
+    types: ["water", "dragon"],
   },
   "484.01": {
     id: "484.01",
     name: "Palkia (Originel)",
-    type: ["water", "dragon"],
+    types: ["water", "dragon"],
   },
   "485": {
     id: "485",
     name: "Heatran",
-    type: ["fire", "steel"],
+    types: ["fire", "steel"],
   },
   "486": {
     id: "486",
     name: "Regigigas",
-    type: ["normal"],
+    types: ["normal"],
   },
   "487": {
     id: "487",
     name: "Giratina (Alternative)",
-    type: ["ghost", "dragon"],
+    types: ["ghost", "dragon"],
   },
   "487.01": {
     id: "487.01",
     name: "Giratina (Originel)",
-    type: ["ghost", "dragon"],
+    types: ["ghost", "dragon"],
   },
   "488": {
     id: "488",
     name: "Cresselia",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "489": {
     id: "489",
     name: "Phione",
-    type: ["water"],
+    types: ["water"],
   },
   "490": {
     id: "490",
     name: "Manaphy",
-    type: ["water"],
+    types: ["water"],
   },
   "491": {
     id: "491",
     name: "Darkrai",
-    type: ["dark"],
+    types: ["dark"],
   },
   "492": {
     id: "492",
     name: "Shaymin (Terrestre)",
-    type: ["grass"],
+    types: ["grass"],
   },
   "492.01": {
     id: "492.01",
     name: "Shaymin (Céleste)",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
   },
   "493": {
     id: "493",
     name: "Arceus (Normal)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "493.01": {
     id: "493.01",
     name: "Arceus (Feu)",
-    type: ["fire"],
+    types: ["fire"],
   },
   "493.02": {
     id: "493.02",
     name: "Arceus (Eau)",
-    type: ["water"],
+    types: ["water"],
   },
   "493.03": {
     id: "493.03",
     name: "Arceus (Électrik)",
-    type: ["electric"],
+    types: ["electric"],
   },
   "493.04": {
     id: "493.04",
     name: "Arceus (Plante)",
-    type: ["grass"],
+    types: ["grass"],
   },
   "493.05": {
     id: "493.05",
     name: "Arceus (Glace)",
-    type: ["ice"],
+    types: ["ice"],
   },
   "493.06": {
     id: "493.06",
     name: "Arceus (Combat)",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "493.07": {
     id: "493.07",
     name: "Arceus (Poison)",
-    type: ["poison"],
+    types: ["poison"],
   },
   "493.08": {
     id: "493.08",
     name: "Arceus (Sol)",
-    type: ["ground"],
+    types: ["ground"],
   },
   "493.09": {
     id: "493.09",
     name: "Arceus (Vol)",
-    type: ["flying"],
+    types: ["flying"],
   },
   "493.1": {
     id: "493.1",
     name: "Arceus (Psy)",
-    type: ["psychic"],
+    types: ["psychic"],
   },
   "493.11": {
     id: "493.11",
     name: "Arceus (Insecte)",
-    type: ["insect"],
+    types: ["insect"],
   },
   "493.12": {
     id: "493.12",
     name: "Arceus (Roche)",
-    type: ["rock"],
+    types: ["rock"],
   },
   "493.13": {
     id: "493.13",
     name: "Arceus (Spectre)",
-    type: ["ghost"],
+    types: ["ghost"],
   },
   "493.14": {
     id: "493.14",
     name: "Arceus (Dragon)",
-    type: ["dragon"],
+    types: ["dragon"],
   },
   "493.15": {
     id: "493.15",
     name: "Arceus (Ténèbres)",
-    type: ["dark"],
+    types: ["dark"],
   },
   "493.16": {
     id: "493.16",
     name: "Arceus (Acier)",
-    type: ["steel"],
+    types: ["steel"],
   },
   "493.17": {
     id: "493.17",
     name: "Arceus (Fée)",
-    type: ["fairy"],
+    types: ["fairy"],
   },
   "494": {
     id: "494",
     name: "Victini",
-    type: ["psychic", "fire"],
+    types: ["psychic", "fire"],
   },
   "495": {
     id: "495",
     name: "Vipélierre",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -8222,7 +8222,7 @@ export const pokemons: {
   "496": {
     id: "496",
     name: "Lianaja",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -8240,7 +8240,7 @@ export const pokemons: {
   "497": {
     id: "497",
     name: "Majaspic",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -8252,7 +8252,7 @@ export const pokemons: {
   "498": {
     id: "498",
     name: "Gruikui",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -8265,7 +8265,7 @@ export const pokemons: {
   "499": {
     id: "499",
     name: "Grotichon",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -8283,7 +8283,7 @@ export const pokemons: {
   "500": {
     id: "500",
     name: "Roitiflam",
-    type: ["fire", "fighting"],
+    types: ["fire", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -8295,7 +8295,7 @@ export const pokemons: {
   "501": {
     id: "501",
     name: "Moustillon",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -8308,7 +8308,7 @@ export const pokemons: {
   "502": {
     id: "502",
     name: "Mateloutre",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -8332,7 +8332,7 @@ export const pokemons: {
   "503": {
     id: "503",
     name: "Clamiral",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -8344,7 +8344,7 @@ export const pokemons: {
   "503.01": {
     id: "503.01",
     name: "Clamiral de Hisui",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -8356,7 +8356,7 @@ export const pokemons: {
   "504": {
     id: "504",
     name: "Ratentif",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -8369,7 +8369,7 @@ export const pokemons: {
   "505": {
     id: "505",
     name: "Miradar",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -8381,7 +8381,7 @@ export const pokemons: {
   "506": {
     id: "506",
     name: "Ponchiot",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -8394,7 +8394,7 @@ export const pokemons: {
   "507": {
     id: "507",
     name: "Ponchien",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -8412,7 +8412,7 @@ export const pokemons: {
   "508": {
     id: "508",
     name: "Mastouffe",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -8424,7 +8424,7 @@ export const pokemons: {
   "509": {
     id: "509",
     name: "Chacripan",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -8437,7 +8437,7 @@ export const pokemons: {
   "510": {
     id: "510",
     name: "Léopardus",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -8449,7 +8449,7 @@ export const pokemons: {
   "511": {
     id: "511",
     name: "Feuillajou",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -8461,7 +8461,7 @@ export const pokemons: {
   "512": {
     id: "512",
     name: "Feuiloutan",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -8473,7 +8473,7 @@ export const pokemons: {
   "513": {
     id: "513",
     name: "Flamajou",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -8485,7 +8485,7 @@ export const pokemons: {
   "514": {
     id: "514",
     name: "Flamoutan",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -8497,7 +8497,7 @@ export const pokemons: {
   "515": {
     id: "515",
     name: "Flotajou",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -8509,7 +8509,7 @@ export const pokemons: {
   "516": {
     id: "516",
     name: "Flotoutan",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -8521,7 +8521,7 @@ export const pokemons: {
   "517": {
     id: "517",
     name: "Munna",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -8533,7 +8533,7 @@ export const pokemons: {
   "518": {
     id: "518",
     name: "Mushana",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -8545,7 +8545,7 @@ export const pokemons: {
   "519": {
     id: "519",
     name: "Poichigeon",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -8558,7 +8558,7 @@ export const pokemons: {
   "520": {
     id: "520",
     name: "Colombeau",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -8576,7 +8576,7 @@ export const pokemons: {
   "521": {
     id: "521",
     name: "Déflaisan",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     femaleVariation: true,
     evolutions: [
       {
@@ -8589,7 +8589,7 @@ export const pokemons: {
   "522": {
     id: "522",
     name: "Zébibron",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -8602,7 +8602,7 @@ export const pokemons: {
   "523": {
     id: "523",
     name: "Zéblitz",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -8614,7 +8614,7 @@ export const pokemons: {
   "524": {
     id: "524",
     name: "Nodulithe",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -8627,7 +8627,7 @@ export const pokemons: {
   "525": {
     id: "525",
     name: "Géolithe",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -8644,7 +8644,7 @@ export const pokemons: {
   "526": {
     id: "526",
     name: "Gigalithe",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -8656,7 +8656,7 @@ export const pokemons: {
   "527": {
     id: "527",
     name: "Chovsourir",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -8668,7 +8668,7 @@ export const pokemons: {
   "528": {
     id: "528",
     name: "Rhinolove",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -8680,7 +8680,7 @@ export const pokemons: {
   "529": {
     id: "529",
     name: "Rototaupe",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -8693,7 +8693,7 @@ export const pokemons: {
   "530": {
     id: "530",
     name: "Minotaupe",
-    type: ["ground", "steel"],
+    types: ["ground", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -8705,7 +8705,7 @@ export const pokemons: {
   "531": {
     id: "531",
     name: "Nanméouïe",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -8717,7 +8717,7 @@ export const pokemons: {
   "531.01": {
     id: "531.01",
     name: "Méga-Nanméouïe",
-    type: ["normal", "fairy"],
+    types: ["normal", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -8729,7 +8729,7 @@ export const pokemons: {
   "532": {
     id: "532",
     name: "Charpenti",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -8742,7 +8742,7 @@ export const pokemons: {
   "533": {
     id: "533",
     name: "Ouvrifier",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -8759,7 +8759,7 @@ export const pokemons: {
   "534": {
     id: "534",
     name: "Bétochef",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -8771,7 +8771,7 @@ export const pokemons: {
   "535": {
     id: "535",
     name: "Tritonde",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -8784,7 +8784,7 @@ export const pokemons: {
   "536": {
     id: "536",
     name: "Batracné",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -8802,7 +8802,7 @@ export const pokemons: {
   "537": {
     id: "537",
     name: "Crapustule",
-    type: ["water", "ground"],
+    types: ["water", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -8814,17 +8814,17 @@ export const pokemons: {
   "538": {
     id: "538",
     name: "Judokrak",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "539": {
     id: "539",
     name: "Karaclée",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "540": {
     id: "540",
     name: "Larveyette",
-    type: ["insect", "grass"],
+    types: ["insect", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -8837,7 +8837,7 @@ export const pokemons: {
   "541": {
     id: "541",
     name: "Couverdure",
-    type: ["insect", "grass"],
+    types: ["insect", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -8854,7 +8854,7 @@ export const pokemons: {
   "542": {
     id: "542",
     name: "Manternel",
-    type: ["insect", "grass"],
+    types: ["insect", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -8866,7 +8866,7 @@ export const pokemons: {
   "543": {
     id: "543",
     name: "Venipatte",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -8879,7 +8879,7 @@ export const pokemons: {
   "544": {
     id: "544",
     name: "Scobolide",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -8897,7 +8897,7 @@ export const pokemons: {
   "545": {
     id: "545",
     name: "Brutapode",
-    type: ["insect", "poison"],
+    types: ["insect", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -8909,7 +8909,7 @@ export const pokemons: {
   "546": {
     id: "546",
     name: "Doudouvet",
-    type: ["grass", "fairy"],
+    types: ["grass", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -8921,7 +8921,7 @@ export const pokemons: {
   "547": {
     id: "547",
     name: "Farfaduvet",
-    type: ["grass", "fairy"],
+    types: ["grass", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -8933,7 +8933,7 @@ export const pokemons: {
   "548": {
     id: "548",
     name: "Chlorobule",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -8950,7 +8950,7 @@ export const pokemons: {
   "549": {
     id: "549",
     name: "Fragilady",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -8962,7 +8962,7 @@ export const pokemons: {
   "549.01": {
     id: "549.01",
     name: "Fragilady de Hisui",
-    type: ["grass", "fighting"],
+    types: ["grass", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -8974,17 +8974,17 @@ export const pokemons: {
   "550": {
     id: "550",
     name: "Bargantua (Rouge)",
-    type: ["water"],
+    types: ["water"],
   },
   "550.01": {
     id: "550.01",
     name: "Bargantua (Bleu)",
-    type: ["water"],
+    types: ["water"],
   },
   "550.02": {
     id: "550.02",
     name: "Bargantua (Blanc)",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -8997,7 +8997,7 @@ export const pokemons: {
   "551": {
     id: "551",
     name: "Mascaïman",
-    type: ["ground", "dark"],
+    types: ["ground", "dark"],
     evolutions: [
       {
         type: "evolution",
@@ -9010,7 +9010,7 @@ export const pokemons: {
   "552": {
     id: "552",
     name: "Escroco",
-    type: ["ground", "dark"],
+    types: ["ground", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -9028,7 +9028,7 @@ export const pokemons: {
   "553": {
     id: "553",
     name: "Crocorible",
-    type: ["ground", "dark"],
+    types: ["ground", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -9040,7 +9040,7 @@ export const pokemons: {
   "554": {
     id: "554",
     name: "Darumarond",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -9053,7 +9053,7 @@ export const pokemons: {
   "554.01": {
     id: "554.01",
     name: "Darumarond de Galar",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -9065,7 +9065,7 @@ export const pokemons: {
   "555": {
     id: "555",
     name: "Darumacho",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -9077,12 +9077,12 @@ export const pokemons: {
   "555.01": {
     id: "555.01",
     name: "Darumacho (Transe)",
-    type: ["fire", "psychic"],
+    types: ["fire", "psychic"],
   },
   "555.02": {
     id: "555.02",
     name: "Darumacho de Galar",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -9094,17 +9094,17 @@ export const pokemons: {
   "555.03": {
     id: "555.03",
     name: "Darumacho de Galar (Transe)",
-    type: ["ice", "fire"],
+    types: ["ice", "fire"],
   },
   "556": {
     id: "556",
     name: "Maracachi",
-    type: ["grass"],
+    types: ["grass"],
   },
   "557": {
     id: "557",
     name: "Crabicoque",
-    type: ["insect", "rock"],
+    types: ["insect", "rock"],
     evolutions: [
       {
         type: "evolution",
@@ -9117,7 +9117,7 @@ export const pokemons: {
   "558": {
     id: "558",
     name: "Crabaraque",
-    type: ["insect", "rock"],
+    types: ["insect", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -9129,7 +9129,7 @@ export const pokemons: {
   "559": {
     id: "559",
     name: "Baggiguane",
-    type: ["dark", "fighting"],
+    types: ["dark", "fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -9142,7 +9142,7 @@ export const pokemons: {
   "560": {
     id: "560",
     name: "Baggaïd",
-    type: ["dark", "fighting"],
+    types: ["dark", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -9154,12 +9154,12 @@ export const pokemons: {
   "561": {
     id: "561",
     name: "Cryptéro",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
   },
   "562": {
     id: "562",
     name: "Tutafeh",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -9172,7 +9172,7 @@ export const pokemons: {
   "562.01": {
     id: "562.01",
     name: "Tutafeh de Galar",
-    type: ["ground", "ghost"],
+    types: ["ground", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -9185,7 +9185,7 @@ export const pokemons: {
   "563": {
     id: "563",
     name: "Tutankafer",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -9197,7 +9197,7 @@ export const pokemons: {
   "564": {
     id: "564",
     name: "Carapagos",
-    type: ["water", "rock"],
+    types: ["water", "rock"],
     evolutions: [
       {
         type: "evolution",
@@ -9210,7 +9210,7 @@ export const pokemons: {
   "565": {
     id: "565",
     name: "Mégapagos",
-    type: ["water", "rock"],
+    types: ["water", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -9222,7 +9222,7 @@ export const pokemons: {
   "566": {
     id: "566",
     name: "Arkéapti",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -9235,7 +9235,7 @@ export const pokemons: {
   "567": {
     id: "567",
     name: "Aéroptéryx",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -9247,7 +9247,7 @@ export const pokemons: {
   "568": {
     id: "568",
     name: "Miamiasme",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -9260,7 +9260,7 @@ export const pokemons: {
   "569": {
     id: "569",
     name: "Miasmax",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -9277,7 +9277,7 @@ export const pokemons: {
   "569.01": {
     id: "569.01",
     name: "Miasmax Gigamax",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -9289,7 +9289,7 @@ export const pokemons: {
   "570": {
     id: "570",
     name: "Zorua",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -9302,7 +9302,7 @@ export const pokemons: {
   "570.01": {
     id: "570.01",
     name: "Zorua de Hisui",
-    type: ["normal", "ghost"],
+    types: ["normal", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -9315,7 +9315,7 @@ export const pokemons: {
   "571": {
     id: "571",
     name: "Zoroark",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -9327,7 +9327,7 @@ export const pokemons: {
   "571.01": {
     id: "571.01",
     name: "Zoroark de Hisui",
-    type: ["normal", "ghost"],
+    types: ["normal", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -9339,7 +9339,7 @@ export const pokemons: {
   "572": {
     id: "572",
     name: "Chinchidou",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -9351,7 +9351,7 @@ export const pokemons: {
   "573": {
     id: "573",
     name: "Pashmilla",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -9363,7 +9363,7 @@ export const pokemons: {
   "574": {
     id: "574",
     name: "Scrutella",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -9376,7 +9376,7 @@ export const pokemons: {
   "575": {
     id: "575",
     name: "Mesmérella",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -9394,7 +9394,7 @@ export const pokemons: {
   "576": {
     id: "576",
     name: "Sidérella",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -9406,7 +9406,7 @@ export const pokemons: {
   "577": {
     id: "577",
     name: "Nucléos",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -9419,7 +9419,7 @@ export const pokemons: {
   "578": {
     id: "578",
     name: "Méios",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -9437,7 +9437,7 @@ export const pokemons: {
   "579": {
     id: "579",
     name: "Symbios",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -9449,7 +9449,7 @@ export const pokemons: {
   "580": {
     id: "580",
     name: "Couaneton",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -9462,7 +9462,7 @@ export const pokemons: {
   "581": {
     id: "581",
     name: "Lakmécygne",
-    type: ["water", "flying"],
+    types: ["water", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -9474,7 +9474,7 @@ export const pokemons: {
   "582": {
     id: "582",
     name: "Sorbébé",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -9487,7 +9487,7 @@ export const pokemons: {
   "583": {
     id: "583",
     name: "Sorboul",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -9505,7 +9505,7 @@ export const pokemons: {
   "584": {
     id: "584",
     name: "Sourbouboul",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -9517,7 +9517,7 @@ export const pokemons: {
   "585": {
     id: "585",
     name: "Vivaldaim (Printemps)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -9530,7 +9530,7 @@ export const pokemons: {
   "585.01": {
     id: "585.01",
     name: "Vivaldaim (Été)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -9543,7 +9543,7 @@ export const pokemons: {
   "585.02": {
     id: "585.02",
     name: "Vivaldaim (Automne)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -9556,7 +9556,7 @@ export const pokemons: {
   "585.03": {
     id: "585.03",
     name: "Vivaldaim (Hiver)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -9569,7 +9569,7 @@ export const pokemons: {
   "586": {
     id: "586",
     name: "Haydaim (Printemps)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -9581,7 +9581,7 @@ export const pokemons: {
   "586.01": {
     id: "586.01",
     name: "Haydaim (Été)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -9593,7 +9593,7 @@ export const pokemons: {
   "586.02": {
     id: "586.02",
     name: "Haydaim (Automne)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -9605,7 +9605,7 @@ export const pokemons: {
   "586.03": {
     id: "586.03",
     name: "Haydaim (Hiver)",
-    type: ["normal", "grass"],
+    types: ["normal", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -9617,12 +9617,12 @@ export const pokemons: {
   "587": {
     id: "587",
     name: "Emolga",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
   },
   "588": {
     id: "588",
     name: "Carabing",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -9634,7 +9634,7 @@ export const pokemons: {
   "589": {
     id: "589",
     name: "Lançargot",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -9646,7 +9646,7 @@ export const pokemons: {
   "590": {
     id: "590",
     name: "Trompignon",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -9659,7 +9659,7 @@ export const pokemons: {
   "591": {
     id: "591",
     name: "Gaulet",
-    type: ["grass", "poison"],
+    types: ["grass", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -9671,7 +9671,7 @@ export const pokemons: {
   "592": {
     id: "592",
     name: "Viskuse",
-    type: ["water", "ghost"],
+    types: ["water", "ghost"],
     femaleVariation: true,
     evolutions: [
       {
@@ -9685,7 +9685,7 @@ export const pokemons: {
   "593": {
     id: "593",
     name: "Moyade",
-    type: ["water", "ghost"],
+    types: ["water", "ghost"],
     femaleVariation: true,
     evolutions: [
       {
@@ -9698,12 +9698,12 @@ export const pokemons: {
   "594": {
     id: "594",
     name: "Mamanbo",
-    type: ["water"],
+    types: ["water"],
   },
   "595": {
     id: "595",
     name: "Statitik",
-    type: ["insect", "electric"],
+    types: ["insect", "electric"],
     evolutions: [
       {
         type: "evolution",
@@ -9716,7 +9716,7 @@ export const pokemons: {
   "596": {
     id: "596",
     name: "Mygavolt",
-    type: ["insect", "electric"],
+    types: ["insect", "electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -9728,7 +9728,7 @@ export const pokemons: {
   "597": {
     id: "597",
     name: "Grindur",
-    type: ["grass", "steel"],
+    types: ["grass", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -9741,7 +9741,7 @@ export const pokemons: {
   "598": {
     id: "598",
     name: "Noacier",
-    type: ["grass", "steel"],
+    types: ["grass", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -9753,7 +9753,7 @@ export const pokemons: {
   "599": {
     id: "599",
     name: "Tic",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "evolution",
@@ -9766,7 +9766,7 @@ export const pokemons: {
   "600": {
     id: "600",
     name: "Clic",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -9784,7 +9784,7 @@ export const pokemons: {
   "601": {
     id: "601",
     name: "Cliticlic",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -9796,7 +9796,7 @@ export const pokemons: {
   "602": {
     id: "602",
     name: "Anchwatt",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -9809,7 +9809,7 @@ export const pokemons: {
   "603": {
     id: "603",
     name: "Lampéroie",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -9826,7 +9826,7 @@ export const pokemons: {
   "604": {
     id: "604",
     name: "Ohmassacre",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -9838,7 +9838,7 @@ export const pokemons: {
   "605": {
     id: "605",
     name: "Lewsor",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -9851,7 +9851,7 @@ export const pokemons: {
   "606": {
     id: "606",
     name: "Neitram",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -9863,7 +9863,7 @@ export const pokemons: {
   "607": {
     id: "607",
     name: "Funécire",
-    type: ["ghost", "fire"],
+    types: ["ghost", "fire"],
     evolutions: [
       {
         type: "evolution",
@@ -9876,7 +9876,7 @@ export const pokemons: {
   "608": {
     id: "608",
     name: "Mélancolux",
-    type: ["ghost", "fire"],
+    types: ["ghost", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -9893,7 +9893,7 @@ export const pokemons: {
   "609": {
     id: "609",
     name: "Lugulabre",
-    type: ["ghost", "fire"],
+    types: ["ghost", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -9905,7 +9905,7 @@ export const pokemons: {
   "610": {
     id: "610",
     name: "Coupenotte",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -9918,7 +9918,7 @@ export const pokemons: {
   "611": {
     id: "611",
     name: "Incisache",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -9936,7 +9936,7 @@ export const pokemons: {
   "612": {
     id: "612",
     name: "Tranchodon",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -9948,7 +9948,7 @@ export const pokemons: {
   "613": {
     id: "613",
     name: "Polarhume",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -9961,7 +9961,7 @@ export const pokemons: {
   "614": {
     id: "614",
     name: "Polagriffe",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -9973,12 +9973,12 @@ export const pokemons: {
   "615": {
     id: "615",
     name: "Hexagel",
-    type: ["ice"],
+    types: ["ice"],
   },
   "616": {
     id: "616",
     name: "Escargaume",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -9990,7 +9990,7 @@ export const pokemons: {
   "617": {
     id: "617",
     name: "Limaspeed",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -10002,17 +10002,17 @@ export const pokemons: {
   "618": {
     id: "618",
     name: "Limonde",
-    type: ["ground", "electric"],
+    types: ["ground", "electric"],
   },
   "618.01": {
     id: "618.01",
     name: "Limonde de Galar",
-    type: ["ground", "steel"],
+    types: ["ground", "steel"],
   },
   "619": {
     id: "619",
     name: "Kungfouine",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -10025,7 +10025,7 @@ export const pokemons: {
   "620": {
     id: "620",
     name: "Shaofouine",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -10037,12 +10037,12 @@ export const pokemons: {
   "621": {
     id: "621",
     name: "Drakkarmin",
-    type: ["dragon"],
+    types: ["dragon"],
   },
   "622": {
     id: "622",
     name: "Gringolem",
-    type: ["ground", "ghost"],
+    types: ["ground", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -10055,7 +10055,7 @@ export const pokemons: {
   "623": {
     id: "623",
     name: "Golemastoc",
-    type: ["ground", "ghost"],
+    types: ["ground", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -10067,7 +10067,7 @@ export const pokemons: {
   "624": {
     id: "624",
     name: "Scalpion",
-    type: ["dark", "steel"],
+    types: ["dark", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -10080,7 +10080,7 @@ export const pokemons: {
   "625": {
     id: "625",
     name: "Scalproie",
-    type: ["dark", "steel"],
+    types: ["dark", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -10097,12 +10097,12 @@ export const pokemons: {
   "626": {
     id: "626",
     name: "Frison",
-    type: ["normal"],
+    types: ["normal"],
   },
   "627": {
     id: "627",
     name: "Furaiglon",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -10121,7 +10121,7 @@ export const pokemons: {
   "628": {
     id: "628",
     name: "Gueriaigle",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10133,7 +10133,7 @@ export const pokemons: {
   "628.01": {
     id: "628.01",
     name: "Gueriaigle de Hisui",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10145,7 +10145,7 @@ export const pokemons: {
   "629": {
     id: "629",
     name: "Vostourno",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -10158,7 +10158,7 @@ export const pokemons: {
   "630": {
     id: "630",
     name: "Vaututrice",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10170,17 +10170,17 @@ export const pokemons: {
   "631": {
     id: "631",
     name: "Aflamanoir",
-    type: ["fire"],
+    types: ["fire"],
   },
   "632": {
     id: "632",
     name: "Fermite",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
   },
   "633": {
     id: "633",
     name: "Solochi",
-    type: ["dark", "dragon"],
+    types: ["dark", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -10193,7 +10193,7 @@ export const pokemons: {
   "634": {
     id: "634",
     name: "Diamat",
-    type: ["dark", "dragon"],
+    types: ["dark", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -10211,7 +10211,7 @@ export const pokemons: {
   "635": {
     id: "635",
     name: "Trioxhydre",
-    type: ["dark", "dragon"],
+    types: ["dark", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -10223,7 +10223,7 @@ export const pokemons: {
   "636": {
     id: "636",
     name: "Pyronille",
-    type: ["insect", "fire"],
+    types: ["insect", "fire"],
     evolutions: [
       {
         type: "evolution",
@@ -10236,7 +10236,7 @@ export const pokemons: {
   "637": {
     id: "637",
     name: "Pyrax",
-    type: ["insect", "fire"],
+    types: ["insect", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -10248,102 +10248,102 @@ export const pokemons: {
   "638": {
     id: "638",
     name: "Cobaltium",
-    type: ["steel", "fighting"],
+    types: ["steel", "fighting"],
   },
   "639": {
     id: "639",
     name: "Terrakium",
-    type: ["rock", "fighting"],
+    types: ["rock", "fighting"],
   },
   "640": {
     id: "640",
     name: "Viridium",
-    type: ["grass", "fighting"],
+    types: ["grass", "fighting"],
   },
   "641": {
     id: "641",
     name: "Boréas",
-    type: ["flying"],
+    types: ["flying"],
   },
   "641.01": {
     id: "641.01",
     name: "Boréas (Totemique)",
-    type: ["flying"],
+    types: ["flying"],
   },
   "642": {
     id: "642",
     name: "Fulguris",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
   },
   "642.01": {
     id: "642.01",
     name: "Fulguris (Totemique)",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
   },
   "643": {
     id: "643",
     name: "Reshiram",
-    type: ["dragon", "fire"],
+    types: ["dragon", "fire"],
   },
   "644": {
     id: "644",
     name: "Zekrom",
-    type: ["dragon", "electric"],
+    types: ["dragon", "electric"],
   },
   "645": {
     id: "645",
     name: "Démétéros",
-    type: ["ground", "flying"],
+    types: ["ground", "flying"],
   },
   "645.01": {
     id: "645.01",
     name: "Démétéros (Totemique)",
-    type: ["ground", "flying"],
+    types: ["ground", "flying"],
   },
   "646": {
     id: "646",
     name: "Kyurem",
-    type: ["dragon", "ice"],
+    types: ["dragon", "ice"],
   },
   "646.01": {
     id: "646.01",
     name: "Kyurem (Blanc)",
-    type: ["dragon", "ice"],
+    types: ["dragon", "ice"],
   },
   "646.02": {
     id: "646.02",
     name: "Kyurem (Noir)",
-    type: ["dragon", "ice"],
+    types: ["dragon", "ice"],
   },
   "647": {
     id: "647",
     name: "Keldeo",
-    type: ["water", "fighting"],
+    types: ["water", "fighting"],
   },
   "647.01": {
     id: "647.01",
     name: "Keldeo (Décidé)",
-    type: ["water", "fighting"],
+    types: ["water", "fighting"],
   },
   "648": {
     id: "648",
     name: "Meloetta (Chant)",
-    type: ["normal", "psychic"],
+    types: ["normal", "psychic"],
   },
   "648.01": {
     id: "648.01",
     name: "Meloetta (Danse)",
-    type: ["normal", "fighting"],
+    types: ["normal", "fighting"],
   },
   "649": {
     id: "649",
     name: "Genesect",
-    type: ["insect", "steel"],
+    types: ["insect", "steel"],
   },
   "650": {
     id: "650",
     name: "Marisson",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -10356,7 +10356,7 @@ export const pokemons: {
   "651": {
     id: "651",
     name: "Boguérisse",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -10374,7 +10374,7 @@ export const pokemons: {
   "652": {
     id: "652",
     name: "Blindépique",
-    type: ["grass", "fighting"],
+    types: ["grass", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -10386,7 +10386,7 @@ export const pokemons: {
   "653": {
     id: "653",
     name: "Feunnec",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -10399,7 +10399,7 @@ export const pokemons: {
   "654": {
     id: "654",
     name: "Roussil",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -10417,7 +10417,7 @@ export const pokemons: {
   "655": {
     id: "655",
     name: "Goupelin",
-    type: ["fire", "psychic"],
+    types: ["fire", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -10429,7 +10429,7 @@ export const pokemons: {
   "656": {
     id: "656",
     name: "Grenousse",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -10442,7 +10442,7 @@ export const pokemons: {
   "657": {
     id: "657",
     name: "Croâporal",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -10460,7 +10460,7 @@ export const pokemons: {
   "658": {
     id: "658",
     name: "Amphinobi",
-    type: ["water", "dark"],
+    types: ["water", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -10472,7 +10472,7 @@ export const pokemons: {
   "659": {
     id: "659",
     name: "Sapereau",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -10485,7 +10485,7 @@ export const pokemons: {
   "660": {
     id: "660",
     name: "Excavarenne",
-    type: ["normal", "ground"],
+    types: ["normal", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -10497,7 +10497,7 @@ export const pokemons: {
   "661": {
     id: "661",
     name: "Passerouge",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -10510,7 +10510,7 @@ export const pokemons: {
   "662": {
     id: "662",
     name: "Braisillon",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10528,7 +10528,7 @@ export const pokemons: {
   "663": {
     id: "663",
     name: "Flambusard",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10540,7 +10540,7 @@ export const pokemons: {
   "664": {
     id: "664",
     name: "Lépidonille",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -10553,7 +10553,7 @@ export const pokemons: {
   "665": {
     id: "665",
     name: "Pérégrain",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -10685,7 +10685,7 @@ export const pokemons: {
   "666": {
     id: "666",
     name: "Prismillon (Floraison)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10697,7 +10697,7 @@ export const pokemons: {
   "666.01": {
     id: "666.01",
     name: "Prismillon (Blizzard)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10709,7 +10709,7 @@ export const pokemons: {
   "666.02": {
     id: "666.02",
     name: "Prismillon (Banquise)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10721,7 +10721,7 @@ export const pokemons: {
   "666.03": {
     id: "666.03",
     name: "Prismillon (Glace)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10733,7 +10733,7 @@ export const pokemons: {
   "666.04": {
     id: "666.04",
     name: "Prismillon (Continent)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10745,7 +10745,7 @@ export const pokemons: {
   "666.05": {
     id: "666.05",
     name: "Prismillon (Verdure)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10757,7 +10757,7 @@ export const pokemons: {
   "666.06": {
     id: "666.06",
     name: "Prismillon (Monarchie)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10769,7 +10769,7 @@ export const pokemons: {
   "666.07": {
     id: "666.07",
     name: "Prismillon (Métropole)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10781,7 +10781,7 @@ export const pokemons: {
   "666.08": {
     id: "666.08",
     name: "Prismillon (Rivage)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10793,7 +10793,7 @@ export const pokemons: {
   "666.09": {
     id: "666.09",
     name: "Prismillon (Archipel)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10805,7 +10805,7 @@ export const pokemons: {
   "666.1": {
     id: "666.1",
     name: "Prismillon (Sécheresse)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10817,7 +10817,7 @@ export const pokemons: {
   "666.11": {
     id: "666.11",
     name: "Prismillon (Sable)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10829,7 +10829,7 @@ export const pokemons: {
   "666.12": {
     id: "666.12",
     name: "Prismillon (Delta)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10841,7 +10841,7 @@ export const pokemons: {
   "666.13": {
     id: "666.13",
     name: "Prismillon (Cyclone)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10853,7 +10853,7 @@ export const pokemons: {
   "666.14": {
     id: "666.14",
     name: "Prismillon (Mangrove)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10865,7 +10865,7 @@ export const pokemons: {
   "666.15": {
     id: "666.15",
     name: "Prismillon (Zénith)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10877,7 +10877,7 @@ export const pokemons: {
   "666.16": {
     id: "666.16",
     name: "Prismillon (Soleil Levant)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10889,7 +10889,7 @@ export const pokemons: {
   "666.17": {
     id: "666.17",
     name: "Prismillon (Jungle)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10901,7 +10901,7 @@ export const pokemons: {
   "666.18": {
     id: "666.18",
     name: "Prismillon (Poké Ball)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10913,7 +10913,7 @@ export const pokemons: {
   "666.19": {
     id: "666.19",
     name: "Prismillon (Fantaisie)",
-    type: ["insect", "flying"],
+    types: ["insect", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -10925,7 +10925,7 @@ export const pokemons: {
   "667": {
     id: "667",
     name: "Hélionceau",
-    type: ["fire", "normal"],
+    types: ["fire", "normal"],
     evolutions: [
       {
         type: "evolution",
@@ -10938,7 +10938,7 @@ export const pokemons: {
   "668": {
     id: "668",
     name: "Némélios",
-    type: ["fire", "normal"],
+    types: ["fire", "normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -10951,7 +10951,7 @@ export const pokemons: {
   "669": {
     id: "669",
     name: "Flabébé (Rouge)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -10964,7 +10964,7 @@ export const pokemons: {
   "669.01": {
     id: "669.01",
     name: "Flabébé (Jaune)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -10977,7 +10977,7 @@ export const pokemons: {
   "669.02": {
     id: "669.02",
     name: "Flabébé (Orange)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -10990,7 +10990,7 @@ export const pokemons: {
   "669.03": {
     id: "669.03",
     name: "Flabébé (Bleu)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -11003,7 +11003,7 @@ export const pokemons: {
   "669.04": {
     id: "669.04",
     name: "Flabébé (Blanc)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -11016,7 +11016,7 @@ export const pokemons: {
   "670": {
     id: "670",
     name: "Floette (Rouge)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11033,7 +11033,7 @@ export const pokemons: {
   "670.01": {
     id: "670.01",
     name: "Floette (Jaune)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11050,7 +11050,7 @@ export const pokemons: {
   "670.02": {
     id: "670.02",
     name: "Floette (Orange)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11067,7 +11067,7 @@ export const pokemons: {
   "670.03": {
     id: "670.03",
     name: "Floette (Bleu)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11084,7 +11084,7 @@ export const pokemons: {
   "670.04": {
     id: "670.04",
     name: "Floette (Blanc)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11101,7 +11101,7 @@ export const pokemons: {
   "671": {
     id: "671",
     name: "Florges (Rouge)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11113,7 +11113,7 @@ export const pokemons: {
   "671.01": {
     id: "671.01",
     name: "Florges (Jaune)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11125,7 +11125,7 @@ export const pokemons: {
   "671.02": {
     id: "671.02",
     name: "Florges (Orange)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11137,7 +11137,7 @@ export const pokemons: {
   "671.03": {
     id: "671.03",
     name: "Florges (Bleu)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11149,7 +11149,7 @@ export const pokemons: {
   "671.04": {
     id: "671.04",
     name: "Florges (Blanc)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11161,7 +11161,7 @@ export const pokemons: {
   "672": {
     id: "672",
     name: "Cabriolaine",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -11174,7 +11174,7 @@ export const pokemons: {
   "673": {
     id: "673",
     name: "Chevroum",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -11186,7 +11186,7 @@ export const pokemons: {
   "674": {
     id: "674",
     name: "Pandespiègle",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -11199,7 +11199,7 @@ export const pokemons: {
   "675": {
     id: "675",
     name: "Pandarbare",
-    type: ["fighting", "dark"],
+    types: ["fighting", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -11211,57 +11211,57 @@ export const pokemons: {
   "676": {
     id: "676",
     name: "Couafarel",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.01": {
     id: "676.01",
     name: "Couafarel (Coeur)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.02": {
     id: "676.02",
     name: "Couafarel (Étoile)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.03": {
     id: "676.03",
     name: "Couafarel (Diamant)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.04": {
     id: "676.04",
     name: "Couafarel (Demoiselle)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.05": {
     id: "676.05",
     name: "Couafarel (Madame)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.06": {
     id: "676.06",
     name: "Couafarel (Monsieur)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.07": {
     id: "676.07",
     name: "Couafarel (Reine)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.08": {
     id: "676.08",
     name: "Couafarel (Kabuki)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "676.09": {
     id: "676.09",
     name: "Couafarel (Pharaon)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "677": {
     id: "677",
     name: "Psystigri",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -11274,7 +11274,7 @@ export const pokemons: {
   "678": {
     id: "678",
     name: "Mistigrix",
-    type: ["psychic"],
+    types: ["psychic"],
     femaleVariation: true,
     evolutions: [
       {
@@ -11287,7 +11287,7 @@ export const pokemons: {
   "679": {
     id: "679",
     name: "Monorpale",
-    type: ["steel", "ghost"],
+    types: ["steel", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -11300,7 +11300,7 @@ export const pokemons: {
   "680": {
     id: "680",
     name: "Dimoclès",
-    type: ["steel", "ghost"],
+    types: ["steel", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -11322,7 +11322,7 @@ export const pokemons: {
   "681": {
     id: "681",
     name: "Exagide (Parade)",
-    type: ["steel", "ghost"],
+    types: ["steel", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -11334,7 +11334,7 @@ export const pokemons: {
   "681.01": {
     id: "681.01",
     name: "Exagide (Assaut)",
-    type: ["steel", "ghost"],
+    types: ["steel", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -11346,7 +11346,7 @@ export const pokemons: {
   "682": {
     id: "682",
     name: "Fluvetin",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -11358,7 +11358,7 @@ export const pokemons: {
   "683": {
     id: "683",
     name: "Cocotine",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11370,7 +11370,7 @@ export const pokemons: {
   "684": {
     id: "684",
     name: "Sucroquin",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -11382,7 +11382,7 @@ export const pokemons: {
   "685": {
     id: "685",
     name: "Cupcanaille",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11394,7 +11394,7 @@ export const pokemons: {
   "686": {
     id: "686",
     name: "Sepiatop",
-    type: ["dark", "psychic"],
+    types: ["dark", "psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -11407,7 +11407,7 @@ export const pokemons: {
   "687": {
     id: "687",
     name: "Sepiatroce",
-    type: ["dark", "psychic"],
+    types: ["dark", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -11419,7 +11419,7 @@ export const pokemons: {
   "688": {
     id: "688",
     name: "Opermine",
-    type: ["rock", "water"],
+    types: ["rock", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -11432,7 +11432,7 @@ export const pokemons: {
   "689": {
     id: "689",
     name: "Golgopathe",
-    type: ["rock", "water"],
+    types: ["rock", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -11444,7 +11444,7 @@ export const pokemons: {
   "690": {
     id: "690",
     name: "Venalgue",
-    type: ["poison", "water"],
+    types: ["poison", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -11457,7 +11457,7 @@ export const pokemons: {
   "691": {
     id: "691",
     name: "Kravarech",
-    type: ["poison", "dragon"],
+    types: ["poison", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11469,7 +11469,7 @@ export const pokemons: {
   "692": {
     id: "692",
     name: "Flingouste",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -11482,7 +11482,7 @@ export const pokemons: {
   "693": {
     id: "693",
     name: "Gamblast",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -11494,7 +11494,7 @@ export const pokemons: {
   "694": {
     id: "694",
     name: "Galvaran",
-    type: ["electric", "normal"],
+    types: ["electric", "normal"],
     evolutions: [
       {
         type: "evolution",
@@ -11506,7 +11506,7 @@ export const pokemons: {
   "695": {
     id: "695",
     name: "Iguolta",
-    type: ["electric", "normal"],
+    types: ["electric", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -11518,7 +11518,7 @@ export const pokemons: {
   "696": {
     id: "696",
     name: "Ptyranidur",
-    type: ["rock", "dragon"],
+    types: ["rock", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -11531,7 +11531,7 @@ export const pokemons: {
   "697": {
     id: "697",
     name: "Rexilius",
-    type: ["rock", "dragon"],
+    types: ["rock", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11543,7 +11543,7 @@ export const pokemons: {
   "698": {
     id: "698",
     name: "Amagara",
-    type: ["rock", "ice"],
+    types: ["rock", "ice"],
     evolutions: [
       {
         type: "evolution",
@@ -11556,7 +11556,7 @@ export const pokemons: {
   "699": {
     id: "699",
     name: "Dragmara",
-    type: ["rock", "ice"],
+    types: ["rock", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -11568,7 +11568,7 @@ export const pokemons: {
   "700": {
     id: "700",
     name: "Nymphali",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11580,22 +11580,22 @@ export const pokemons: {
   "701": {
     id: "701",
     name: "Brutalibré",
-    type: ["fighting", "flying"],
+    types: ["fighting", "flying"],
   },
   "702": {
     id: "702",
     name: "Dedenne",
-    type: ["electric", "fairy"],
+    types: ["electric", "fairy"],
   },
   "703": {
     id: "703",
     name: "Strassie",
-    type: ["rock", "fairy"],
+    types: ["rock", "fairy"],
   },
   "704": {
     id: "704",
     name: "Mucuscule",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -11614,7 +11614,7 @@ export const pokemons: {
   "705": {
     id: "705",
     name: "Colimucus",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11632,7 +11632,7 @@ export const pokemons: {
   "705.01": {
     id: "705.01",
     name: "Colimucus de Hisui",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11650,7 +11650,7 @@ export const pokemons: {
   "706": {
     id: "706",
     name: "Muplodocus",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11662,7 +11662,7 @@ export const pokemons: {
   "706.01": {
     id: "706.01",
     name: "Muplodocus de Hisui",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11674,12 +11674,12 @@ export const pokemons: {
   "707": {
     id: "707",
     name: "Trousselin",
-    type: ["steel", "fairy"],
+    types: ["steel", "fairy"],
   },
   "708": {
     id: "708",
     name: "Brocélôme",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -11691,7 +11691,7 @@ export const pokemons: {
   "709": {
     id: "709",
     name: "Desséliandre",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -11703,7 +11703,7 @@ export const pokemons: {
   "710": {
     id: "710",
     name: "Pitrouille (Normal)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -11715,7 +11715,7 @@ export const pokemons: {
   "710.01": {
     id: "710.01",
     name: "Pitrouille (Mini)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -11727,7 +11727,7 @@ export const pokemons: {
   "710.02": {
     id: "710.02",
     name: "Pitrouille (Maxi)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -11739,7 +11739,7 @@ export const pokemons: {
   "710.03": {
     id: "710.03",
     name: "Pitrouille (Ultra)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -11751,7 +11751,7 @@ export const pokemons: {
   "711": {
     id: "711",
     name: "Banshitrouye (Normal)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -11763,7 +11763,7 @@ export const pokemons: {
   "711.01": {
     id: "711.01",
     name: "Banshitrouye (Mini)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -11775,7 +11775,7 @@ export const pokemons: {
   "711.02": {
     id: "711.02",
     name: "Banshitrouye (Maxi)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -11787,7 +11787,7 @@ export const pokemons: {
   "711.03": {
     id: "711.03",
     name: "Banshitrouye (Ultra)",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -11799,7 +11799,7 @@ export const pokemons: {
   "712": {
     id: "712",
     name: "Grelaçon",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -11818,7 +11818,7 @@ export const pokemons: {
   "713": {
     id: "713",
     name: "Séracrawl",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -11830,7 +11830,7 @@ export const pokemons: {
   "713.01": {
     id: "713.01",
     name: "Séracrawl de Hisui",
-    type: ["ice", "rock"],
+    types: ["ice", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -11842,7 +11842,7 @@ export const pokemons: {
   "714": {
     id: "714",
     name: "Sonistrelle",
-    type: ["flying", "dragon"],
+    types: ["flying", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -11855,7 +11855,7 @@ export const pokemons: {
   "715": {
     id: "715",
     name: "Bruyverne",
-    type: ["flying", "dragon"],
+    types: ["flying", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -11867,22 +11867,22 @@ export const pokemons: {
   "716": {
     id: "716",
     name: "Xerneas",
-    type: ["fairy"],
+    types: ["fairy"],
   },
   "717": {
     id: "717",
     name: "Yveltal",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
   },
   "718": {
     id: "718",
     name: "Zygarde",
-    type: ["dragon", "ground"],
+    types: ["dragon", "ground"],
   },
   "719": {
     id: "719",
     name: "Diancie",
-    type: ["rock", "fairy"],
+    types: ["rock", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -11894,7 +11894,7 @@ export const pokemons: {
   "719.01": {
     id: "719.01",
     name: "Méga-Diancie",
-    type: ["rock", "fairy"],
+    types: ["rock", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -11906,22 +11906,22 @@ export const pokemons: {
   "720": {
     id: "720",
     name: "Hoopa",
-    type: ["psychic", "ghost"],
+    types: ["psychic", "ghost"],
   },
   "720.01": {
     id: "720.01",
     name: "Hoopa (Dechaine)",
-    type: ["psychic", "dark"],
+    types: ["psychic", "dark"],
   },
   "721": {
     id: "721",
     name: "Volcanion",
-    type: ["fire", "water"],
+    types: ["fire", "water"],
   },
   "722": {
     id: "722",
     name: "Brindibou",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -11934,7 +11934,7 @@ export const pokemons: {
   "723": {
     id: "723",
     name: "Efflèche",
-    type: ["grass", "flying"],
+    types: ["grass", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -11958,7 +11958,7 @@ export const pokemons: {
   "724": {
     id: "724",
     name: "Archéduc",
-    type: ["grass", "ghost"],
+    types: ["grass", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -11970,7 +11970,7 @@ export const pokemons: {
   "724.01": {
     id: "724.01",
     name: "Archéduc de Hisui",
-    type: ["grass", "fighting"],
+    types: ["grass", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -11982,7 +11982,7 @@ export const pokemons: {
   "725": {
     id: "725",
     name: "Flamiaou",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -11995,7 +11995,7 @@ export const pokemons: {
   "726": {
     id: "726",
     name: "Matoufeu",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -12013,7 +12013,7 @@ export const pokemons: {
   "727": {
     id: "727",
     name: "Félinferno",
-    type: ["fire", "dark"],
+    types: ["fire", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -12025,7 +12025,7 @@ export const pokemons: {
   "728": {
     id: "728",
     name: "Otaquin",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -12038,7 +12038,7 @@ export const pokemons: {
   "729": {
     id: "729",
     name: "Otarlette",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -12056,7 +12056,7 @@ export const pokemons: {
   "730": {
     id: "730",
     name: "Oratoria",
-    type: ["water", "fairy"],
+    types: ["water", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -12068,7 +12068,7 @@ export const pokemons: {
   "731": {
     id: "731",
     name: "Picassaut",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -12081,7 +12081,7 @@ export const pokemons: {
   "732": {
     id: "732",
     name: "Piclairon",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -12099,7 +12099,7 @@ export const pokemons: {
   "733": {
     id: "733",
     name: "Bazoucan",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -12111,7 +12111,7 @@ export const pokemons: {
   "734": {
     id: "734",
     name: "Manglouton",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -12124,7 +12124,7 @@ export const pokemons: {
   "735": {
     id: "735",
     name: "Argouste",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -12136,7 +12136,7 @@ export const pokemons: {
   "736": {
     id: "736",
     name: "Larvibule",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -12149,7 +12149,7 @@ export const pokemons: {
   "737": {
     id: "737",
     name: "Chrysapile",
-    type: ["insect", "electric"],
+    types: ["insect", "electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -12166,7 +12166,7 @@ export const pokemons: {
   "738": {
     id: "738",
     name: "Lucanon",
-    type: ["insect", "electric"],
+    types: ["insect", "electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -12178,7 +12178,7 @@ export const pokemons: {
   "739": {
     id: "739",
     name: "Crabagarre",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -12191,7 +12191,7 @@ export const pokemons: {
   "740": {
     id: "740",
     name: "Crabominable",
-    type: ["fighting", "ice"],
+    types: ["fighting", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -12203,27 +12203,27 @@ export const pokemons: {
   "741": {
     id: "741",
     name: "Plumeline (Flamenco)",
-    type: ["fire", "flying"],
+    types: ["fire", "flying"],
   },
   "741.01": {
     id: "741.01",
     name: "Plumeline (Pom-Pom)",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
   },
   "741.02": {
     id: "741.02",
     name: "Plumeline (Hula)",
-    type: ["psychic", "flying"],
+    types: ["psychic", "flying"],
   },
   "741.03": {
     id: "741.03",
     name: "Plumeline (Buyo)",
-    type: ["ghost", "flying"],
+    types: ["ghost", "flying"],
   },
   "742": {
     id: "742",
     name: "Bombydou",
-    type: ["insect", "fairy"],
+    types: ["insect", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -12236,7 +12236,7 @@ export const pokemons: {
   "743": {
     id: "743",
     name: "Rubombelle",
-    type: ["insect", "fairy"],
+    types: ["insect", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -12248,7 +12248,7 @@ export const pokemons: {
   "744": {
     id: "744",
     name: "Rocabot",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -12273,7 +12273,7 @@ export const pokemons: {
   "745": {
     id: "745",
     name: "Lougaroc (Diurne)",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -12285,7 +12285,7 @@ export const pokemons: {
   "745.01": {
     id: "745.01",
     name: "Lougaroc (Nocturne)",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -12297,7 +12297,7 @@ export const pokemons: {
   "745.02": {
     id: "745.02",
     name: "Lougaroc (Crépusculaire)",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -12309,17 +12309,17 @@ export const pokemons: {
   "746": {
     id: "746",
     name: "Froussardine (Solitaire)",
-    type: ["water"],
+    types: ["water"],
   },
   "746.01": {
     id: "746.01",
     name: "Froussardine (Banc)",
-    type: ["water"],
+    types: ["water"],
   },
   "747": {
     id: "747",
     name: "Vorastérie",
-    type: ["poison", "water"],
+    types: ["poison", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -12332,7 +12332,7 @@ export const pokemons: {
   "748": {
     id: "748",
     name: "Prédastérie",
-    type: ["poison", "water"],
+    types: ["poison", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -12344,7 +12344,7 @@ export const pokemons: {
   "749": {
     id: "749",
     name: "Tiboudet",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -12357,7 +12357,7 @@ export const pokemons: {
   "750": {
     id: "750",
     name: "Bourrinos",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -12369,7 +12369,7 @@ export const pokemons: {
   "751": {
     id: "751",
     name: "Araqua",
-    type: ["water", "insect"],
+    types: ["water", "insect"],
     evolutions: [
       {
         type: "evolution",
@@ -12382,7 +12382,7 @@ export const pokemons: {
   "752": {
     id: "752",
     name: "Tarenbulle",
-    type: ["water", "insect"],
+    types: ["water", "insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -12394,7 +12394,7 @@ export const pokemons: {
   "753": {
     id: "753",
     name: "Mimantis",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -12407,7 +12407,7 @@ export const pokemons: {
   "754": {
     id: "754",
     name: "Floramantis",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -12419,7 +12419,7 @@ export const pokemons: {
   "755": {
     id: "755",
     name: "Spododo",
-    type: ["grass", "fairy"],
+    types: ["grass", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -12432,7 +12432,7 @@ export const pokemons: {
   "756": {
     id: "756",
     name: "Lampignon",
-    type: ["grass", "fairy"],
+    types: ["grass", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -12444,7 +12444,7 @@ export const pokemons: {
   "757": {
     id: "757",
     name: "Tritox",
-    type: ["poison", "fire"],
+    types: ["poison", "fire"],
     evolutions: [
       {
         type: "evolution",
@@ -12457,7 +12457,7 @@ export const pokemons: {
   "758": {
     id: "758",
     name: "Malamandre",
-    type: ["poison", "fire"],
+    types: ["poison", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -12469,7 +12469,7 @@ export const pokemons: {
   "759": {
     id: "759",
     name: "Nounourson",
-    type: ["normal", "fighting"],
+    types: ["normal", "fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -12482,7 +12482,7 @@ export const pokemons: {
   "760": {
     id: "760",
     name: "Chelours",
-    type: ["normal", "fighting"],
+    types: ["normal", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -12494,7 +12494,7 @@ export const pokemons: {
   "761": {
     id: "761",
     name: "Croquine",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -12507,7 +12507,7 @@ export const pokemons: {
   "762": {
     id: "762",
     name: "Candine",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -12525,7 +12525,7 @@ export const pokemons: {
   "763": {
     id: "763",
     name: "Sucreine",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -12537,22 +12537,22 @@ export const pokemons: {
   "764": {
     id: "764",
     name: "Guérilande",
-    type: ["fairy"],
+    types: ["fairy"],
   },
   "765": {
     id: "765",
     name: "Gouroutan",
-    type: ["normal", "psychic"],
+    types: ["normal", "psychic"],
   },
   "766": {
     id: "766",
     name: "Quatermac",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "767": {
     id: "767",
     name: "Sovkipou",
-    type: ["insect", "water"],
+    types: ["insect", "water"],
     evolutions: [
       {
         type: "evolution",
@@ -12565,7 +12565,7 @@ export const pokemons: {
   "768": {
     id: "768",
     name: "Sarmuraï",
-    type: ["insect", "water"],
+    types: ["insect", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -12577,7 +12577,7 @@ export const pokemons: {
   "769": {
     id: "769",
     name: "Bacabouh",
-    type: ["ghost", "ground"],
+    types: ["ghost", "ground"],
     evolutions: [
       {
         type: "evolution",
@@ -12590,7 +12590,7 @@ export const pokemons: {
   "770": {
     id: "770",
     name: "Trépassable",
-    type: ["ghost", "ground"],
+    types: ["ghost", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -12602,12 +12602,12 @@ export const pokemons: {
   "771": {
     id: "771",
     name: "Concombaffe",
-    type: ["water"],
+    types: ["water"],
   },
   "772": {
     id: "772",
     name: "Type: 0",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -12704,7 +12704,7 @@ export const pokemons: {
   "773": {
     id: "773",
     name: "Silvallié (Normal)",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -12716,7 +12716,7 @@ export const pokemons: {
   "773.01": {
     id: "773.01",
     name: "Silvallié (Feu)",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -12728,7 +12728,7 @@ export const pokemons: {
   "773.02": {
     id: "773.02",
     name: "Silvallié (Eau)",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -12740,7 +12740,7 @@ export const pokemons: {
   "773.03": {
     id: "773.03",
     name: "Silvallié (Électrik)",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -12752,7 +12752,7 @@ export const pokemons: {
   "773.04": {
     id: "773.04",
     name: "Silvallié (Plante)",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -12764,7 +12764,7 @@ export const pokemons: {
   "773.05": {
     id: "773.05",
     name: "Silvallié (Glace)",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -12776,7 +12776,7 @@ export const pokemons: {
   "773.06": {
     id: "773.06",
     name: "Silvallié (Combat)",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -12788,7 +12788,7 @@ export const pokemons: {
   "773.07": {
     id: "773.07",
     name: "Silvallié (Poison)",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -12800,7 +12800,7 @@ export const pokemons: {
   "773.08": {
     id: "773.08",
     name: "Silvallié (Sol)",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -12812,7 +12812,7 @@ export const pokemons: {
   "773.09": {
     id: "773.09",
     name: "Silvallié (Vol)",
-    type: ["flying"],
+    types: ["flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -12824,7 +12824,7 @@ export const pokemons: {
   "773.1": {
     id: "773.1",
     name: "Silvallié (Psy)",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -12836,7 +12836,7 @@ export const pokemons: {
   "773.11": {
     id: "773.11",
     name: "Silvallié (Insecte)",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -12848,7 +12848,7 @@ export const pokemons: {
   "773.12": {
     id: "773.12",
     name: "Silvallié (Roche)",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -12860,7 +12860,7 @@ export const pokemons: {
   "773.13": {
     id: "773.13",
     name: "Silvallié (Spectre)",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -12872,7 +12872,7 @@ export const pokemons: {
   "773.14": {
     id: "773.14",
     name: "Silvallié (Dragon)",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -12884,7 +12884,7 @@ export const pokemons: {
   "773.15": {
     id: "773.15",
     name: "Silvallié (Ténèbres)",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -12896,7 +12896,7 @@ export const pokemons: {
   "773.16": {
     id: "773.16",
     name: "Silvallié (Acier)",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -12908,7 +12908,7 @@ export const pokemons: {
   "773.17": {
     id: "773.17",
     name: "Silvallié (Fée)",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -12920,82 +12920,82 @@ export const pokemons: {
   "774": {
     id: "774",
     name: "Météno (Météore)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.01": {
     id: "774.01",
     name: "Météno (Rouge)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.02": {
     id: "774.02",
     name: "Météno (Orange)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.03": {
     id: "774.03",
     name: "Météno (Jaune)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.04": {
     id: "774.04",
     name: "Météno (Vert)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.05": {
     id: "774.05",
     name: "Météno (Bleu)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.06": {
     id: "774.06",
     name: "Météno (Indigo)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "774.07": {
     id: "774.07",
     name: "Météno (Violet)",
-    type: ["rock", "flying"],
+    types: ["rock", "flying"],
   },
   "775": {
     id: "775",
     name: "Dodoala",
-    type: ["normal"],
+    types: ["normal"],
   },
   "776": {
     id: "776",
     name: "Boumata",
-    type: ["fire", "dragon"],
+    types: ["fire", "dragon"],
   },
   "777": {
     id: "777",
     name: "Togedemaru",
-    type: ["electric", "steel"],
+    types: ["electric", "steel"],
   },
   "778": {
     id: "778",
     name: "Mimiqui",
-    type: ["ghost", "fairy"],
+    types: ["ghost", "fairy"],
   },
   "779": {
     id: "779",
     name: "Denticrisse",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
   },
   "780": {
     id: "780",
     name: "Draïeul",
-    type: ["normal", "dragon"],
+    types: ["normal", "dragon"],
   },
   "781": {
     id: "781",
     name: "Sinistrail",
-    type: ["ghost", "grass"],
+    types: ["ghost", "grass"],
   },
   "782": {
     id: "782",
     name: "Bébécaille",
-    type: ["dragon"],
+    types: ["dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -13008,7 +13008,7 @@ export const pokemons: {
   "783": {
     id: "783",
     name: "Écaïd",
-    type: ["dragon", "fighting"],
+    types: ["dragon", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -13026,7 +13026,7 @@ export const pokemons: {
   "784": {
     id: "784",
     name: "Ékaïser",
-    type: ["dragon", "fighting"],
+    types: ["dragon", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -13038,27 +13038,27 @@ export const pokemons: {
   "785": {
     id: "785",
     name: "Tokorico",
-    type: ["electric", "fairy"],
+    types: ["electric", "fairy"],
   },
   "786": {
     id: "786",
     name: "Tokopiyon",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
   },
   "787": {
     id: "787",
     name: "Tokotoro",
-    type: ["grass", "fairy"],
+    types: ["grass", "fairy"],
   },
   "788": {
     id: "788",
     name: "Tokopisco",
-    type: ["water", "fairy"],
+    types: ["water", "fairy"],
   },
   "789": {
     id: "789",
     name: "Cosmog",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -13071,7 +13071,7 @@ export const pokemons: {
   "790": {
     id: "790",
     name: "Cosmovum",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -13095,7 +13095,7 @@ export const pokemons: {
   "791": {
     id: "791",
     name: "Solgaleo",
-    type: ["psychic", "steel"],
+    types: ["psychic", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -13107,7 +13107,7 @@ export const pokemons: {
   "792": {
     id: "792",
     name: "Lunala",
-    type: ["psychic", "ghost"],
+    types: ["psychic", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -13119,42 +13119,42 @@ export const pokemons: {
   "793": {
     id: "793",
     name: "Zéroïd",
-    type: ["rock", "poison"],
+    types: ["rock", "poison"],
   },
   "794": {
     id: "794",
     name: "Mouscoto",
-    type: ["insect", "fighting"],
+    types: ["insect", "fighting"],
   },
   "795": {
     id: "795",
     name: "Cancrelove",
-    type: ["insect", "fighting"],
+    types: ["insect", "fighting"],
   },
   "796": {
     id: "796",
     name: "Câblifère",
-    type: ["electric"],
+    types: ["electric"],
   },
   "797": {
     id: "797",
     name: "Bamboiselle",
-    type: ["steel", "flying"],
+    types: ["steel", "flying"],
   },
   "798": {
     id: "798",
     name: "Katagami",
-    type: ["grass", "steel"],
+    types: ["grass", "steel"],
   },
   "799": {
     id: "799",
     name: "Engloutyran",
-    type: ["dark", "dragon"],
+    types: ["dark", "dragon"],
   },
   "800": {
     id: "800",
     name: "Necrozma",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -13171,7 +13171,7 @@ export const pokemons: {
   "800.01": {
     id: "800.01",
     name: "Necrozma (Crinière du Couchant)",
-    type: ["psychic", "steel"],
+    types: ["psychic", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -13188,7 +13188,7 @@ export const pokemons: {
   "800.02": {
     id: "800.02",
     name: "Necrozma (Ailes de l'Aurore)",
-    type: ["psychic", "ghost"],
+    types: ["psychic", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -13205,7 +13205,7 @@ export const pokemons: {
   "800.03": {
     id: "800.03",
     name: "Ultra Necrozma",
-    type: ["psychic", "dragon"],
+    types: ["psychic", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -13222,17 +13222,17 @@ export const pokemons: {
   "801": {
     id: "801",
     name: "Magearna",
-    type: ["steel", "fairy"],
+    types: ["steel", "fairy"],
   },
   "802": {
     id: "802",
     name: "Marshadow",
-    type: ["fighting", "ghost"],
+    types: ["fighting", "ghost"],
   },
   "803": {
     id: "803",
     name: "Vémini",
-    type: ["poison"],
+    types: ["poison"],
     evolutions: [
       {
         type: "evolution",
@@ -13245,7 +13245,7 @@ export const pokemons: {
   "804": {
     id: "804",
     name: "Mandrillon",
-    type: ["poison", "dragon"],
+    types: ["poison", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -13257,22 +13257,22 @@ export const pokemons: {
   "805": {
     id: "805",
     name: "Ama-Ama",
-    type: ["rock", "steel"],
+    types: ["rock", "steel"],
   },
   "806": {
     id: "806",
     name: "Pierroteknik",
-    type: ["fire", "ghost"],
+    types: ["fire", "ghost"],
   },
   "807": {
     id: "807",
     name: "Zeraora",
-    type: ["electric"],
+    types: ["electric"],
   },
   "808": {
     id: "808",
     name: "Meltan",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "evolution",
@@ -13284,7 +13284,7 @@ export const pokemons: {
   "809": {
     id: "809",
     name: "Melmetal",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -13301,7 +13301,7 @@ export const pokemons: {
   "809.01": {
     id: "809.01",
     name: "Melmetal Gigamax",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -13313,7 +13313,7 @@ export const pokemons: {
   "810": {
     id: "810",
     name: "Ouistempo",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -13326,7 +13326,7 @@ export const pokemons: {
   "811": {
     id: "811",
     name: "Badabouin",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -13344,7 +13344,7 @@ export const pokemons: {
   "812": {
     id: "812",
     name: "Gorythmic",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -13361,7 +13361,7 @@ export const pokemons: {
   "812.01": {
     id: "812.01",
     name: "Gorythmic Gigamax",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -13373,7 +13373,7 @@ export const pokemons: {
   "813": {
     id: "813",
     name: "Flambino",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -13386,7 +13386,7 @@ export const pokemons: {
   "814": {
     id: "814",
     name: "Lapyro",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -13404,7 +13404,7 @@ export const pokemons: {
   "815": {
     id: "815",
     name: "Pyrobut",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -13421,7 +13421,7 @@ export const pokemons: {
   "815.01": {
     id: "815.01",
     name: "Pyrobut Gigamax",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -13433,7 +13433,7 @@ export const pokemons: {
   "816": {
     id: "816",
     name: "Larméléon",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -13446,7 +13446,7 @@ export const pokemons: {
   "817": {
     id: "817",
     name: "Arrozard",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -13464,7 +13464,7 @@ export const pokemons: {
   "818": {
     id: "818",
     name: "Lézargus",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -13481,7 +13481,7 @@ export const pokemons: {
   "818.01": {
     id: "818.01",
     name: "Lézargus Gigamax",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -13493,7 +13493,7 @@ export const pokemons: {
   "819": {
     id: "819",
     name: "Rongourmand",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -13506,7 +13506,7 @@ export const pokemons: {
   "820": {
     id: "820",
     name: "Rongrigou",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -13518,7 +13518,7 @@ export const pokemons: {
   "821": {
     id: "821",
     name: "Minisange",
-    type: ["flying"],
+    types: ["flying"],
     evolutions: [
       {
         type: "evolution",
@@ -13531,7 +13531,7 @@ export const pokemons: {
   "822": {
     id: "822",
     name: "Bleuseille",
-    type: ["flying"],
+    types: ["flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -13549,7 +13549,7 @@ export const pokemons: {
   "823": {
     id: "823",
     name: "Corvaillus",
-    type: ["flying", "steel"],
+    types: ["flying", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -13566,7 +13566,7 @@ export const pokemons: {
   "823.01": {
     id: "823.01",
     name: "Corvaillus Gigamax",
-    type: ["flying", "steel"],
+    types: ["flying", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -13578,7 +13578,7 @@ export const pokemons: {
   "824": {
     id: "824",
     name: "Larvadar",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -13591,7 +13591,7 @@ export const pokemons: {
   "825": {
     id: "825",
     name: "Coléodôme",
-    type: ["insect", "psychic"],
+    types: ["insect", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -13609,7 +13609,7 @@ export const pokemons: {
   "826": {
     id: "826",
     name: "Astronelle",
-    type: ["insect", "psychic"],
+    types: ["insect", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -13626,7 +13626,7 @@ export const pokemons: {
   "826.01": {
     id: "826.01",
     name: "Astronelle Gigamax",
-    type: ["insect", "psychic"],
+    types: ["insect", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -13638,7 +13638,7 @@ export const pokemons: {
   "827": {
     id: "827",
     name: "Goupilou",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -13651,7 +13651,7 @@ export const pokemons: {
   "828": {
     id: "828",
     name: "Roublenard",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -13663,7 +13663,7 @@ export const pokemons: {
   "829": {
     id: "829",
     name: "Tournicoton",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -13676,7 +13676,7 @@ export const pokemons: {
   "830": {
     id: "830",
     name: "Blancoton",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -13688,7 +13688,7 @@ export const pokemons: {
   "831": {
     id: "831",
     name: "Moumouton",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -13701,7 +13701,7 @@ export const pokemons: {
   "832": {
     id: "832",
     name: "Moumouflon",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -13713,7 +13713,7 @@ export const pokemons: {
   "833": {
     id: "833",
     name: "Khélocrok",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -13726,7 +13726,7 @@ export const pokemons: {
   "834": {
     id: "834",
     name: "Torgarmord",
-    type: ["water", "rock"],
+    types: ["water", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -13743,7 +13743,7 @@ export const pokemons: {
   "834.01": {
     id: "834.01",
     name: "Torgarmord Gigamax",
-    type: ["water", "rock"],
+    types: ["water", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -13755,7 +13755,7 @@ export const pokemons: {
   "835": {
     id: "835",
     name: "Voltoutou",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -13768,7 +13768,7 @@ export const pokemons: {
   "836": {
     id: "836",
     name: "Flugudog",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -13780,7 +13780,7 @@ export const pokemons: {
   "837": {
     id: "837",
     name: "Charbi",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -13793,7 +13793,7 @@ export const pokemons: {
   "838": {
     id: "838",
     name: "Wagomine",
-    type: ["rock", "fire"],
+    types: ["rock", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -13811,7 +13811,7 @@ export const pokemons: {
   "839": {
     id: "839",
     name: "Monthracite",
-    type: ["rock", "fire"],
+    types: ["rock", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -13828,7 +13828,7 @@ export const pokemons: {
   "839.01": {
     id: "839.01",
     name: "Monthracite Gigamax",
-    type: ["rock", "fire"],
+    types: ["rock", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -13840,7 +13840,7 @@ export const pokemons: {
   "840": {
     id: "840",
     name: "Verpom",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -13862,7 +13862,7 @@ export const pokemons: {
   "841": {
     id: "841",
     name: "Pomdrapi",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -13879,7 +13879,7 @@ export const pokemons: {
   "841.01": {
     id: "841.01",
     name: "Pomdrapi Gigamax",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -13891,7 +13891,7 @@ export const pokemons: {
   "842": {
     id: "842",
     name: "Dratatin",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -13908,7 +13908,7 @@ export const pokemons: {
   "842.01": {
     id: "842.01",
     name: "Dratatin Gigamax",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -13920,7 +13920,7 @@ export const pokemons: {
   "843": {
     id: "843",
     name: "Dunaja",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "evolution",
@@ -13933,7 +13933,7 @@ export const pokemons: {
   "844": {
     id: "844",
     name: "Dunaconda",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -13950,7 +13950,7 @@ export const pokemons: {
   "844.01": {
     id: "844.01",
     name: "Dunaconda Gigamax",
-    type: ["ground"],
+    types: ["ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -13962,22 +13962,22 @@ export const pokemons: {
   "845": {
     id: "845",
     name: "Nigosier",
-    type: ["flying", "water"],
+    types: ["flying", "water"],
   },
   "845.01": {
     id: "845.01",
     name: "Nigosier (Gobe-Tout)",
-    type: ["flying", "water"],
+    types: ["flying", "water"],
   },
   "845.02": {
     id: "845.02",
     name: "Nigosier (Gobe-chu)",
-    type: ["flying", "water"],
+    types: ["flying", "water"],
   },
   "846": {
     id: "846",
     name: "Embrochet",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -13990,7 +13990,7 @@ export const pokemons: {
   "847": {
     id: "847",
     name: "Hastacuda",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -14002,7 +14002,7 @@ export const pokemons: {
   "848": {
     id: "848",
     name: "Toxizap",
-    type: ["electric", "poison"],
+    types: ["electric", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -14021,7 +14021,7 @@ export const pokemons: {
   "849": {
     id: "849",
     name: "Salarsen (Aigu)",
-    type: ["electric", "poison"],
+    types: ["electric", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -14038,7 +14038,7 @@ export const pokemons: {
   "849.01": {
     id: "849.01",
     name: "Salarsen (Grave)",
-    type: ["electric", "poison"],
+    types: ["electric", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -14055,7 +14055,7 @@ export const pokemons: {
   "849.02": {
     id: "849.02",
     name: "Salarsen Gigamax",
-    type: ["electric", "poison"],
+    types: ["electric", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -14067,7 +14067,7 @@ export const pokemons: {
   "850": {
     id: "850",
     name: "Grillepattes",
-    type: ["fire", "insect"],
+    types: ["fire", "insect"],
     evolutions: [
       {
         type: "evolution",
@@ -14080,7 +14080,7 @@ export const pokemons: {
   "851": {
     id: "851",
     name: "Scolocendre",
-    type: ["fire", "insect"],
+    types: ["fire", "insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -14097,7 +14097,7 @@ export const pokemons: {
   "851.01": {
     id: "851.01",
     name: "Scolocendre Gigamax",
-    type: ["fire", "insect"],
+    types: ["fire", "insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -14109,7 +14109,7 @@ export const pokemons: {
   "852": {
     id: "852",
     name: "Poulpaf",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -14122,7 +14122,7 @@ export const pokemons: {
   "853": {
     id: "853",
     name: "Krakos",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -14134,7 +14134,7 @@ export const pokemons: {
   "854": {
     id: "854",
     name: "Théffroi",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -14146,7 +14146,7 @@ export const pokemons: {
   "855": {
     id: "855",
     name: "Polthegeist",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14158,7 +14158,7 @@ export const pokemons: {
   "856": {
     id: "856",
     name: "Bibichut",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -14171,7 +14171,7 @@ export const pokemons: {
   "857": {
     id: "857",
     name: "Chapotus",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -14189,7 +14189,7 @@ export const pokemons: {
   "858": {
     id: "858",
     name: "Sorcilence",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14206,7 +14206,7 @@ export const pokemons: {
   "858.01": {
     id: "858.01",
     name: "Sorcilence Gigamax",
-    type: ["psychic", "fairy"],
+    types: ["psychic", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14218,7 +14218,7 @@ export const pokemons: {
   "859": {
     id: "859",
     name: "Grimalin",
-    type: ["dark", "fairy"],
+    types: ["dark", "fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -14231,7 +14231,7 @@ export const pokemons: {
   "860": {
     id: "860",
     name: "Fourbelin",
-    type: ["dark", "fairy"],
+    types: ["dark", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14249,7 +14249,7 @@ export const pokemons: {
   "861": {
     id: "861",
     name: "Angoliath",
-    type: ["dark", "fairy"],
+    types: ["dark", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14266,7 +14266,7 @@ export const pokemons: {
   "861.01": {
     id: "861.01",
     name: "Angoliath Gigamax",
-    type: ["dark", "fairy"],
+    types: ["dark", "fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14278,7 +14278,7 @@ export const pokemons: {
   "862": {
     id: "862",
     name: "Ixon",
-    type: ["dark", "normal"],
+    types: ["dark", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -14290,7 +14290,7 @@ export const pokemons: {
   "863": {
     id: "863",
     name: "Berserkatt",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -14302,7 +14302,7 @@ export const pokemons: {
   "864": {
     id: "864",
     name: "Corayôme",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14314,7 +14314,7 @@ export const pokemons: {
   "865": {
     id: "865",
     name: "Palarticho",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -14326,7 +14326,7 @@ export const pokemons: {
   "866": {
     id: "866",
     name: "M. Glaquette",
-    type: ["ice", "psychic"],
+    types: ["ice", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -14338,7 +14338,7 @@ export const pokemons: {
   "867": {
     id: "867",
     name: "Tutétékri",
-    type: ["ground", "ghost"],
+    types: ["ground", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14350,7 +14350,7 @@ export const pokemons: {
   "868": {
     id: "868",
     name: "Crèmy",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -14362,7 +14362,7 @@ export const pokemons: {
   "869": {
     id: "869",
     name: "Charmilly",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14379,7 +14379,7 @@ export const pokemons: {
   "869.01": {
     id: "869.01",
     name: "Charmilly Gigamax",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -14391,17 +14391,17 @@ export const pokemons: {
   "870": {
     id: "870",
     name: "Hexadron",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "871": {
     id: "871",
     name: "Wattapik",
-    type: ["electric"],
+    types: ["electric"],
   },
   "872": {
     id: "872",
     name: "Frissonille",
-    type: ["ice", "insect"],
+    types: ["ice", "insect"],
     evolutions: [
       {
         type: "evolution",
@@ -14413,7 +14413,7 @@ export const pokemons: {
   "873": {
     id: "873",
     name: "Beldeneige",
-    type: ["ice", "insect"],
+    types: ["ice", "insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -14425,38 +14425,38 @@ export const pokemons: {
   "874": {
     id: "874",
     name: "Dolman",
-    type: ["rock"],
+    types: ["rock"],
   },
   "875": {
     id: "875",
     name: "Bekaglaçon (Tête de Gel)",
-    type: ["ice"],
+    types: ["ice"],
   },
   "875.01": {
     id: "875.01",
     name: "Bekaglaçon (Tête Dégel)",
-    type: ["ice"],
+    types: ["ice"],
   },
   "876": {
     id: "876",
     name: "Wimessir (Male)",
-    type: ["psychic", "normal"],
+    types: ["psychic", "normal"],
     femaleVariation: true,
   },
   "877": {
     id: "877",
     name: "Morpeko",
-    type: ["electric", "dark"],
+    types: ["electric", "dark"],
   },
   "877.01": {
     id: "877.01",
     name: "Morpeko (Affamé)",
-    type: ["electric", "dark"],
+    types: ["electric", "dark"],
   },
   "878": {
     id: "878",
     name: "Charibari",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "evolution",
@@ -14469,7 +14469,7 @@ export const pokemons: {
   "879": {
     id: "879",
     name: "Pachyradjah",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -14486,7 +14486,7 @@ export const pokemons: {
   "879.01": {
     id: "879.01",
     name: "Pachyradjah Gigamax",
-    type: ["steel"],
+    types: ["steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -14498,27 +14498,27 @@ export const pokemons: {
   "880": {
     id: "880",
     name: "Galvagon",
-    type: ["electric", "dragon"],
+    types: ["electric", "dragon"],
   },
   "881": {
     id: "881",
     name: "Galvagla",
-    type: ["electric", "ice"],
+    types: ["electric", "ice"],
   },
   "882": {
     id: "882",
     name: "Hydragon",
-    type: ["water", "dragon"],
+    types: ["water", "dragon"],
   },
   "883": {
     id: "883",
     name: "Hydragla",
-    type: ["water", "ice"],
+    types: ["water", "ice"],
   },
   "884": {
     id: "884",
     name: "Duralugon",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
     evolutions: [
       {
         type: "evolution",
@@ -14535,7 +14535,7 @@ export const pokemons: {
   "884.01": {
     id: "884.01",
     name: "Duralugon Gigamax",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -14547,7 +14547,7 @@ export const pokemons: {
   "885": {
     id: "885",
     name: "Fantyrm",
-    type: ["dragon", "ghost"],
+    types: ["dragon", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -14560,7 +14560,7 @@ export const pokemons: {
   "886": {
     id: "886",
     name: "Dispareptil",
-    type: ["dragon", "ghost"],
+    types: ["dragon", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14578,7 +14578,7 @@ export const pokemons: {
   "887": {
     id: "887",
     name: "Lanssorien",
-    type: ["dragon", "ghost"],
+    types: ["dragon", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14590,37 +14590,37 @@ export const pokemons: {
   "888": {
     id: "888",
     name: "Zacian (Hero Aguerri)",
-    type: ["fairy"],
+    types: ["fairy"],
   },
   "888.01": {
     id: "888.01",
     name: "Zacian (Epee Supreme)",
-    type: ["fairy", "steel"],
+    types: ["fairy", "steel"],
   },
   "889": {
     id: "889",
     name: "Zamazenta (Hero Aguerri)",
-    type: ["fighting"],
+    types: ["fighting"],
   },
   "889.01": {
     id: "889.01",
     name: "Zamazenta (Bouclier Supreme)",
-    type: ["fighting", "steel"],
+    types: ["fighting", "steel"],
   },
   "890": {
     id: "890",
     name: "Éthernatos",
-    type: ["poison", "dragon"],
+    types: ["poison", "dragon"],
   },
   "890.01": {
     id: "890.01",
     name: "Éthernatos Infinimax",
-    type: ["poison", "dragon"],
+    types: ["poison", "dragon"],
   },
   "891": {
     id: "891",
     name: "Wushours",
-    type: ["fighting"],
+    types: ["fighting"],
     evolutions: [
       {
         type: "evolution",
@@ -14637,7 +14637,7 @@ export const pokemons: {
   "892": {
     id: "892",
     name: "Shifours (Poing Final)",
-    type: ["fighting", "dark"],
+    types: ["fighting", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -14654,7 +14654,7 @@ export const pokemons: {
   "892.01": {
     id: "892.01",
     name: "Shifours (Mille Poings)",
-    type: ["fighting", "water"],
+    types: ["fighting", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -14671,7 +14671,7 @@ export const pokemons: {
   "892.02": {
     id: "892.02",
     name: "Shifours Gigamax (Poing Final)",
-    type: ["fighting", "dark"],
+    types: ["fighting", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -14683,7 +14683,7 @@ export const pokemons: {
   "892.03": {
     id: "892.03",
     name: "Shifours Gigamax (Mille Poings)",
-    type: ["fighting", "water"],
+    types: ["fighting", "water"],
     evolutions: [
       {
         type: "prevolution",
@@ -14695,37 +14695,37 @@ export const pokemons: {
   "893": {
     id: "893",
     name: "Zarude",
-    type: ["dark", "grass"],
+    types: ["dark", "grass"],
   },
   "893.01": {
     id: "893.01",
     name: "Zarude (Papa)",
-    type: ["dark", "grass"],
+    types: ["dark", "grass"],
   },
   "894": {
     id: "894",
     name: "Regieleki",
-    type: ["electric"],
+    types: ["electric"],
   },
   "895": {
     id: "895",
     name: "Regidrago",
-    type: ["dragon"],
+    types: ["dragon"],
   },
   "896": {
     id: "896",
     name: "Blizzeval",
-    type: ["ice"],
+    types: ["ice"],
   },
   "897": {
     id: "897",
     name: "Spectreval",
-    type: ["ghost"],
+    types: ["ghost"],
   },
   "898": {
     id: "898",
     name: "Sylveroy",
-    type: ["psychic", "grass"],
+    types: ["psychic", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -14742,7 +14742,7 @@ export const pokemons: {
   "898.01": {
     id: "898.01",
     name: "Sylveroy (Cavalier du Froid)",
-    type: ["psychic", "ice"],
+    types: ["psychic", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -14754,7 +14754,7 @@ export const pokemons: {
   "898.02": {
     id: "898.02",
     name: "Sylveroy (Cavalier de l'Effroi)",
-    type: ["psychic", "ghost"],
+    types: ["psychic", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14766,7 +14766,7 @@ export const pokemons: {
   "899": {
     id: "899",
     name: "Cerbyllin",
-    type: ["normal", "psychic"],
+    types: ["normal", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -14778,7 +14778,7 @@ export const pokemons: {
   "900": {
     id: "900",
     name: "Hachécateur",
-    type: ["insect", "rock"],
+    types: ["insect", "rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -14790,7 +14790,7 @@ export const pokemons: {
   "901": {
     id: "901",
     name: "Ursaking",
-    type: ["ground", "normal"],
+    types: ["ground", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -14802,12 +14802,12 @@ export const pokemons: {
   "901.01": {
     id: "901.01",
     name: "Ursaking (Lune Vermeille)",
-    type: ["ground", "normal"],
+    types: ["ground", "normal"],
   },
   "902": {
     id: "902",
     name: "Paragruel",
-    type: ["water", "ghost"],
+    types: ["water", "ghost"],
     femaleVariation: true,
     evolutions: [
       {
@@ -14820,7 +14820,7 @@ export const pokemons: {
   "903": {
     id: "903",
     name: "Farfurex",
-    type: ["fighting", "poison"],
+    types: ["fighting", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -14832,7 +14832,7 @@ export const pokemons: {
   "904": {
     id: "904",
     name: "Qwilpik",
-    type: ["dark", "poison"],
+    types: ["dark", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -14844,17 +14844,17 @@ export const pokemons: {
   "905": {
     id: "905",
     name: "Amovénus",
-    type: ["fairy", "flying"],
+    types: ["fairy", "flying"],
   },
   "905.01": {
     id: "905.01",
     name: "Amovénus (Totemique)",
-    type: ["fairy", "flying"],
+    types: ["fairy", "flying"],
   },
   "906": {
     id: "906",
     name: "Poussacha",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -14867,7 +14867,7 @@ export const pokemons: {
   "907": {
     id: "907",
     name: "Matourgeon",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -14885,7 +14885,7 @@ export const pokemons: {
   "908": {
     id: "908",
     name: "Miascarade",
-    type: ["grass", "dark"],
+    types: ["grass", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -14897,7 +14897,7 @@ export const pokemons: {
   "909": {
     id: "909",
     name: "Chochodile",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -14910,7 +14910,7 @@ export const pokemons: {
   "910": {
     id: "910",
     name: "Crocogril",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -14928,7 +14928,7 @@ export const pokemons: {
   "911": {
     id: "911",
     name: "Flâmigator",
-    type: ["fire", "ghost"],
+    types: ["fire", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -14940,7 +14940,7 @@ export const pokemons: {
   "912": {
     id: "912",
     name: "Coiffeton",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -14953,7 +14953,7 @@ export const pokemons: {
   "913": {
     id: "913",
     name: "Canarbello",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -14971,7 +14971,7 @@ export const pokemons: {
   "914": {
     id: "914",
     name: "Palmaval",
-    type: ["water", "fighting"],
+    types: ["water", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -14983,7 +14983,7 @@ export const pokemons: {
   "915": {
     id: "915",
     name: "Gourmelet",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -14996,7 +14996,7 @@ export const pokemons: {
   "916": {
     id: "916",
     name: "Fragouin",
-    type: ["normal"],
+    types: ["normal"],
     femaleVariation: true,
     evolutions: [
       {
@@ -15009,7 +15009,7 @@ export const pokemons: {
   "917": {
     id: "917",
     name: "Tissenboule",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -15022,7 +15022,7 @@ export const pokemons: {
   "918": {
     id: "918",
     name: "Filentrappe",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "prevolution",
@@ -15034,7 +15034,7 @@ export const pokemons: {
   "919": {
     id: "919",
     name: "Lilliterelle",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -15047,7 +15047,7 @@ export const pokemons: {
   "920": {
     id: "920",
     name: "Gambex",
-    type: ["insect", "dark"],
+    types: ["insect", "dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -15059,7 +15059,7 @@ export const pokemons: {
   "921": {
     id: "921",
     name: "Pohm",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -15072,7 +15072,7 @@ export const pokemons: {
   "922": {
     id: "922",
     name: "Pohmotte",
-    type: ["electric", "fighting"],
+    types: ["electric", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -15089,7 +15089,7 @@ export const pokemons: {
   "923": {
     id: "923",
     name: "Pohmarmotte",
-    type: ["electric", "fighting"],
+    types: ["electric", "fighting"],
     evolutions: [
       {
         type: "prevolution",
@@ -15101,7 +15101,7 @@ export const pokemons: {
   "924": {
     id: "924",
     name: "Compagnol",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "evolution",
@@ -15120,7 +15120,7 @@ export const pokemons: {
   "925": {
     id: "925",
     name: "Famignol (Famille de Quatre)",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15132,7 +15132,7 @@ export const pokemons: {
   "925.01": {
     id: "925.01",
     name: "Famignol (Famille de Trois)",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15144,7 +15144,7 @@ export const pokemons: {
   "926": {
     id: "926",
     name: "Pâtachiot",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "evolution",
@@ -15157,7 +15157,7 @@ export const pokemons: {
   "927": {
     id: "927",
     name: "Briochien",
-    type: ["fairy"],
+    types: ["fairy"],
     evolutions: [
       {
         type: "prevolution",
@@ -15169,7 +15169,7 @@ export const pokemons: {
   "928": {
     id: "928",
     name: "Olivini",
-    type: ["grass", "normal"],
+    types: ["grass", "normal"],
     evolutions: [
       {
         type: "evolution",
@@ -15182,7 +15182,7 @@ export const pokemons: {
   "929": {
     id: "929",
     name: "Olivado",
-    type: ["grass", "normal"],
+    types: ["grass", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15200,7 +15200,7 @@ export const pokemons: {
   "930": {
     id: "930",
     name: "Arboliva",
-    type: ["grass", "normal"],
+    types: ["grass", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15212,27 +15212,27 @@ export const pokemons: {
   "931": {
     id: "931",
     name: "Tapatoès (Vert)",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
   },
   "931.01": {
     id: "931.01",
     name: "Tapatoès (Bleu)",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
   },
   "931.02": {
     id: "931.02",
     name: "Tapatoès (Jaune)",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
   },
   "931.03": {
     id: "931.03",
     name: "Tapatoès (Blanc)",
-    type: ["normal", "flying"],
+    types: ["normal", "flying"],
   },
   "932": {
     id: "932",
     name: "Selutin",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "evolution",
@@ -15245,7 +15245,7 @@ export const pokemons: {
   "933": {
     id: "933",
     name: "Amassel",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -15263,7 +15263,7 @@ export const pokemons: {
   "934": {
     id: "934",
     name: "Gigansel",
-    type: ["rock"],
+    types: ["rock"],
     evolutions: [
       {
         type: "prevolution",
@@ -15275,7 +15275,7 @@ export const pokemons: {
   "935": {
     id: "935",
     name: "Charbambin",
-    type: ["fire"],
+    types: ["fire"],
     evolutions: [
       {
         type: "evolution",
@@ -15292,7 +15292,7 @@ export const pokemons: {
   "936": {
     id: "936",
     name: "Carmadura",
-    type: ["fire", "psychic"],
+    types: ["fire", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -15304,7 +15304,7 @@ export const pokemons: {
   "937": {
     id: "937",
     name: "Malvalame",
-    type: ["fire", "ghost"],
+    types: ["fire", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -15316,7 +15316,7 @@ export const pokemons: {
   "938": {
     id: "938",
     name: "Têtampoule",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "evolution",
@@ -15328,7 +15328,7 @@ export const pokemons: {
   "939": {
     id: "939",
     name: "Ampibidou",
-    type: ["electric"],
+    types: ["electric"],
     evolutions: [
       {
         type: "prevolution",
@@ -15340,7 +15340,7 @@ export const pokemons: {
   "940": {
     id: "940",
     name: "Zapétrel",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
     evolutions: [
       {
         type: "evolution",
@@ -15353,7 +15353,7 @@ export const pokemons: {
   "941": {
     id: "941",
     name: "Fulgulairo",
-    type: ["electric", "flying"],
+    types: ["electric", "flying"],
     evolutions: [
       {
         type: "prevolution",
@@ -15365,7 +15365,7 @@ export const pokemons: {
   "942": {
     id: "942",
     name: "Grondogue",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "evolution",
@@ -15378,7 +15378,7 @@ export const pokemons: {
   "943": {
     id: "943",
     name: "Dogrino",
-    type: ["dark"],
+    types: ["dark"],
     evolutions: [
       {
         type: "prevolution",
@@ -15390,7 +15390,7 @@ export const pokemons: {
   "944": {
     id: "944",
     name: "Gribougraine",
-    type: ["poison", "normal"],
+    types: ["poison", "normal"],
     evolutions: [
       {
         type: "evolution",
@@ -15403,7 +15403,7 @@ export const pokemons: {
   "945": {
     id: "945",
     name: "Tag-Tag",
-    type: ["poison", "normal"],
+    types: ["poison", "normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15415,7 +15415,7 @@ export const pokemons: {
   "946": {
     id: "946",
     name: "Virovent",
-    type: ["grass", "ghost"],
+    types: ["grass", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -15427,7 +15427,7 @@ export const pokemons: {
   "947": {
     id: "947",
     name: "Virevorreur",
-    type: ["grass", "ghost"],
+    types: ["grass", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -15439,7 +15439,7 @@ export const pokemons: {
   "948": {
     id: "948",
     name: "Terracool",
-    type: ["ground", "grass"],
+    types: ["ground", "grass"],
     evolutions: [
       {
         type: "evolution",
@@ -15452,7 +15452,7 @@ export const pokemons: {
   "949": {
     id: "949",
     name: "Terracruel",
-    type: ["ground", "grass"],
+    types: ["ground", "grass"],
     evolutions: [
       {
         type: "prevolution",
@@ -15464,12 +15464,12 @@ export const pokemons: {
   "950": {
     id: "950",
     name: "Craparoi",
-    type: ["rock"],
+    types: ["rock"],
   },
   "951": {
     id: "951",
     name: "Pimito",
-    type: ["grass"],
+    types: ["grass"],
     evolutions: [
       {
         type: "evolution",
@@ -15481,7 +15481,7 @@ export const pokemons: {
   "952": {
     id: "952",
     name: "Scovilain",
-    type: ["grass", "fire"],
+    types: ["grass", "fire"],
     evolutions: [
       {
         type: "prevolution",
@@ -15493,7 +15493,7 @@ export const pokemons: {
   "953": {
     id: "953",
     name: "Léboulérou",
-    type: ["insect"],
+    types: ["insect"],
     evolutions: [
       {
         type: "evolution",
@@ -15505,7 +15505,7 @@ export const pokemons: {
   "954": {
     id: "954",
     name: "Bérasca",
-    type: ["insect", "psychic"],
+    types: ["insect", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -15517,7 +15517,7 @@ export const pokemons: {
   "955": {
     id: "955",
     name: "Flotillon",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "evolution",
@@ -15530,7 +15530,7 @@ export const pokemons: {
   "956": {
     id: "956",
     name: "Cléopsytra",
-    type: ["psychic"],
+    types: ["psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -15542,7 +15542,7 @@ export const pokemons: {
   "957": {
     id: "957",
     name: "Forgerette",
-    type: ["fairy", "steel"],
+    types: ["fairy", "steel"],
     evolutions: [
       {
         type: "evolution",
@@ -15555,7 +15555,7 @@ export const pokemons: {
   "958": {
     id: "958",
     name: "Forgella",
-    type: ["fairy", "steel"],
+    types: ["fairy", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -15573,7 +15573,7 @@ export const pokemons: {
   "959": {
     id: "959",
     name: "Forgelina",
-    type: ["fairy", "steel"],
+    types: ["fairy", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -15585,7 +15585,7 @@ export const pokemons: {
   "960": {
     id: "960",
     name: "Taupikeau",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -15598,7 +15598,7 @@ export const pokemons: {
   "961": {
     id: "961",
     name: "Triopikeau",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -15610,12 +15610,12 @@ export const pokemons: {
   "962": {
     id: "962",
     name: "Lestombaile",
-    type: ["flying", "dark"],
+    types: ["flying", "dark"],
   },
   "963": {
     id: "963",
     name: "Dofin",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "evolution",
@@ -15634,7 +15634,7 @@ export const pokemons: {
   "964": {
     id: "964",
     name: "Superdofin (Ordinaire)",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -15646,7 +15646,7 @@ export const pokemons: {
   "964.01": {
     id: "964.01",
     name: "Superdofin (Super)",
-    type: ["water"],
+    types: ["water"],
     evolutions: [
       {
         type: "prevolution",
@@ -15658,7 +15658,7 @@ export const pokemons: {
   "965": {
     id: "965",
     name: "Vrombi",
-    type: ["steel", "poison"],
+    types: ["steel", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -15671,7 +15671,7 @@ export const pokemons: {
   "966": {
     id: "966",
     name: "Vrombotor",
-    type: ["steel", "poison"],
+    types: ["steel", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -15683,17 +15683,17 @@ export const pokemons: {
   "967": {
     id: "967",
     name: "Motorizard",
-    type: ["dragon", "normal"],
+    types: ["dragon", "normal"],
   },
   "968": {
     id: "968",
     name: "Ferdeter",
-    type: ["steel"],
+    types: ["steel"],
   },
   "969": {
     id: "969",
     name: "Germéclat",
-    type: ["rock", "poison"],
+    types: ["rock", "poison"],
     evolutions: [
       {
         type: "evolution",
@@ -15706,7 +15706,7 @@ export const pokemons: {
   "970": {
     id: "970",
     name: "Floréclat",
-    type: ["rock", "poison"],
+    types: ["rock", "poison"],
     evolutions: [
       {
         type: "prevolution",
@@ -15718,7 +15718,7 @@ export const pokemons: {
   "971": {
     id: "971",
     name: "Toutombe",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -15731,7 +15731,7 @@ export const pokemons: {
   "972": {
     id: "972",
     name: "Tomberro",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -15743,12 +15743,12 @@ export const pokemons: {
   "973": {
     id: "973",
     name: "Flamenroule",
-    type: ["flying", "fighting"],
+    types: ["flying", "fighting"],
   },
   "974": {
     id: "974",
     name: "Piétacé",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "evolution",
@@ -15760,7 +15760,7 @@ export const pokemons: {
   "975": {
     id: "975",
     name: "Balbalèze",
-    type: ["ice"],
+    types: ["ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -15772,32 +15772,32 @@ export const pokemons: {
   "976": {
     id: "976",
     name: "Délestin",
-    type: ["water", "psychic"],
+    types: ["water", "psychic"],
   },
   "977": {
     id: "977",
     name: "Oyacata",
-    type: ["water"],
+    types: ["water"],
   },
   "978": {
     id: "978",
     name: "Nigirigon (Courbé)",
-    type: ["dragon", "water"],
+    types: ["dragon", "water"],
   },
   "978.01": {
     id: "978.01",
     name: "Nigirigon (Affalé)",
-    type: ["dragon", "water"],
+    types: ["dragon", "water"],
   },
   "978.02": {
     id: "978.02",
     name: "Nigirigon (Raide)",
-    type: ["dragon", "water"],
+    types: ["dragon", "water"],
   },
   "979": {
     id: "979",
     name: "Courrousinge",
-    type: ["fighting", "ghost"],
+    types: ["fighting", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -15809,7 +15809,7 @@ export const pokemons: {
   "980": {
     id: "980",
     name: "Terraiste",
-    type: ["poison", "ground"],
+    types: ["poison", "ground"],
     evolutions: [
       {
         type: "prevolution",
@@ -15821,7 +15821,7 @@ export const pokemons: {
   "981": {
     id: "981",
     name: "Farigiraf",
-    type: ["normal", "psychic"],
+    types: ["normal", "psychic"],
     evolutions: [
       {
         type: "prevolution",
@@ -15833,7 +15833,7 @@ export const pokemons: {
   "982": {
     id: "982",
     name: "Deusolourdo (Double)",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15845,7 +15845,7 @@ export const pokemons: {
   "982.01": {
     id: "982.01",
     name: "Deusolourdo (Triple)",
-    type: ["normal"],
+    types: ["normal"],
     evolutions: [
       {
         type: "prevolution",
@@ -15857,7 +15857,7 @@ export const pokemons: {
   "983": {
     id: "983",
     name: "Scalpereur",
-    type: ["dark", "steel"],
+    types: ["dark", "steel"],
     evolutions: [
       {
         type: "prevolution",
@@ -15869,67 +15869,67 @@ export const pokemons: {
   "984": {
     id: "984",
     name: "Fort-Ivoire",
-    type: ["ground", "fighting"],
+    types: ["ground", "fighting"],
   },
   "985": {
     id: "985",
     name: "Hurle-Queue",
-    type: ["fairy", "psychic"],
+    types: ["fairy", "psychic"],
   },
   "986": {
     id: "986",
     name: "Fongus-Furie",
-    type: ["grass", "dark"],
+    types: ["grass", "dark"],
   },
   "987": {
     id: "987",
     name: "Flotte-Mèche",
-    type: ["ghost", "fairy"],
+    types: ["ghost", "fairy"],
   },
   "988": {
     id: "988",
     name: "Rampe-Ailes",
-    type: ["insect", "fighting"],
+    types: ["insect", "fighting"],
   },
   "989": {
     id: "989",
     name: "Pelage-Sablé",
-    type: ["electric", "ground"],
+    types: ["electric", "ground"],
   },
   "990": {
     id: "990",
     name: "Roue-de-fer",
-    type: ["ground", "steel"],
+    types: ["ground", "steel"],
   },
   "991": {
     id: "991",
     name: "Hotte-de-fer",
-    type: ["ice", "water"],
+    types: ["ice", "water"],
   },
   "992": {
     id: "992",
     name: "Paume-de-fer",
-    type: ["fighting", "electric"],
+    types: ["fighting", "electric"],
   },
   "993": {
     id: "993",
     name: "Têtes-de-fer",
-    type: ["dark", "flying"],
+    types: ["dark", "flying"],
   },
   "994": {
     id: "994",
     name: "Mite-de-fer",
-    type: ["fire", "poison"],
+    types: ["fire", "poison"],
   },
   "995": {
     id: "995",
     name: "Épine-de-fer",
-    type: ["rock", "electric"],
+    types: ["rock", "electric"],
   },
   "996": {
     id: "996",
     name: "Frigodo",
-    type: ["dragon", "ice"],
+    types: ["dragon", "ice"],
     evolutions: [
       {
         type: "evolution",
@@ -15942,7 +15942,7 @@ export const pokemons: {
   "997": {
     id: "997",
     name: "Cryodo",
-    type: ["dragon", "ice"],
+    types: ["dragon", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -15960,7 +15960,7 @@ export const pokemons: {
   "998": {
     id: "998",
     name: "Glaivodo",
-    type: ["dragon", "ice"],
+    types: ["dragon", "ice"],
     evolutions: [
       {
         type: "prevolution",
@@ -15972,7 +15972,7 @@ export const pokemons: {
   "999": {
     id: "999",
     name: "Mordudor (Coffre)",
-    type: ["ghost"],
+    types: ["ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -15984,12 +15984,12 @@ export const pokemons: {
   "999.01": {
     id: "999.01",
     name: "Mordudor (Marche)",
-    type: ["ghost"],
+    types: ["ghost"],
   },
   "1000": {
     id: "1000",
     name: "Gromago",
-    type: ["steel", "ghost"],
+    types: ["steel", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -16001,57 +16001,57 @@ export const pokemons: {
   "1001": {
     id: "1001",
     name: "Chongjian",
-    type: ["dark", "grass"],
+    types: ["dark", "grass"],
   },
   "1002": {
     id: "1002",
     name: "Baojian",
-    type: ["dark", "ice"],
+    types: ["dark", "ice"],
   },
   "1003": {
     id: "1003",
     name: "Dinglu",
-    type: ["dark", "ground"],
+    types: ["dark", "ground"],
   },
   "1004": {
     id: "1004",
     name: "Yuyu",
-    type: ["dark", "fire"],
+    types: ["dark", "fire"],
   },
   "1005": {
     id: "1005",
     name: "Rugit-Lune",
-    type: ["dragon", "dark"],
+    types: ["dragon", "dark"],
   },
   "1006": {
     id: "1006",
     name: "Garde-de-fer",
-    type: ["fairy", "fighting"],
+    types: ["fairy", "fighting"],
   },
   "1007": {
     id: "1007",
     name: "Koraidon",
-    type: ["fighting", "dragon"],
+    types: ["fighting", "dragon"],
   },
   "1008": {
     id: "1008",
     name: "Miraidon",
-    type: ["electric", "dragon"],
+    types: ["electric", "dragon"],
   },
   "1009": {
     id: "1009",
     name: "Serpente-Eau",
-    type: ["water", "dragon"],
+    types: ["water", "dragon"],
   },
   "1010": {
     id: "1010",
     name: "Vert-de-fer",
-    type: ["grass", "psychic"],
+    types: ["grass", "psychic"],
   },
   "1011": {
     id: "1011",
     name: "Pomdramour",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -16068,7 +16068,7 @@ export const pokemons: {
   "1012": {
     id: "1012",
     name: "Poltchageist",
-    type: ["grass", "ghost"],
+    types: ["grass", "ghost"],
     evolutions: [
       {
         type: "evolution",
@@ -16080,7 +16080,7 @@ export const pokemons: {
   "1013": {
     id: "1013",
     name: "Théffroyable",
-    type: ["grass", "ghost"],
+    types: ["grass", "ghost"],
     evolutions: [
       {
         type: "prevolution",
@@ -16092,47 +16092,47 @@ export const pokemons: {
   "1014": {
     id: "1014",
     name: "Félicanis",
-    type: ["poison", "fighting"],
+    types: ["poison", "fighting"],
   },
   "1015": {
     id: "1015",
     name: "Fortusimia",
-    type: ["poison", "psychic"],
+    types: ["poison", "psychic"],
   },
   "1016": {
     id: "1016",
     name: "Favianos",
-    type: ["poison", "fairy"],
+    types: ["poison", "fairy"],
   },
   "1017": {
     id: "1017",
     name: "Ogerpon (Masque Turquoise)",
-    type: ["grass"],
+    types: ["grass"],
   },
   "1017.01": {
     id: "1017.01",
     name: "Ogerpon (Masque du Puits)",
-    type: ["grass", "water"],
+    types: ["grass", "water"],
   },
   "1017.02": {
     id: "1017.02",
     name: "Ogerpon (Masque du Fourneau)",
-    type: ["grass", "fire"],
+    types: ["grass", "fire"],
   },
   "1017.03": {
     id: "1017.03",
     name: "Ogerpon (Masque de la Pierre)",
-    type: ["grass", "rock"],
+    types: ["grass", "rock"],
   },
   "1018": {
     id: "1018",
     name: "Pondralugon",
-    type: ["steel", "dragon"],
+    types: ["steel", "dragon"],
   },
   "1019": {
     id: "1019",
     name: "Pomdorochi",
-    type: ["grass", "dragon"],
+    types: ["grass", "dragon"],
     evolutions: [
       {
         type: "prevolution",
@@ -16144,41 +16144,41 @@ export const pokemons: {
   "1020": {
     id: "1020",
     name: "Feu-Perçant",
-    type: ["fire", "dragon"],
+    types: ["fire", "dragon"],
   },
   "1021": {
     id: "1021",
     name: "Ire-Foudre",
-    type: ["electric", "dragon"],
+    types: ["electric", "dragon"],
   },
   "1022": {
     id: "1022",
     name: "Roc-de-fer",
-    type: ["rock", "psychic"],
+    types: ["rock", "psychic"],
   },
   "1023": {
     id: "1023",
     name: "Chef-de-fer",
-    type: ["steel", "psychic"],
+    types: ["steel", "psychic"],
   },
   "1024": {
     id: "1024",
     name: "Terapagos",
-    type: ["normal"],
+    types: ["normal"],
   },
   "1024.01": {
     id: "1024.01",
     name: "Terapagos (Teracristal)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "1024.02": {
     id: "1024.02",
     name: "Terapagos (Stellaire)",
-    type: ["normal"],
+    types: ["normal"],
   },
   "1025": {
     id: "1025",
     name: "Pêchaminus",
-    type: ["poison", "ghost"],
+    types: ["poison", "ghost"],
   },
 };
