@@ -1,26 +1,34 @@
 import { QuizNextQuestion } from "../../types/quiz";
+import { WeightedQuizQuestion } from "../utils";
 import { lolQuizQuestions } from "./lol/lol";
 import { pokemonQuizQuestions } from "./pokemon/pokemon";
 
 export const getQuizNextQuestion = async (
   rushTime: "all" | "pokemon" | "lol" | null
 ): Promise<QuizNextQuestion> => {
-  let question: (() => QuizNextQuestion) | (() => Promise<QuizNextQuestion>);
-  let random = 0;
+  let questionsPool = [];
   switch (rushTime) {
     case "pokemon":
-      random = Math.floor(Math.random() * pokemonQuizQuestions.length);
-      question = pokemonQuizQuestions[random];
+      questionsPool = pokemonQuizQuestions;
       break;
     case "lol":
-      random = Math.floor(Math.random() * lolQuizQuestions.length);
-      question = lolQuizQuestions[random];
+      questionsPool = lolQuizQuestions;
       break;
     default:
-      random = Math.floor(
-        Math.random() * [...pokemonQuizQuestions, ...lolQuizQuestions].length
-      );
-      question = [...pokemonQuizQuestions, ...lolQuizQuestions][random];
+      questionsPool = [...pokemonQuizQuestions, ...lolQuizQuestions];
+      break;
   }
-  return question();
+  let randomRange = 0;
+  const questions: WeightedQuizQuestion[] = questionsPool.map((question) => {
+    randomRange += question.weight;
+    return {
+      option: question.option,
+      weight: randomRange,
+    };
+  });
+  const random = Math.floor(Math.random() * randomRange);
+  const question =
+    questions.find((question) => question.weight > random) ??
+    questions.splice(-1)[0];
+  return question.option();
 };

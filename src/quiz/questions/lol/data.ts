@@ -5247,6 +5247,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
   masteryi: {
     id: "masteryi",
     name: "Maître Yi",
+    alias: "Master Yi",
     classes: ["assassin", "fighter"],
     skins: [
       {

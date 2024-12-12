@@ -39,7 +39,7 @@ export const getRandomLoLChampionFrom = (champions: {
 };
 
 export const getWhosThatLoLChampionImage = async (champion: LoLChampion) => {
-  const blurFactor = Math.floor(Math.random() * 10 + 10);
+  const blurFactor = Math.floor(Math.random() * 5 + 10);
   const championImage = await loadImage(
     `./${LOL_CHAMPION_IMAGE_PATH_BASE}/${champion?.id}.png`
   );

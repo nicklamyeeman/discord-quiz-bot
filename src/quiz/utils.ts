@@ -2,6 +2,20 @@ import { Image, loadImage } from "@napi-rs/canvas";
 import { Colors, EmbedBuilder } from "discord.js";
 import { setQuizIsLive } from "../database/data/quiz";
 import { MINUTE, SECOND } from "../types/constants";
+import { QuizNextQuestion } from "../types/quiz";
+
+export class WeightedQuizQuestion {
+  option: (() => QuizNextQuestion) | (() => Promise<QuizNextQuestion>);
+  weight: number;
+
+  constructor(
+    option: (() => QuizNextQuestion) | (() => Promise<QuizNextQuestion>),
+    weight: number
+  ) {
+    this.option = option;
+    this.weight = weight;
+  }
+}
 
 export const NEXT_QUESTION_RUSH_INTERVAL = SECOND * 30;
 
@@ -11,7 +25,7 @@ export const NEXT_QUESTION_NIGHT_INTERVAL = MINUTE * 10;
 
 export const ANSWER_TIME_LIMIT = SECOND * 6;
 
-export const RUSH_TIME_DURATION = MINUTE * 20;
+export const RUSH_TIME_DURATION = SECOND * 10;
 
 export const WHOS_THAT_POKEMON_IMAGE_PATH =
   "assets/images/backdrop/whos_that_pokemon.png";

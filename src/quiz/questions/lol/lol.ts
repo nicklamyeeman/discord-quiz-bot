@@ -1,7 +1,11 @@
 import { AttachmentBuilder, Colors, EmbedBuilder, Message } from "discord.js";
 import { GlobalEmotes } from "../../../types/constants";
 import { QuizNextQuestion } from "../../../types/quiz";
-import { getRewardAmount, normalizeAnswer } from "../../utils";
+import {
+  getRewardAmount,
+  normalizeAnswer,
+  WeightedQuizQuestion,
+} from "../../utils";
 import { lolChampions, lolChampionsClasses } from "./data";
 import {
   dualClassLoLChampions,
@@ -293,9 +297,9 @@ const whosTheLoLChampionSkin = async (): Promise<QuizNextQuestion> => {
 };
 
 export const lolQuizQuestions = [
-  nameDualClassLoLChampion,
-  whatsTheLoLChampionClass,
-  whosThatLoLChampion,
-  whosTheLoLChampionSpell,
-  whosTheLoLChampionSkin,
+  new WeightedQuizQuestion(nameDualClassLoLChampion, 5),
+  new WeightedQuizQuestion(whatsTheLoLChampionClass, 5),
+  new WeightedQuizQuestion(whosThatLoLChampion, 30),
+  new WeightedQuizQuestion(whosTheLoLChampionSpell, 30),
+  new WeightedQuizQuestion(whosTheLoLChampionSkin, 30),
 ];

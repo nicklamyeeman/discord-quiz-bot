@@ -13,7 +13,7 @@ export const rush: CommandConfig = {
   description: "Description de la commande",
   args: [
     {
-      name: "game",
+      name: "theme",
       type: ApplicationCommandOptionType.String,
       description: "Sur quel jeu voulez-vous lancer le rush ?",
       required: false,
@@ -34,7 +34,7 @@ export const rush: CommandConfig = {
     },
   ],
   execute: async (interaction: CommandInteraction) => {
-    const game = (interaction.options.get("game")?.value ||
+    const game = (interaction.options.get("theme")?.value ||
       "all") as Quiz["rushTime"];
 
     const rushTime = await getQuizRushTime();

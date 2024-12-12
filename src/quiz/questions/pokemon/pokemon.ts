@@ -1,7 +1,11 @@
 import { AttachmentBuilder, Colors, EmbedBuilder, Message } from "discord.js";
 import { GlobalEmotes } from "../../../types/constants";
 import { QuizNextQuestion } from "../../../types/quiz";
-import { getRewardAmount, normalizeAnswer } from "../../utils";
+import {
+  getRewardAmount,
+  normalizeAnswer,
+  WeightedQuizQuestion,
+} from "../../utils";
 import { pokemons, pokemonTypes } from "./data";
 import {
   dualTypePokemons,
@@ -368,7 +372,7 @@ const whosThePokemonEvolution = async (): Promise<QuizNextQuestion> => {
         name: "pokemon.png",
       });
       const newEmbed = new EmbedBuilder()
-        .setTitle(`Les évoluions de ce Pokémon sont :`)
+        .setTitle(`Les évolutions de ce Pokémon sont :`)
         .setDescription(
           `${selectedPokemonEvolutions
             ?.map((pokemon) => pokemon.name)
@@ -438,7 +442,7 @@ const whosThePokemonPrevolution = async (): Promise<QuizNextQuestion> => {
         name: "pokemon.png",
       });
       const newEmbed = new EmbedBuilder()
-        .setTitle(`Les évoluions de ce Pokémon sont :`)
+        .setTitle(`Les pré-évolutions de ce Pokémon sont :`)
         .setDescription(
           `${selectedPokemonPrevolutions
             ?.map((pokemon) => pokemon.name)
@@ -458,11 +462,11 @@ const whosThePokemonPrevolution = async (): Promise<QuizNextQuestion> => {
 };
 
 export const pokemonQuizQuestions = [
-  nameDualTypePokemon,
-  whatsThePokemonType,
-  whatsThePokemonId,
-  whatsThePokemonEvolutionLevel,
-  whosThatPokemon,
-  whosThePokemonEvolution,
-  whosThePokemonPrevolution,
+  new WeightedQuizQuestion(nameDualTypePokemon, 5),
+  new WeightedQuizQuestion(whatsThePokemonType, 5),
+  new WeightedQuizQuestion(whosThePokemonPrevolution, 10),
+  new WeightedQuizQuestion(whosThePokemonEvolution, 10),
+  new WeightedQuizQuestion(whatsThePokemonId, 20),
+  new WeightedQuizQuestion(whatsThePokemonEvolutionLevel, 20),
+  new WeightedQuizQuestion(whosThatPokemon, 30),
 ];
