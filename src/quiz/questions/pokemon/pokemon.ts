@@ -1,14 +1,13 @@
 import { AttachmentBuilder, Colors, EmbedBuilder, Message } from "discord.js";
 import { GlobalEmotes } from "../../../types/constants";
 import { QuizNextQuestion } from "../../../types/quiz";
-import { getRewardAmount } from "../../utils";
+import { getRewardAmount, normalizeAnswer } from "../../utils";
 import { pokemons, pokemonTypes } from "./data";
 import {
   dualTypePokemons,
   generateTypesAnwer,
   getRandomPokemonFrom,
   getWhosThatPokemonImage,
-  normalizeAnswer,
   POKEMON_IMAGE_PATH_BASE,
   pokemonsWithEvolution,
   pokemonsWithLevelUpEvolution,
@@ -61,7 +60,7 @@ const nameDualTypePokemon = (): QuizNextQuestion => {
           `${eligiblePokemons
             .map((pokemon) => pokemon.name)
             .splice(0, 10)
-            .join("\n")}${eligiblePokemons.length > 10 ? "\net plus..." : "!"}`
+            .join("\n")}${eligiblePokemons.length > 10 ? "\net plus..." : ""}`
         )
         .setThumbnail("attachment://pokemon.png")
         .setColor(Colors.DarkGreen);

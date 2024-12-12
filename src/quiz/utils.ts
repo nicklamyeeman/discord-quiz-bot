@@ -25,6 +25,16 @@ export const loadImages = async () => {
 
 export const getRewardAmount = () => Math.floor(Math.random() * 7) * 5 + 30;
 
+export const normalizeAnswer = (answer: string) =>
+  answer
+    .replaceAll(/(â|à|ä)/gi, "a")
+    .replaceAll(/(é|ê|è|ë)/gi, "e")
+    .replaceAll(/(î|ï)/gi, "i")
+    .replaceAll(/(ô|ö)/gi, "o")
+    .replaceAll(/(ç)/gi, "c")
+    .replaceAll(/\(.+\)/gi, "")
+    .replaceAll(/\W|_/gi, ".?");
+
 export const reloadQuiz = async () => {
   await setQuizIsLive(false);
   return setQuizIsLive(true);

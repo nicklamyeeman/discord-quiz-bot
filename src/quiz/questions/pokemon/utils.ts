@@ -1,18 +1,8 @@
 import { createCanvas, loadImage } from "@napi-rs/canvas";
-import { whosThatPokemonBackgroundImage } from "../../utils";
+import { normalizeAnswer, whosThatPokemonBackgroundImage } from "../../utils";
 import { Pokemon, pokemons, pokemonTypes, PokemonTypesKeys } from "./data";
 
 export const POKEMON_IMAGE_PATH_BASE = "assets/images/pokemon";
-
-export const normalizeAnswer = (answer: string) =>
-  answer
-    .replaceAll(/(â|à|ä)/gi, "a")
-    .replaceAll(/(é|ê|è|ë)/gi, "e")
-    .replaceAll(/(î|ï)/gi, "i")
-    .replaceAll(/(ô|ö)/gi, "o")
-    .replaceAll(/(ç)/gi, "c")
-    .replaceAll(/\(.+\)/gi, "")
-    .replaceAll(/\W|_/gi, ".?");
 
 export const dualTypePokemons = Object.entries(pokemons)
   .filter(([, pokemon]) => pokemon.types.length === 2)
@@ -125,7 +115,7 @@ export const getWhosThatPokemonImage = async (
   );
 
   const pokemonImage = await loadImage(
-    `./assets/images/pokemon/${pokemon?.id ?? pokemons["0"].id}${
+    `./${POKEMON_IMAGE_PATH_BASE}/${pokemon?.id ?? pokemons["0"].id}${
       useFemale ? "-f" : ""
     }.png`
   );
