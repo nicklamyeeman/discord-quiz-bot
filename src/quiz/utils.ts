@@ -3,7 +3,7 @@ import { Colors, EmbedBuilder } from "discord.js";
 import { setQuizIsLive } from "../database/data/quiz";
 import { MINUTE, SECOND } from "../types/constants";
 
-export const NEXT_QUESTION_RUSH_INTERVAL = MINUTE * 1;
+export const NEXT_QUESTION_RUSH_INTERVAL = SECOND * 30;
 
 export const NEXT_QUESTION_INTERVAL = MINUTE * 5;
 
