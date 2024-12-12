@@ -25,7 +25,7 @@ export const NEXT_QUESTION_NIGHT_INTERVAL = MINUTE * 10;
 
 export const ANSWER_TIME_LIMIT = SECOND * 6;
 
-export const RUSH_TIME_DURATION = SECOND * 10;
+export const RUSH_TIME_DURATION = MINUTE * 20;
 
 export const WHOS_THAT_POKEMON_IMAGE_PATH =
   "assets/images/backdrop/whos_that_pokemon.png";
