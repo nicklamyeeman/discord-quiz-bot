@@ -403,12 +403,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Atomisation",
         type: "spell",
       },
       {
-        id: "t",
+        id: "w",
         name: "Coup de tête",
         type: "spell",
       },
@@ -418,7 +418,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "l",
+        id: "r",
         name: "Volonté de fer",
         type: "spell",
       },
@@ -446,7 +446,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "q",
-        name: "Frappe fourbe/Frappe fracassante",
+        name: "Frappe fourbe",
         type: "spell",
       },
       {
@@ -515,22 +515,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "s",
+        id: "q",
         name: "Jet de bandelette",
         type: "spell",
       },
       {
-        id: "r",
+        id: "w",
         name: "Désespoir",
         type: "spell",
       },
       {
-        id: "m",
+        id: "e",
         name: "Colère",
         type: "spell",
       },
       {
-        id: "y",
+        id: "r",
         name: "Malédiction d'Amumu",
         type: "spell",
       },
@@ -577,12 +577,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "t",
+        id: "q",
         name: "Lance de glace",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Cristallisation",
         type: "spell",
       },
@@ -592,7 +592,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "m",
+        id: "r",
         name: "Tempête glaciale",
         type: "spell",
       },
@@ -709,7 +709,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Compétences d'arme",
         type: "spell",
       },
@@ -719,7 +719,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Système de file d'armes",
         type: "spell",
       },
@@ -796,17 +796,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "y",
+        id: "w",
         name: "Salve",
         type: "spell",
       },
       {
-        id: "k",
+        id: "e",
         name: "Rapace",
         type: "spell",
       },
       {
-        id: "w",
+        id: "r",
         name: "Flèche de cristal enchantée",
         type: "spell",
       },
@@ -861,7 +861,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "r",
-        name: "Étoile finale/Apocalypse",
+        name: "Étoile finale",
         type: "spell",
       },
     ],
@@ -941,7 +941,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Sables conquérants",
         type: "spell",
       },
@@ -951,7 +951,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Sables mouvants",
         type: "spell",
       },
@@ -1119,22 +1119,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "b",
+        id: "q",
         name: "Grappin propulsé",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Surcharge",
         type: "spell",
       },
       {
-        id: "t",
+        id: "e",
         name: "Poing d'acier",
         type: "spell",
       },
       {
-        id: "d",
+        id: "r",
         name: "Champ de stase",
         type: "spell",
       },
@@ -1291,7 +1291,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "w",
-        name: "Folie sanguinaire / Juste un croc",
+        name: "Folie sanguinaire",
         type: "spell",
       },
       {
@@ -1557,22 +1557,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Rupture",
         type: "spell",
       },
       {
-        id: "m",
+        id: "w",
         name: "Cri sauvage",
         type: "spell",
       },
       {
-        id: "s",
+        id: "e",
         name: "Piques vorpales",
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Festin",
         type: "spell",
       },
@@ -1607,22 +1607,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "b",
+        id: "q",
         name: "Bombe au phosphore",
         type: "spell",
       },
       {
-        id: "b",
+        id: "w",
         name: "Valkyrie",
         type: "spell",
       },
       {
-        id: "n",
+        id: "e",
         name: "Gatling",
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Barrage de projectiles",
         type: "spell",
       },
@@ -1681,12 +1681,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Décimation",
         type: "spell",
       },
       {
-        id: "h",
+        id: "w",
         name: "Estropiaison",
         type: "spell",
       },
@@ -1696,7 +1696,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Guillotine noxienne",
         type: "spell",
       },
@@ -1768,12 +1768,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "s",
+        id: "w",
         name: "Corps célestes",
         type: "spell",
       },
       {
-        id: "t",
+        id: "e",
         name: "Rush lunaire",
         type: "spell",
       },
@@ -1833,22 +1833,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "g",
+        id: "q",
         name: "Hache tournoyante",
         type: "spell",
       },
       {
-        id: "y",
+        id: "w",
         name: "Pulsion sanguinaire",
         type: "spell",
       },
       {
-        id: "t",
+        id: "e",
         name: "Division",
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Volée mortelle",
         type: "spell",
       },
@@ -2029,17 +2029,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "q",
-        name: "Neurotoxine/Morsure venimeuse",
+        name: "Neurotoxine",
         type: "spell",
       },
       {
         id: "w",
-        name: "Araignée explosive/Frénésie symbiotique",
+        name: "Araignée explosive",
         type: "spell",
       },
       {
         id: "e",
-        name: "Cocon/Suspension",
+        name: "Cocon",
         type: "spell",
       },
       {
@@ -2429,7 +2429,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "e",
-        name: "Joueur/Filou",
+        name: "Joueur",
         type: "spell",
       },
       {
@@ -2546,7 +2546,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Pourparlers",
         type: "spell",
       },
@@ -2671,17 +2671,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "q",
-        name: "Jet de boomerang/Jet de rocher",
+        name: "Jet de boomerang",
         type: "spell",
       },
       {
         id: "w",
-        name: "Agitation/Beigne",
+        name: "Agitation",
         type: "spell",
       },
       {
         id: "e",
-        name: "Rebond/Aplatissement",
+        name: "Rebond",
         type: "spell",
       },
       {
@@ -2798,12 +2798,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "l",
+        id: "q",
         name: "Terminus",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Écran de fumée",
         type: "spell",
       },
@@ -2813,7 +2813,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Dégâts collatéraux",
         type: "spell",
       },
@@ -2922,7 +2922,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "h",
+        id: "q",
         name: "Carnage",
         type: "spell",
       },
@@ -2932,12 +2932,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "p",
+        id: "e",
         name: "Charge dévastatrice",
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Légion des ombres",
         type: "spell",
       },
@@ -3270,22 +3270,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Vent hurlant",
         type: "spell",
       },
       {
-        id: "d",
+        id: "w",
         name: "Alizé",
         type: "spell",
       },
       {
-        id: "m",
+        id: "e",
         name: "Œil du cyclone",
         type: "spell",
       },
       {
-        id: "d",
+        id: "r",
         name: "Mousson",
         type: "spell",
       },
@@ -3329,22 +3329,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Frappe du dragon",
         type: "spell",
       },
       {
-        id: "s",
+        id: "w",
         name: "Égide dorée",
         type: "spell",
       },
       {
-        id: "d",
+        id: "e",
         name: "Étendard demacien",
         type: "spell",
       },
       {
-        id: "m",
+        id: "r",
         name: "Cataclysme",
         type: "spell",
       },
@@ -3493,23 +3493,23 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "s",
-        name: "Direction le ciel! / Orbe électrique",
-        type: "spell",
-      },
-      {
-        id: "d",
-        name: "Champ électrique / Hypercharge",
+        id: "q",
+        name: "Direction le ciel!",
         type: "spell",
       },
       {
         id: "w",
-        name: "Coup foudroyant / Portail d'accélération",
+        name: "Champ électrique",
         type: "spell",
       },
       {
-        id: "g",
-        name: "Canon Mercury / Marteau Mercury",
+        id: "e",
+        name: "Coup foudroyant",
+        type: "spell",
+      },
+      {
+        id: "r",
+        name: "Canon Mercury",
         type: "spell",
       },
     ],
@@ -3753,7 +3753,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "t",
+        id: "q",
         name: "Perforation",
         type: "spell",
       },
@@ -3763,12 +3763,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Extirpation",
         type: "spell",
       },
       {
-        id: "x",
+        id: "r",
         name: "Appel du destin",
         type: "spell",
       },
@@ -3844,17 +3844,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "d",
+        id: "w",
         name: "Volonté concentrée",
         type: "spell",
       },
       {
-        id: "d",
+        id: "e",
         name: "Exaltation",
         type: "spell",
       },
       {
-        id: "a",
+        id: "r",
         name: "Mantra",
         type: "spell",
       },
@@ -3881,12 +3881,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "1",
+        id: "q",
         name: "Dévastation",
         type: "spell",
       },
       {
-        id: "n",
+        id: "w",
         name: "Mur de douleur",
         type: "spell",
       },
@@ -3896,7 +3896,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Requiem",
         type: "spell",
       },
@@ -3943,12 +3943,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Orbe du Néant",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Lame éthérée",
         type: "spell",
       },
@@ -3958,7 +3958,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "k",
+        id: "r",
         name: "Fissure",
         type: "spell",
       },
@@ -4035,7 +4035,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Shunpo",
         type: "spell",
       },
@@ -4199,22 +4199,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "1",
+        id: "q",
         name: "Shuriken foudroyant",
         type: "spell",
       },
       {
-        id: "t",
+        id: "w",
         name: "Surtension",
         type: "spell",
       },
       {
-        id: "h",
+        id: "e",
         name: "Rush foudroyant",
         type: "spell",
       },
       {
-        id: "m",
+        id: "r",
         name: "Maelström",
         type: "spell",
       },
@@ -4329,7 +4329,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Terreur mortelle",
         type: "spell",
       },
@@ -4436,7 +4436,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Barrage bio-arcanique",
         type: "spell",
       },
@@ -4446,7 +4446,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "y",
+        id: "r",
         name: "Artillerie vivante",
         type: "spell",
       },
@@ -4625,18 +4625,18 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
-        name: "Onde sonore/Coup résonant",
+        id: "q",
+        name: "Onde sonore",
+        type: "spell",
+      },
+      {
+        id: "w",
+        name: "Rempart",
         type: "spell",
       },
       {
         id: "e",
-        name: "Rempart/Force d'âme",
-        type: "spell",
-      },
-      {
-        id: "e",
-        name: "Trombe/Fracture",
+        name: "Trombe",
         type: "spell",
       },
       {
@@ -4699,12 +4699,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "k",
+        id: "q",
         name: "Bouclier de l'aube",
         type: "spell",
       },
       {
-        id: "r",
+        id: "w",
         name: "Éclipse",
         type: "spell",
       },
@@ -4714,7 +4714,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Éruption solaire",
         type: "spell",
       },
@@ -5037,17 +5037,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "g",
+        id: "q",
         name: "Entrave de lumière",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Barrière prismatique",
         type: "spell",
       },
       {
-        id: "l",
+        id: "e",
         name: "Anomalie radieuse",
         type: "spell",
       },
@@ -5099,12 +5099,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "d",
+        id: "q",
         name: "Éclat sismique",
         type: "spell",
       },
       {
-        id: "y",
+        id: "w",
         name: "Coup de tonnerre",
         type: "spell",
       },
@@ -5114,7 +5114,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "h",
+        id: "r",
         name: "Force indomptable",
         type: "spell",
       },
@@ -5305,12 +5305,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Assaut éclair",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Méditation",
         type: "spell",
       },
@@ -5457,22 +5457,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "t",
+        id: "q",
         name: "Doublé",
         type: "spell",
       },
       {
-        id: "s",
+        id: "w",
         name: "Fanfaronne",
         type: "spell",
       },
       {
-        id: "t",
+        id: "e",
         name: "Pluie de balles",
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Barrage de plomb",
         type: "spell",
       },
@@ -5490,22 +5490,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "k",
+        id: "q",
         name: "Écrasement",
         type: "spell",
       },
       {
-        id: "y",
+        id: "w",
         name: "Guerrier espiègle",
         type: "spell",
       },
       {
-        id: "s",
+        id: "e",
         name: "Nimbus",
         type: "spell",
       },
       {
-        id: "n",
+        id: "r",
         name: "Cyclone",
         type: "spell",
       },
@@ -5866,12 +5866,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "g",
+        id: "q",
         name: "Abordage",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Colère du titan",
         type: "spell",
       },
@@ -5881,7 +5881,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Grenade ASM",
         type: "spell",
       },
@@ -6002,18 +6002,18 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "s",
-        name: "Javelot / Mise à terre",
+        id: "q",
+        name: "Javelot",
         type: "spell",
       },
       {
-        id: "k",
-        name: "Guérilla / Bond",
+        id: "w",
+        name: "Guérilla",
         type: "spell",
       },
       {
         id: "e",
-        name: "Charge primale / Taillade",
+        name: "Charge primale",
         type: "spell",
       },
       {
@@ -6110,22 +6110,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Crépuscule",
         type: "spell",
       },
       {
-        id: "s",
+        id: "w",
         name: "Linceul des ténèbres",
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Horreur indicible",
         type: "spell",
       },
       {
-        id: "a",
+        id: "r",
         name: "Paranoïa",
         type: "spell",
       },
@@ -6235,12 +6235,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "t",
+        id: "q",
         name: "Déchireuse",
         type: "spell",
       },
       {
-        id: "s",
+        id: "w",
         name: "Force décuplée",
         type: "spell",
       },
@@ -6250,7 +6250,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "k",
+        id: "r",
         name: "Ragnarok",
         type: "spell",
       },
@@ -6293,22 +6293,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "d",
+        id: "q",
         name: "Ordre : Attaque",
         type: "spell",
       },
       {
-        id: "d",
+        id: "w",
         name: "Ordre: Dissonance",
         type: "spell",
       },
       {
-        id: "d",
+        id: "e",
         name: "Ordre: Protection",
         type: "spell",
       },
       {
-        id: "d",
+        id: "r",
         name: "Ordre : Onde de choc",
         type: "spell",
       },
@@ -6624,7 +6624,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "q",
-        name: "Courroux élémentaire/Lame d'Ixtal",
+        name: "Courroux élémentaire",
         type: "spell",
       },
       {
@@ -6797,22 +6797,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "l",
+        id: "q",
         name: "Démolisseur",
         type: "spell",
       },
       {
-        id: "l",
+        id: "w",
         name: "Boule défensive",
         type: "spell",
       },
       {
-        id: "t",
+        id: "e",
         name: "Provocation frénétique",
         type: "spell",
       },
       {
-        id: "2",
+        id: "r",
         name: "Frappe ascendante",
         type: "spell",
       },
@@ -6848,17 +6848,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "q",
-        name: "Courroux de la reine/Sondeur explosif",
+        name: "Courroux de la reine",
         type: "spell",
       },
       {
         id: "w",
-        name: "Enfouissement/Jaillissement",
+        name: "Enfouissement",
         type: "spell",
       },
       {
         id: "e",
-        name: "Morsure féroce/Tunnel",
+        name: "Morsure féroce",
         type: "spell",
       },
       {
@@ -6898,7 +6898,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "t",
+        id: "w",
         name: "Ferromancie: Descendre en piqué",
         type: "spell",
       },
@@ -7001,12 +7001,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Destruction des faibles",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Prédateur impitoyable",
         type: "spell",
       },
@@ -7016,7 +7016,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Dominus",
         type: "spell",
       },
@@ -7137,22 +7137,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Ailes brisées",
         type: "spell",
       },
       {
-        id: "r",
+        id: "w",
         name: "Décharge de ki",
         type: "spell",
       },
       {
-        id: "t",
+        id: "e",
         name: "Bravoure",
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Lame de l'exilée",
         type: "spell",
       },
@@ -7187,12 +7187,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Lance-flammes",
         type: "spell",
       },
       {
-        id: "d",
+        id: "w",
         name: "Bouclier recyclé",
         type: "spell",
       },
@@ -7202,7 +7202,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "b",
+        id: "r",
         name: "Éradication",
         type: "spell",
       },
@@ -7261,7 +7261,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Court-circuit",
         type: "spell",
       },
@@ -7641,22 +7641,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Tromperie",
         type: "spell",
       },
       {
-        id: "x",
+        id: "w",
         name: "Boîte surprise",
         type: "spell",
       },
       {
-        id: "n",
+        id: "e",
         name: "Poison double",
         type: "spell",
       },
       {
-        id: "l",
+        id: "r",
         name: "Hallucination",
         type: "spell",
       },
@@ -7769,22 +7769,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "k",
+        id: "q",
         name: "Morsure double",
         type: "spell",
       },
       {
-        id: "a",
+        id: "w",
         name: "Combustion",
         type: "spell",
       },
       {
-        id: "l",
+        id: "e",
         name: "Souffle de flammes",
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Vol du dragon",
         type: "spell",
       },
@@ -7827,22 +7827,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "l",
+        id: "q",
         name: "Piste empoisonnée",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Attrape-mouche",
         type: "spell",
       },
       {
-        id: "g",
+        id: "e",
         name: "Projection",
         type: "spell",
       },
       {
-        id: "n",
+        id: "r",
         name: "Potion de démence",
         type: "spell",
       },
@@ -8030,7 +8030,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "q",
-        name: "Terre brisée/Soulèvement",
+        name: "Terre brisée",
         type: "spell",
       },
       {
@@ -8354,7 +8354,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
       },
       {
         id: "e",
-        name: "Évasion / Enlèvement",
+        name: "Évasion",
         type: "spell",
       },
       {
@@ -8510,7 +8510,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "c",
+        id: "w",
         name: "Poussée sismique",
         type: "spell",
       },
@@ -8796,7 +8796,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "a",
+        id: "r",
         name: "La cage",
         type: "spell",
       },
@@ -8921,12 +8921,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "h",
+        id: "q",
         name: "Morsure",
         type: "spell",
       },
       {
-        id: "e",
+        id: "w",
         name: "Royaume gelé",
         type: "spell",
       },
@@ -8936,7 +8936,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "n",
+        id: "r",
         name: "Soumission",
         type: "spell",
       },
@@ -8998,7 +8998,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Rage inépuisable",
         type: "spell",
       },
@@ -9045,22 +9045,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "s",
+        id: "q",
         name: "Atouts",
         type: "spell",
       },
       {
-        id: "d",
+        id: "w",
         name: "Bonne pioche",
         type: "spell",
       },
       {
-        id: "k",
+        id: "e",
         name: "Paquet",
         type: "spell",
       },
       {
-        id: "y",
+        id: "r",
         name: "Destinée",
         type: "spell",
       },
@@ -9119,12 +9119,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "s",
+        id: "q",
         name: "Embuscade",
         type: "spell",
       },
       {
-        id: "k",
+        id: "w",
         name: "Dose de venin",
         type: "spell",
       },
@@ -9134,7 +9134,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "c",
+        id: "r",
         name: "Panique",
         type: "spell",
       },
@@ -9371,22 +9371,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Roulade",
         type: "spell",
       },
       {
-        id: "s",
+        id: "w",
         name: "Carreaux d'argent",
         type: "spell",
       },
       {
-        id: "n",
+        id: "e",
         name: "Condamnation",
         type: "spell",
       },
       {
-        id: "n",
+        id: "r",
         name: "Combat ultime",
         type: "spell",
       },
@@ -9437,17 +9437,17 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "e",
+        id: "q",
         name: "Coup malin",
         type: "spell",
       },
       {
-        id: "r",
+        id: "w",
         name: "Matière noire",
         type: "spell",
       },
       {
-        id: "n",
+        id: "e",
         name: "Profanation",
         type: "spell",
       },
@@ -9711,22 +9711,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Siphonnage",
         type: "spell",
       },
       {
-        id: "d",
+        id: "w",
         name: "Champ gravitationnel",
         type: "spell",
       },
       {
-        id: "y",
+        id: "e",
         name: "Rayon de la mort",
         type: "spell",
       },
       {
-        id: "m",
+        id: "r",
         name: "Tempête du chaos",
         type: "spell",
       },
@@ -9782,7 +9782,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "l",
+        id: "w",
         name: "Bain de sang",
         type: "spell",
       },
@@ -9792,7 +9792,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "e",
+        id: "r",
         name: "Peste sanguine",
         type: "spell",
       },
@@ -10045,22 +10045,22 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "p",
+        id: "q",
         name: "Rayon arcanique",
         type: "spell",
       },
       {
-        id: "2",
+        id: "w",
         name: "Œil de la destruction",
         type: "spell",
       },
       {
-        id: "r",
+        id: "e",
         name: "Orbe d'électrocution",
         type: "spell",
       },
       {
-        id: "2",
+        id: "r",
         name: "Rite arcanique",
         type: "spell",
       },
@@ -10209,7 +10209,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "passive",
       },
       {
-        id: "r",
+        id: "q",
         name: "Tempête d'acier",
         type: "spell",
       },
@@ -10679,12 +10679,12 @@ export const lolChampions: { [id: string]: LoLChampion } = {
         type: "spell",
       },
       {
-        id: "p",
+        id: "e",
         name: "Distorsion temporelle",
         type: "spell",
       },
       {
-        id: "t",
+        id: "r",
         name: "Retour temporel",
         type: "spell",
       },
