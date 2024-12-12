@@ -11,7 +11,7 @@ import {
   addUserQuizStatistics,
 } from "../database/data/statistics";
 import { addUserBalance } from "../database/data/user";
-import { GlobalEmotes, MINUTE } from "../types/constants";
+import { GlobalEmotes } from "../types/constants";
 import { Quiz } from "../types/quiz";
 import { runOnInterval } from "../utils";
 import { getQuizNextQuestion } from "./questions/questions";
@@ -19,6 +19,9 @@ import {
   ANSWER_TIME_LIMIT,
   endRushMessageContent,
   loadImages,
+  NEXT_QUESTION_INTERVAL,
+  NEXT_QUESTION_NIGHT_INTERVAL,
+  NEXT_QUESTION_RUSH_INTERVAL,
   reloadQuiz,
   RUSH_TIME_DURATION,
   startRushMessageContent,
@@ -56,12 +59,12 @@ export const startQuiz = async (guild: Guild) => {
     }
 
     const isNight = new Date().getHours() >= 22 || new Date().getHours() < 6;
-    // const questionInterval = isNight
-    //   ? NEXT_QUESTION_NIGHT_INTERVAL
-    //   : !!rushTime
-    //   ? NEXT_QUESTION_RUSH_INTERVAL
-    //   : NEXT_QUESTION_INTERVAL;
-    const questionInterval = MINUTE * 1;
+    const questionInterval = isNight
+      ? NEXT_QUESTION_NIGHT_INTERVAL
+      : !!rushTime
+      ? NEXT_QUESTION_RUSH_INTERVAL
+      : NEXT_QUESTION_INTERVAL;
+    // const questionInterval = MINUTE * 1;
 
     interval = await runOnInterval(async () => {
       const question = await getQuizNextQuestion(rushTime);
