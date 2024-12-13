@@ -1,4 +1,4 @@
-import { createCanvas, loadImage } from "@napi-rs/canvas";
+import { createCanvas, ImageData, loadImage } from "@napi-rs/canvas";
 import { LoLChampion, lolChampions } from "./data";
 
 export const LOL_CHAMPION_IMAGE_PATH_BASE = "assets/images/champion";
@@ -39,35 +39,50 @@ export const getRandomLoLChampionFrom = (champions: {
 };
 
 export const getWhosThatLoLChampionImage = async (champion: LoLChampion) => {
-  const blurFactor = Math.floor(Math.random() * 5 + 10);
+  const blurFactor = Math.round(Math.random() * 7 + 12);
   const championImage = await loadImage(
     `./${LOL_CHAMPION_IMAGE_PATH_BASE}/${champion?.id}.png`
   );
-  const imageCanvas = createCanvas(championImage.width, championImage.height);
+  const width = Math.round(championImage.width / blurFactor) * blurFactor;
+  const height = Math.round(championImage.height / blurFactor) * blurFactor;
+
+  const imageCanvas = createCanvas(width, height);
   const imageContext = imageCanvas.getContext("2d");
 
-  const championCanvas = createCanvas(
-    championImage.width / blurFactor,
-    championImage.height / blurFactor
-  );
+  const championCanvas = createCanvas(width, height);
   const championContext = championCanvas.getContext("2d");
-  championContext.imageSmoothingEnabled = false;
   championContext.filter = "grayscale(100%)";
-  championContext.drawImage(
-    championImage,
-    0,
-    0,
-    championImage.width / blurFactor,
-    championImage.height / blurFactor
-  );
+  championContext.drawImage(championImage, 0, 0, width, height);
+  const { data: imageData } = championContext.getImageData(0, 0, width, height);
+  for (let i = 0; i < width / blurFactor; i++) {
+    for (let j = 0; j < height / blurFactor; j++) {
+      let r = 0;
+      let g = 0;
+      let b = 0;
+      for (let x = 0; x < blurFactor; x++) {
+        for (let y = 0; y < blurFactor; y++) {
+          const index = (i * blurFactor + x + (j * blurFactor + y) * width) * 4;
+          r += imageData[index];
+          g += imageData[index + 1];
+          b += imageData[index + 2];
+        }
+      }
+      r = Math.round(r / blurFactor ** 2);
+      g = Math.round(g / blurFactor ** 2);
+      b = Math.round(b / blurFactor ** 2);
+      for (let x = 0; x < blurFactor; x++) {
+        for (let y = 0; y < blurFactor; y++) {
+          const index = (i * blurFactor + x + (j * blurFactor + y) * width) * 4;
+          imageData[index] = r;
+          imageData[index + 1] = g;
+          imageData[index + 2] = b;
+        }
+      }
+    }
+  }
+  championContext.putImageData(new ImageData(imageData, width, height), 0, 0);
 
-  imageContext.drawImage(
-    championCanvas,
-    0,
-    0,
-    championImage.width,
-    championImage.height
-  );
+  imageContext.drawImage(championCanvas, 0, 0, width, height);
   return imageCanvas.encode("png");
 };
 

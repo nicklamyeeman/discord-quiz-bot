@@ -6918,6 +6918,7 @@ export const lolChampions: { [id: string]: LoLChampion } = {
   renata: {
     id: "renata",
     name: "Renata Glasc",
+    alias: "Renata",
     classes: ["support", "mage"],
     skins: [
       {

@@ -464,9 +464,9 @@ const whosThePokemonPrevolution = async (): Promise<QuizNextQuestion> => {
 export const pokemonQuizQuestions = [
   new WeightedQuizQuestion(nameDualTypePokemon, 5),
   new WeightedQuizQuestion(whatsThePokemonType, 5),
-  new WeightedQuizQuestion(whosThePokemonPrevolution, 10),
-  new WeightedQuizQuestion(whosThePokemonEvolution, 10),
-  new WeightedQuizQuestion(whatsThePokemonId, 20),
-  new WeightedQuizQuestion(whatsThePokemonEvolutionLevel, 20),
+  new WeightedQuizQuestion(whatsThePokemonEvolutionLevel, 15),
+  new WeightedQuizQuestion(whosThePokemonPrevolution, 15),
+  new WeightedQuizQuestion(whosThePokemonEvolution, 15),
+  new WeightedQuizQuestion(whatsThePokemonId, 15),
   new WeightedQuizQuestion(whosThatPokemon, 30),
 ];
