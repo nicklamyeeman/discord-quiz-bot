@@ -17,6 +17,7 @@ export const getQuizNextQuestion = async (
       break;
     case "ssbu":
       questionsPool = ssbuQuizQuestions;
+      break;
     default:
       questionsPool = [
         ...pokemonQuizQuestions,
