@@ -1,9 +1,9 @@
 import { createCanvas, ImageData, loadImage } from "@napi-rs/canvas";
 import { LoLChampion, lolChampions } from "./data";
 
-export const LOL_CHAMPION_IMAGE_PATH_BASE = "assets/images/champion";
-export const LOL_CHAMPION_SPELL_IMAGE_PATH_BASE = "assets/images/spell";
-export const LOL_CHAMPION_SKIN_IMAGE_PATH_BASE = "assets/images/skin";
+export const LOL_CHAMPION_IMAGE_PATH_BASE = "assets/images/lol/champions";
+export const LOL_CHAMPION_SPELL_IMAGE_PATH_BASE = "assets/images/lol/spells";
+export const LOL_CHAMPION_SKIN_IMAGE_PATH_BASE = "assets/images/lol/skins";
 
 export const dualClassLoLChampions = Object.entries(lolChampions)
   .filter(([, champion]) => champion.classes.length === 2)

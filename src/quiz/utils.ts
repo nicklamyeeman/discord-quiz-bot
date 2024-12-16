@@ -2,7 +2,7 @@ import { Image, loadImage } from "@napi-rs/canvas";
 import { Colors, EmbedBuilder } from "discord.js";
 import { setQuizIsLive } from "../database/data/quiz";
 import { MINUTE, SECOND } from "../types/constants";
-import { QuizNextQuestion } from "../types/quiz";
+import { Quiz, QuizNextQuestion } from "../types/quiz";
 
 export class WeightedQuizQuestion {
   option: (() => QuizNextQuestion) | (() => Promise<QuizNextQuestion>);
@@ -29,11 +29,17 @@ export const RUSH_TIME_DURATION = MINUTE * 20;
 
 export const WHOS_THAT_POKEMON_IMAGE_PATH =
   "assets/images/backdrop/whos_that_pokemon.png";
+export const A_NEW_FOE_HAS_APPEARED_IMAGE_PATH =
+  "assets/images/backdrop/a_new_foe_has_appeared.png";
 
 export let whosThatPokemonBackgroundImage: Image;
+export let aNewFoeHasAppearedBackgroundImage: Image;
 export const loadImages = async () => {
   whosThatPokemonBackgroundImage = await loadImage(
     WHOS_THAT_POKEMON_IMAGE_PATH
+  );
+  aNewFoeHasAppearedBackgroundImage = await loadImage(
+    A_NEW_FOE_HAS_APPEARED_IMAGE_PATH
   );
 };
 
@@ -55,7 +61,7 @@ export const reloadQuiz = async () => {
 };
 
 export const startRushMessageContent = (
-  rushTime: "all" | "pokemon" | "lol"
+  rushTime: Exclude<Quiz["rushTime"], null>
 ) => {
   let gameName = "";
 
@@ -65,6 +71,9 @@ export const startRushMessageContent = (
       break;
     case "lol":
       gameName = "League of Legends";
+      break;
+    case "ssbu":
+      gameName = "Super Smash Bros Ultimate";
       break;
   }
 

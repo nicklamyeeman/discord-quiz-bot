@@ -1,10 +1,11 @@
-import { QuizNextQuestion } from "../../types/quiz";
+import { Quiz, QuizNextQuestion } from "../../types/quiz";
 import { WeightedQuizQuestion } from "../utils";
 import { lolQuizQuestions } from "./lol/lol";
 import { pokemonQuizQuestions } from "./pokemon/pokemon";
+import { ssbuQuizQuestions } from "./ssbu/ssbu";
 
 export const getQuizNextQuestion = async (
-  rushTime: "all" | "pokemon" | "lol" | null
+  rushTime: Quiz["rushTime"]
 ): Promise<QuizNextQuestion> => {
   let questionsPool = [];
   switch (rushTime) {
@@ -14,8 +15,14 @@ export const getQuizNextQuestion = async (
     case "lol":
       questionsPool = lolQuizQuestions;
       break;
+    case "ssbu":
+      questionsPool = ssbuQuizQuestions;
     default:
-      questionsPool = [...pokemonQuizQuestions, ...lolQuizQuestions];
+      questionsPool = [
+        ...pokemonQuizQuestions,
+        ...lolQuizQuestions,
+        ...ssbuQuizQuestions,
+      ];
       break;
   }
   let randomRange = 0;

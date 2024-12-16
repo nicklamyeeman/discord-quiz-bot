@@ -2,7 +2,7 @@ import { createCanvas, loadImage } from "@napi-rs/canvas";
 import { normalizeAnswer, whosThatPokemonBackgroundImage } from "../../utils";
 import { Pokemon, pokemons, pokemonTypes, PokemonTypesKeys } from "./data";
 
-export const POKEMON_IMAGE_PATH_BASE = "assets/images/pokemon";
+export const POKEMON_IMAGE_PATH_BASE = "assets/images/pokemon/pokemons";
 
 export const dualTypePokemons = Object.entries(pokemons)
   .filter(([, pokemon]) => pokemon.types.length === 2)

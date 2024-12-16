@@ -7,7 +7,7 @@ import {
 
 export type Quiz = {
   isLive: boolean;
-  rushTime?: "all" | "pokemon" | "lol" | null;
+  rushTime?: "all" | "pokemon" | "lol" | "ssbu" | null;
 };
 
 export type QuizNextQuestion = {

@@ -64,7 +64,7 @@ export const startQuiz = async (guild: Guild) => {
       : !!rushTime
       ? NEXT_QUESTION_RUSH_INTERVAL
       : NEXT_QUESTION_INTERVAL;
-    // const questionInterval = MINUTE * 1;
+    // const questionInterval = SECOND * 30;
 
     interval = await runOnInterval(async () => {
       const question = await getQuizNextQuestion(rushTime);

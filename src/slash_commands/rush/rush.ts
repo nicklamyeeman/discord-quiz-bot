@@ -30,6 +30,10 @@ export const rush: CommandConfig = {
           name: "League of Legends",
           value: "lol",
         },
+        {
+          name: "Super Smash Bros Ultimate",
+          value: "ssbu",
+        },
       ],
     },
   ],
